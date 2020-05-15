@@ -1,2 +1,3 @@
-# 3n_solution
-3n_solution website
+# Project 3N Solution
+
+Project Preview: http://www.marypieroszkiewicz.com/3n_solution/index.html
