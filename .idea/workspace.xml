@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84a2ce32-75ad-4bf7-881b-9ced68f13a49" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bDBfGibaEPtowiM6xn1a3KlMPz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/scss/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/sersives" />
+      <recent name="$PROJECT_DIR$/scss/components" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84a2ce32-75ad-4bf7-881b-9ced68f13a49" name="Default Changelist" comment="" />
+      <created>1588156885412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588156885412</updated>
+      <workItem from="1588156886875" duration="8000" />
+      <workItem from="1588156909427" duration="34000" />
+      <workItem from="1588403624647" duration="38000" />
+      <workItem from="1588403687730" duration="1371000" />
+      <workItem from="1588405986084" duration="1659000" />
+      <workItem from="1588412104685" duration="138000" />
+      <workItem from="1588415049940" duration="2030000" />
+      <workItem from="1588429917650" duration="4064000" />
+      <workItem from="1588434929128" duration="2272000" />
+      <workItem from="1588437574775" duration="14107000" />
+      <workItem from="1588517657884" duration="60628000" />
+      <workItem from="1588768713961" duration="31735000" />
+      <workItem from="1588870641749" duration="13030000" />
+      <workItem from="1588922049408" duration="2565000" />
+      <workItem from="1588931986980" duration="16684000" />
+      <workItem from="1589027284359" duration="38334000" />
+      <workItem from="1589208337801" duration="104425000" />
+      <workItem from="1589470151042" duration="126904000" />
+      <workItem from="1589898365455" duration="25779000" />
+      <workItem from="1590001806065" duration="24315000" />
+      <workItem from="1590069945730" duration="1621000" />
+      <workItem from="1590233140924" duration="5231000" />
+      <workItem from="1590239262177" duration="7731000" />
+      <workItem from="1590306566177" duration="65486000" />
+      <workItem from="1590473465915" duration="8193000" />
+      <workItem from="1590519835897" duration="77000" />
+      <workItem from="1590519980929" duration="2934000" />
+      <workItem from="1590525585362" duration="25528000" />
+      <workItem from="1590608848534" duration="12219000" />
+      <workItem from="1590664704573" duration="26524000" />
+      <workItem from="1590757682670" duration="13246000" />
+      <workItem from="1590781397108" duration="19037000" />
+      <workItem from="1591000169713" duration="6207000" />
+      <workItem from="1591072112064" duration="113000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="629" y="232" key="#Plugins" timestamp="1590567663176">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="629" y="232" key="#Plugins/0.23.1920.1123@0.23.1920.1123" timestamp="1590567663176" />
+    <state x="333" y="268" width="1072" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588432040491">
+      <screen x="0" y="23" width="1920" height="1130" />
+    </state>
+    <state x="333" y="268" width="1072" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1130@0.23.1920.1130" timestamp="1588432040491" />
+    <state x="484" y="246" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1588869348174">
+      <screen x="0" y="23" width="1920" height="1130" />
+    </state>
+    <state x="484" y="246" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1920.1130@0.23.1920.1130" timestamp="1588869348174" />
+    <state x="714" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588499249784">
+      <screen x="0" y="23" width="1920" height="1130" />
+    </state>
+    <state x="714" y="338" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1130@0.23.1920.1130" timestamp="1588499249784" />
+    <state x="760" y="484" key="Github.CreateGistDialog" timestamp="1589140326682">
+      <screen x="0" y="23" width="1920" height="1130" />
+    </state>
+    <state x="760" y="484" key="Github.CreateGistDialog/0.23.1920.1130@0.23.1920.1130" timestamp="1589140326682" />
+    <state x="601" y="332" key="RollbackChangesDialog" timestamp="1590739546031">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="601" y="332" key="RollbackChangesDialog/0.23.1920.1123@0.23.1920.1123" timestamp="1590739546031" />
+    <state x="237" y="97" width="1419" height="897" key="SettingsEditor" timestamp="1590004524980">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="237" y="97" key="SettingsEditor/0.23.1920.1123@0.23.1920.1123" timestamp="1590004524980" />
+    <state x="237" y="97" width="1419" height="897" key="SettingsEditor/0.23.1920.1130@0.23.1920.1130" timestamp="1588932065614" />
+    <state width="572" height="445" key="SwitcherDM" timestamp="1588670865512">
+      <screen x="0" y="23" width="1920" height="1130" />
+    </state>
+    <state width="572" height="445" key="SwitcherDM/0.23.1920.1130@0.23.1920.1130" timestamp="1588670865512" />
+    <state x="687" y="208" width="637" height="753" key="find.popup" timestamp="1589709255458">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="687" y="208" width="637" height="753" key="find.popup/0.23.1920.1123@0.23.1920.1123" timestamp="1589709255458" />
+    <state x="641" y="277" width="670" height="673" key="search.everywhere.popup" timestamp="1590573359529">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="641" y="277" width="670" height="673" key="search.everywhere.popup/0.23.1920.1123@0.23.1920.1123" timestamp="1590573359529" />
+    <state x="641" y="277" width="670" height="674" key="search.everywhere.popup/0.23.1920.1125@0.23.1920.1125" timestamp="1589639739327" />
+    <state x="641" y="277" width="670" height="675" key="search.everywhere.popup/0.23.1920.1127@0.23.1920.1127" timestamp="1589223872885" />
+    <state x="641" y="278" width="670" height="676" key="search.everywhere.popup/0.23.1920.1130@0.23.1920.1130" timestamp="1588436135388" />
+  </component>
+</project>

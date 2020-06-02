@@ -1,0 +1,280 @@
+.fire-cleaning {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__heading {
+    width: 100%;
+
+    &::before {
+      content: url("../images/shape03.svg");
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  @media #{$HD__screens__1920} {
+    padding-bottom: rem(210px);
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    @media #{$HD__screens__1920} {
+      padding: rem(0 278px);
+    }
+
+    &--1 {
+      //margin-top: rem(-70px);
+      //margin-top: -21.875vw;
+      margin-top: -21.875%;
+
+      @media #{$tablet__768} {
+        //margin-top: rem(-135px);
+        //margin-top: -17.578vw;
+        margin-top: -17.578125%;
+      }
+
+      @media #{$tablet_land__1024} {
+        //margin-top: rem(-125px);
+        //margin-top: -12.207vw;
+        margin-top: -12.20703125%;
+      }
+
+      @media #{$desktop__1280} {
+        //margin-top: rem(-158px);
+        //margin-top: -12.344vw;
+        margin-top:  -12.34375%;
+      }
+
+      @media #{$large__screens__1440} {
+        //margin-top: rem(-177px);
+        //margin-top: -12.292vw;
+        margin-top: -12.291666666666666%;
+      }
+
+      @media #{$full__screens__1600} {
+        //margin-top: rem(-198px);
+        //margin-top: -12.375vw;
+        margin-top: -12.375%;
+      }
+
+      @media #{$HD__screens__1920} {
+        //margin-top: rem(-273px);
+        //margin-top: -14.219vw;
+        margin-top: -14.21875%;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 0 0 140px);
+        //margin-top: -290px;
+        //margin-top: rem(-273px);
+        //margin-top: -14.219vw;
+        //margin-top: -14.21875%;
+        margin-top: -289px;
+      }
+    }
+
+
+    &--2, &--4 {
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &--3 {
+      position: relative;
+    }
+  }
+
+  &__col {
+    width: 100%;
+
+    @media #{$HD__screens__1920} {
+      width: calc(100% / 2);
+    }
+
+    &-title {
+      font-family: $font-title;
+      font-size: rem(30px);
+      padding-bottom: rem(34px);
+      text-align: center;
+
+      @media #{$mobile_land__640} {
+        font-size: rem(40px);
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(71px);
+        text-align: left;
+      }
+    }
+
+    &-text {
+      font-family: $font-text;
+      font-size: rem(18px);
+      text-align: center;
+      padding-bottom: rem(30px);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(20px);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding-bottom: 0;
+        text-align: left;
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(25px);
+      }
+
+      @media #{$large__screens__1440} {
+        font-size: rem(30px);
+      }
+    }
+
+    &--space1, &--space3, &--space5, &--space7 {
+      padding: rem(40px 20px);
+
+      @media #{$tablet_land__1024} {
+        padding: rem(0 20px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-right: rem(131px);
+      }
+    }
+  }
+
+  &__graphics {
+    width: 50%;
+    margin: 0 auto 1.875rem;
+    position: relative;
+
+    @media #{$tablet_land__1024} {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__shadow {
+
+    &--1 {
+      filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+
+    &--2, &--4 {
+      filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+
+    &--3 {
+      filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+  }
+
+  &__shape {
+
+    &--1 {
+      &::before {
+        content: url("../images/shape--05.svg");
+        position: absolute;
+        display: block;
+        width: 198px;
+        transform: scale(0.3);
+        left: -74px;
+        bottom: -58px;
+        z-index: -1;
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+        }
+      }
+
+      &::after {
+        content: url("../images/shape--11.svg");
+        position: absolute;
+        display: block;
+        width: 192px;
+        right: 74px;
+        top: -15px;
+        z-index: -1;
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: url("../images/shape--06.svg");
+        position: absolute;
+        display: block;
+        width: 234px;
+        right: -166px;
+        top: -90px;
+        z-index: -1;
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: url("../images/shape--07.svg");
+        position: absolute;
+        display: block;
+        width: 281px;
+        left: -93px;
+        top: -95px;
+        z-index: -1;
+      }
+
+      &::after {
+        content: url("../images/shape--08.svg");
+        position: absolute;
+        display: block;
+        width: 169px;
+        right: 32px;
+        bottom: 21px;
+        z-index: -1;
+      }
+    }
+  }
+
+
+  &__img {
+    filter: drop-shadow(1px 1px 0 $white)
+    drop-shadow(-1px 1px 0 $white)
+    drop-shadow(1px -1px 0 $white)
+    drop-shadow(-1px -1px 0 $white);
+  }
+
+  &__img--3 {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

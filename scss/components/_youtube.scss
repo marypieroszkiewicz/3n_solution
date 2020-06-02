@@ -1,0 +1,8 @@
+.ytp-chrome-top .ytp-show-cards-title {
+  visibility: hidden !important;
+}
+
+.ytp-title-channel, .ytp-title, .ytp-title-text, .yt-uix-sessionlink {
+  display: none !important;
+  z-index: -1;
+}

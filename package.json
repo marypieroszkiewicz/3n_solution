@@ -1,0 +1,28 @@
+{
+  "name": "3n_solution",
+  "version": "1.0.0",
+  "description": "Project Preview: http://www.marypieroszkiewicz.com/3n_solution/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marypieroszkiewicz/3n_solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marypieroszkiewicz/3n_solution/issues"
+  },
+  "homepage": "https://github.com/marypieroszkiewicz/3n_solution#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
