@@ -1,36 +1,36 @@
 <?php
 
-define("RECAPTCHA_V3_SECRET_KEY", '6LfG6P4UAAAAAPByReQYcP4ZQabBRjUrxon9fp45');
-
-if (isset($_POST['email']) && $_POST['email']) {
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-} else {
-    // set error message and redirect back to form...
-    header('location: send-script.php');
+  $email;$message;$captcha;
+  $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+  $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+  $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
+  if(!$captcha){
+    echo '<h2>Please check the the captcha form.</h2>';
     exit;
-}
+  }
+  $secretKey = "6LfYcf8UAAAAANmOLIRH-D0j32FRZqrNjzFAoDDu";
+  $ip = $_SERVER['REMOTE_ADDR'];
 
-$token = $_POST['token'];
-$action = $_POST['action'];
+  // post request to server
+  $url = 'https://www.google.com/recaptcha/api/siteverify';
+  $data = array('secret' => $secretKey, 'response' => $captcha);
 
-// call curl to POST request
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => RECAPTCHA_V3_SECRET_KEY, 'response' => $token)));
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
-$arrResponse = json_decode($response, true);
-
-// verify the response
-if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
-    // valid submission
-    // go ahead and do necessary stuff
-} else {
-    // spam submission
-    // show error message
-}
+  $options = array(
+    'http' => array(
+      'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+      'method'  => 'POST',
+      'content' => http_build_query($data)
+    )
+  );
+  $context  = stream_context_create($options);
+  $response = file_get_contents($url, false, $context);
+  $responseKeys = json_decode($response,true);
+  header('Content-type: application/json');
+  if($responseKeys["success"]) {
+    echo json_encode(array('success' => 'true'));
+  } else {
+    echo json_encode(array('success' => 'false'));
+  }
 
 
 $mailToSend = "marketing@3ns.com.pl";
