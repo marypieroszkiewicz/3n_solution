@@ -75,19 +75,17 @@ form.addEventListener("submit", e => {
                             toggleErrorField(el, true);
                         }
                     } else {
-                        if (res.status === "ok") {
+                        if (res.success) {
                             const div = document.createElement("div");
                             div.classList.add("form-send-success");
                             div.innerText = "Wysłanie wiadomości się nie powiodło";
-                            
                             form.parentElement.insertBefore(div, form);
                             div.innerHTML = `
                         <strong>Wiadomość została wysłana</strong>
                         <span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span>
                     `;
                             form.remove();
-                        }
-                        if (res.status === "error") {
+                        } else {
                             //jeżeli istnieje komunikat o błędzie wysyłki
                             //np. generowany przy poprzednim wysyłaniu formularza
                             //usuwamy go, by nie duplikować tych komunikatów
