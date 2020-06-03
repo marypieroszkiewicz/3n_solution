@@ -1,4 +1,25 @@
 <?php
+// -----------------------------------------------------------------------------
+function post($url, $data = "", $headers = []) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    $result = curl_exec($ch);
+    curl_close($result);
+    return json_decode($result);
+}
+// -----------------------------------------------------------------------------
+
+function verify_captcha($token) {
+    $secret = "6LfYcf8UAAAAANmOLIRH-D0j32FRZqrNjzFAoDDu";
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = "secret=" . $secret . "&response=" . $token;
+    return post($url, $data, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
+}
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
@@ -9,31 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Catcha
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
-    $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
-    if (!$captcha) {
-        echo json_encode(array('success' => 'false', 'message' => 'captacha error'));
-        exit;
-    }
-    $secretKey = "6LfYcf8UAAAAANmOLIRH-D0j32FRZqrNjzFAoDDu";
-    $ip = $_SERVER['REMOTE_ADDR'];
-
-    // post request to server
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
-    $data = array('secret' => $secretKey, 'response' => $captcha);
-
-    $options = array(
-        'http' => array(
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data)
-        )
-    );
-    $context  = stream_context_create($options);
-    $response = file_get_contents($url, false, $context);
-    $responseKeys = json_decode($response,true);
+    $token = $_POST["token"];
     header('Content-type: application/json');
-
-    if (!$responseKeys["success"]) {
+    $captcha = verify_captcha($token);
+    if (!$captcha->success) {
         echo json_encode(array('success' => 'false'));
         exit;
     }
@@ -81,9 +81,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </html>";
 
         if (mail($mailToSend, "Wiadomosc ze strony - 3N SOLUTIONS " . date("d-m-Y"), $message, $headers)) {
-            $return["status"] = "ok";
+            $return["success"] = "true";
         } else {
-            $return["status"] = "error";
+            $return["success"] = "false";
         }
     }
 
