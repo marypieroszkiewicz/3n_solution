@@ -75,7 +75,6 @@
       z-index: -1;
     }
   }
-
 }
 
 .logo {
@@ -682,23 +681,11 @@
   }
 }
 
-
-//.fade-in {
-//  opacity: 1;
-//}
-
-
-//.begone {
-//  transform: translateY(-200%);
-//}
-
-//.menu-dropdown.is-hidden {
-//  transform: translateY(-200%);
-//}
-//
-//.menu-dropdown.is-visible {
-//  transform: translateY(0);
-//}
+@media (min-width: 1921px) {
+ video {
+   width: 100vw;
+ }
+}
 
 /* ----- END OF HEADER ----- */
 
