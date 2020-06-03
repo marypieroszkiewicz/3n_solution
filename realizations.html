@@ -5,13 +5,9 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>3N Solution - Contact</title>
+  <title>3N Solution - Realizations</title>
 
-  <!-- Google reCAPTCHA v3 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--  <script src="https://www.google.com/recaptcha/api.js?render=6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I"></script>-->
-
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- Google Fonts -->
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -128,84 +124,170 @@
   </header>
   <!-- end of header -->
 
-  <!-- contact -->
-  <section class="contact">
-    <div  class="contact__row">
-      <figure class="contact__col contact__col--1">
-<!--        <div id="map" class="contact__map"></div>-->
-        <img src="images/map.jpg">
-      </figure>
-
-      <div class="contact__col contact__col--2">
-
-        <div class="contact__details">
-          <div class="contact__details-wrap contact__details-wrap--1">
-            <div class="contact__details-email">biuro@3ns.com.pl</div>
-            <div class="contact__details-phone">+48 22 233 00 50</div>
-          </div>
-          <div class="contact__details-wrap contact__details-wrap--2">
-            <div class="contact__details-address contact__details-address--1">
-              <h4 class="contact__details-address__title">Biuro Handlowe</h4>
-              <span class="contact__details-address__text">ul. Szeligowska 40a,
-              01-320 Warszawa
-          </span>
-            </div>
-            <div class="contact__details-address contact__details-address--2">
-              <h4 class="contact__details-address__title">Siedziba firmy</h4>
-              <span class="contact__details-address__text">ul. Złota 61/100,
-              00-819 Warszawa</span>
-            </div>
-          </div>
+  <!-- realizations -->
+  <section class="realizations">
+    <section class="container">
+      <h2 class="realizations__title">Realizacje</h2>
+      <div class="realizations__video">
+        <div class="realizations__video-overlay">
+          <figure class="realizations__video-inner">
+            <iframe src="https://www.youtube.com/embed/jcg3gezdwbo?&controls=0&mute=1" allowfullscreen="allowfullscreen" frameborder="0" allow="autoplay" id="ytplayer" class="realizations__video-youtube"></iframe>
+          </figure>
         </div>
+      </div>
 
-        <form class="contact__form" id="contactForm" method="post" action="send-script.php">
-          <h2 class="contact__form-title">Wypełnij formularz kontaktowy</h2>
-          <div class="contact__form-content">
 
-            <div class="contact__form-row contact__form-row--1">
-              <div class="contact__form-col contact__form-col--2">
-                <label class="contact__form-col__lab contact__form-required" for="name">Imię</label>
-                <input class="contact__form-col__inp" type="text" name="name" required pattern=.{3,} id="name" data-error="Wypełnij to pole">
-              </div>
-              <div class="contact__form-col contact__form-col--2">
-                <label class="contact__form-col__lab contact__form-required" for="surname">Nazwisko</label>
-                <input class="contact__form-col__inp" type="text" name="surname" required pattern=.{3,} id="surname" data-error="Wypełnij to pole">
-              </div>
-            </div>
-            <div class="contact__form-row contact__form-row--2">
-              <div class="contact__form-col contact__form-col--3">
-                <label class="contact__form-col__lab contact__form-required" for="email">E-mail</label>
-                <input class="contact__form-col__inp" type="email" name="email" id="email" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-              </div>
-              <div class="contact__form-col contact__form-col--4">
-                <label class="contact__form-col__lab" for="phone">Telefon kontaktowy</label>
-                <input class="contact__form-col__inp" type="number" name="phone" id="phone">
+      <div class="realizations__wrapper">
+        <div class="realizations__slider">
+          <div id="one" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide2.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
               </div>
             </div>
-            <div class="contact__form-row contact__form-row--3">
-              <label class="contact__form-col__lab" for="message">Wiadomość</label>
-              <textarea class="contact__form-col__area" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="10"></textarea>
-            </div>
-            <div class="contact__form-row contact__form-row--4">
-              <div class="contact__form-row__gdpr-privacy">
-                <input id="terms" type="checkbox" required data-error-text="Musisz wypełnić pole" name="terms" class="contact__form-row__inp contact__form-row__inp--check">
-                <label class="contact__form-row__lab" for="terms">
-                  <span class="contact__form-row__lab-text">Oświadczam, że zapoznałem się z <a href="privacy-policy.html" target="_blank" class="contact__form-row__link">polityką prywatności</a> i informacją o <a href="privacy-policy.html#data-administrator" target="_blank" class="contact__form-row__link">Administratorze danych</a></span>
-                </label>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide1.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
               </div>
             </div>
-            <div class="honey-row">
-              <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
-              <input type="text" id="honey" name="honey">
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
             </div>
-            <button type="submit" class="contact__form-row__btn submit-btn g-recaptcha" data-sitekey="6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I" data-callback='onSubmit' data-action='submit'>Wyślij</button>
 
           </div>
-        </form>
+
+          <div id="two" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide4.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide3.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
+            </div>
+
+          </div>
+
+          <div id="three" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide6.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide5.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
+            </div>
+
+          </div>
+
+          <div id="four" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide8.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide7.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
+            </div>
+
+          </div>
+
+          <div id="five" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide10.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide9.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
+            </div>
+
+          </div>
+
+          <div id="six" class="realizations__slider-content">
+            <div class="realizations__slider-content__after">
+              <img src="images/slide11.jpg">
+              <div class="realizations__slider-content__afterPosition realizations__slider-content__afterLabel">
+                Po
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__before">
+              <div class="realizations__slider-content__before-inset">
+                <img src="images/slide12.jpg">
+                <div class="realizations__slider-content__beforePosition realizations__slider-content__beforeLabel">
+                  Przed
+                </div>
+              </div>
+            </div>
+
+            <div class="realizations__slider-content__handle">
+              <span class="realizations__slider-content__handle-left__arrow"></span>
+              <span class="realizations__slider-content__handle-right__arrow"></span>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-    </div>
+    </section>
   </section>
-  <!-- end of contact -->
+  <!-- end of realizations -->
 
   <!-- footer -->
   <footer class="footer">
@@ -265,22 +347,32 @@
 
 <!-- JS Scripts -->
 <script src="js/app.js"></script>
-<!--<script src="js/map.js"></script>-->
-<!--<script async defer-->
-<!--          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVpac2yFWOSlB8h54PEpp0tcmGB-R7FEA&callback=initMap">-->
-<!--</script>-->
-<script src="js/form.js"></script>
+<script src="js/youtube.js"></script>
 <!--<script src="js/parallax.js"></script>-->
 <!--<script src="js/parallaxes.js"></script>-->
-<!--<script src="js/hero.js"></script>-->
 <!--<script src="js/main&#45;&#45;before-after__slider.js"></script>-->
+<script src="js/before-after__slider.js"></script>
 
 <script>
-  function onSubmit(token) {
-    document.getElementById("contactForm").submit();
-  }
+  new BeforeAfter({
+    id: '#one'
+  });
+  new BeforeAfter({
+    id: '#two'
+  });
+  new BeforeAfter({
+    id: '#three'
+  });
+  new BeforeAfter({
+    id: '#four'
+  });
+  new BeforeAfter({
+    id: '#five'
+  });
+  new BeforeAfter({
+    id: '#six'
+  });
 </script>
-
 
 </body>
 </html>

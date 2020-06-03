@@ -22,13 +22,13 @@
 <section class="wrapper">
   <!-- header-->
   <header class="header">
-    <section class="container">
-      <!-- navigation -->
-      <div class="navigation">
+    <!-- navigation -->
+    <div class="navigation">
+      <section class="container">
         <div class="navigation-container">
           <div class="logo">
             <a href="index.html" class="logo__link">
-              <img src="images/logo.svg" class="logo__img"></a>
+              <img src="images/logo.svg" class="logo__img" alt="3ns logo"></a>
           </div>
           <button class="btn-toggle" id="btnToggle" aria-label="Open / Close Menu">
             <div class="hamburger-container">
@@ -44,7 +44,7 @@
             <ul class="menu">
               <li class="menu__item menu__item--dropdown">
                 <a href="#" class="menu__link">Usługi<span class="menu__link--arrow"></span></a>
-                <ul class="menu-submenu menu-submenu--1">
+                <ul class="menu-submenu menu-submenu--1 js--menu-submenu">
                   <li class="menu-submenu__item">
                     <a href="services-maintenance.html" class="menu-submenu__link js-anchor--link">Konserwacja urządzeń elektroenergetycznych
                     </a>
@@ -72,7 +72,7 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Technologie<span class="menu__link--arrow"></span></a>
-                <ul class="menu-submenu menu-submenu--2">
+                <ul class="menu-submenu menu-submenu--2 js--menu-submenu">
                   <li class="menu-submenu__item">
                     <a href="technologies--gas-mixture.html" class="menu-submenu__link js-anchor--link">Mieszanka Gazów
                     </a>
@@ -95,32 +95,33 @@
               </li>
               <li class="menu__item menu-item--ue">
                 <a href="tenders.html" class="menu__link-ue js-anchor--link">
-                  <img src="images/logo-ue.svg" class="menu__link-ue__img">
+                  <img src="images/logo-ue.svg" class="menu__link-ue__img" alt="European Union">
                 </a>
               </li>
 
               <li class="menu__item menu__item--color">
                 <span class="menu__link-dropdown menu__link-icon">
-                  <img src="images/ask.svg" class="menu__link-img">
+                  <img src="images/ask.svg" class="menu__link-img" alt="zapytanie">
                 </span>
-                <ul class="menu-dropdown">
+                <ul class="menu-dropdown js--menu-submenu">
                   <li class="menu-dropdown__item">
                     <span class="menu-dropdown__text menu-dropdown__text--mobile">+48 22 233 00 50</span>
-                    <a class="menu-dropdown__link menu-dropdown__link--mobile js-anchor--link" href="tel:+48 22 233 00 50"><img src="images/smartphone_2.svg" class="menu-dropdown__icon menu-dropdown__icon--1"></a>
+                    <a class="menu-dropdown__link menu-dropdown__link--mobile js-anchor--link" href="tel:+48 22 233 00 50"><img src="images/smartphone_2.svg" class="menu-dropdown__icon menu-dropdown__icon--1" alt="mobile"></a>
                   </li>
                   <li class="menu-dropdown__item">
                     <span class="menu-dropdown__text menu-dropdown__text--envelop">biuro@3ns.com.pl</span>
                     <a class="menu-dropdown__link menu-dropdown__link--envelop js-anchor--link" href="mailto:biuro@3ns.com.pl">
-                      <img src="images/envelope_2.svg" class="menu-dropdown__icon menu-dropdown__icon--2"></a>
+                      <img src="images/envelope_2.svg" class="menu-dropdown__icon menu-dropdown__icon--2" alt="email"></a>
                   </li>
                 </ul>
               </li>
             </ul>
           </nav>
         </div>
-      </div>
-      <!-- end of navigation -->
-    </section>
+
+      </section>
+    </div>
+    <!-- end of navigation -->
   </header>
   <!-- end of header -->
 
