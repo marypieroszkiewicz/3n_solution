@@ -43,9 +43,13 @@
       justify-content: space-between;
     }
 
-    //@media (min-width: 1921px) {
-    //  padding: rem(0 0 0 140px);
-    //}
+    @media #{$HD__screens__1920} {
+      background-color: $catskill-white;
+    }
+
+    @media (min-width: 1921px) {
+      padding: rem(0 0 0 140px);
+    }
   }
 
   @media (min-width: 1921px) {
@@ -59,7 +63,7 @@
       top: 0;
       background-color: $catskill-white;
       z-index: -1;
-      width: 87%;
+      width: 50%;
       height: 100%;
     }
 
@@ -69,7 +73,7 @@
       right: 0;
       top: 0;
       background-color: $fun-blue;
-      width: 13%;
+      width: 50%;
       height: 100%;
       z-index: -1;
     }
