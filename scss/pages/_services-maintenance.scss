@@ -389,6 +389,10 @@
       font-size: rem(18px);
       padding-bottom: rem(10px);
 
+      @media #{$mobile_land__640} {
+        font-size: rem(20px);
+      }
+
       @media #{$HD__screens__1920} {
         font-size: rem(30px);
         padding-bottom: rem(23px);
@@ -453,6 +457,10 @@
 
     &-content {
       padding: 30px 20px 40px;
+
+      @media #{$mobile_land__640} {
+        padding: 30px 0 40px;
+      }
 
       @media #{$tablet_land__1024} {
         grid-column: 2 / 3;
