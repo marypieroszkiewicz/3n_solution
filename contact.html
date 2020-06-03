@@ -9,8 +9,9 @@
 
   <!-- Google reCAPTCHA v3 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfYcf8UAAAAAHiC72XsuF_WQ6tF0EyJvvJ7nFWL"></script>
+<!--  <script src="https://www.google.com/recaptcha/api.js?render=6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I"></script>-->
 
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -130,7 +131,8 @@
   <section class="contact">
     <div  class="contact__row">
       <figure class="contact__col contact__col--1">
-        <div id="map" class="contact__map"></div>
+<!--        <div id="map" class="contact__map"></div>-->
+        <img src="images/map.jpg">
       </figure>
 
       <div class="contact__col contact__col--2">
@@ -191,15 +193,12 @@
                 </label>
               </div>
             </div>
-            <!-- <div class="google-recaptcha">
-              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-              <input type="hidden" name="action" value="validate_captcha">
-            </div> -->
             <div class="honey-row">
               <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
               <input type="text" id="honey" name="honey">
             </div>
-            <button type="submit" class="contact__form-row__btn submit-btn">Wyślij</button>
+            <button type="submit" class="contact__form-row__btn submit-btn g-recaptcha" data-sitekey="6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I" data-callback='onSubmit' data-action='submit'>Wyślij</button>
+
           </div>
         </form>
       </div>
@@ -265,42 +264,22 @@
 
 <!-- JS Scripts -->
 <script src="js/app.js"></script>
-<script src="js/map.js"></script>
-<script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVpac2yFWOSlB8h54PEpp0tcmGB-R7FEA&callback=initMap">
-</script>
+<!--<script src="js/map.js"></script>-->
+<!--<script async defer-->
+<!--          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVpac2yFWOSlB8h54PEpp0tcmGB-R7FEA&callback=initMap">-->
+<!--</script>-->
 <script src="js/form.js"></script>
 <!--<script src="js/parallax.js"></script>-->
 <!--<script src="js/parallaxes.js"></script>-->
 <!--<script src="js/hero.js"></script>-->
 <!--<script src="js/main&#45;&#45;before-after__slider.js"></script>-->
 
-      <script>
-       // when form is submit
-    $('#contactForm').submit(function() {
-        // we stoped it
-        event.preventDefault();
-        var email = $('#email').val();
-        var message = $("#message").val();
-        // needs for recaptacha ready
-        grecaptcha.ready(function() {
-            // do request for recaptcha token
-            // response is promise with passed token
-            grecaptcha.execute('6LfYcf8UAAAAAHiC72XsuF_WQ6tF0EyJvvJ7nFWL', {action: 'create_message'}).then(function(token) {
-                // add token to form
-                $('#contactForm').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
-                    $.post("send-script.php",{email: email, message: message, token: token}, function(result) {
-                            console.log(result);
-                            if(result.success) {
-                                    alert('Thanks for send message.')
-                            } else {
-                                    alert('You are spammer ! Get the @$%K out.')
-                            }
-                    });
-            });;
-        });
-  });
-  </script>
+<script>
+  function onSubmit(token) {
+    document.getElementById("contactForm").submit();
+  }
+</script>
+
 
 </body>
 </html>

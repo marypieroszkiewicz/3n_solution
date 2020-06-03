@@ -1,3 +1,3 @@
 # Project 3N Solution
 
-Project Preview: http://www.marypieroszkiewicz.com/3n_solution/index.html
+Project Preview: https://www.3ns.com.pl/

@@ -31,7 +31,7 @@
     padding: rem(0 0 0 30px);
   }
 
-  @media #{  $HD__screens__1920} {
+  @media #{$HD__screens__1920} {
     padding: rem(0 0 0 140px);
   }
 
@@ -43,9 +43,39 @@
       justify-content: space-between;
     }
 
-    @media #{  $HD__screens__1920} {
+    @media (min-width: 1921px) {
+      padding: rem(0 0 0 140px);
+
     }
   }
+
+  @media (min-width: 1921px) {
+    padding: 0;
+    background-color: transparent;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $catskill-white;
+      z-index: -1;
+      width: 87%;
+      height: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $fun-blue;
+      width: 13%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
 }
 
 .logo {
