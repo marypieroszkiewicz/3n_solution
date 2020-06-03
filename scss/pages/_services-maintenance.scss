@@ -410,6 +410,10 @@
         text-align: left;
       }
 
+      @media #{$large__screens__1440} {
+        padding-bottom: 60px;
+      }
+
       @media #{$full__screens__1600} {
         padding-bottom: 60px;
       }
