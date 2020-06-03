@@ -28,6 +28,7 @@ for (const el of inputs) {
 }
 
 form.addEventListener("submit", e => {
+  var captcha_API = '6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I';
   e.preventDefault();
 
   let formErrors = false;
@@ -51,56 +52,59 @@ form.addEventListener("submit", e => {
 
     const formData = new FormData();
     for (const el of inputs) {
-      formData.append(el.name, el.value)
+      formData.append(el.name, el.value);
     }
 
     const url = form.getAttribute("action");
     const method = form.getAttribute("method");
+    grecaptcha.ready(function() {
+      grecaptcha.execute(captcha_API, {action: 'login'})
+          .then(function(token) {
+            formData.append('token', token);
+            return fetch(url, {
+              method: method.toUpperCase(),
+              body: formData
+            });
+          }).then(res => res.json())
+          .then(res => {
+            if (res.errors) {
+              const selectors = res.errors.map(el => `[name="${el}"]`);
+              const fieldsWithErrors = form.querySelectorAll(selectors.join(","));
+              for (const el of fieldsWithErrors) {
+                markFieldAsError(el, true);
+                toggleErrorField(el, true);
+              }
+            } else {
+              if (res.status === "ok") {
+                const div = document.createElement("div");
+                div.classList.add("form-send-success");
+                div.innerText = "Wysłanie wiadomości się nie powiodło";
 
-    fetch(url, {
-      method: method.toUpperCase(),
-      body: formData
-    })
-        .then(res => res.json())
-        .then(res => {
-          if (res.errors) {
-            const selectors = res.errors.map(el => `[name="${el}"]`);
-            const fieldsWithErrors = form.querySelectorAll(selectors.join(","));
-            for (const el of fieldsWithErrors) {
-              markFieldAsError(el, true);
-              toggleErrorField(el, true);
-            }
-          } else {
-            if (res.status === "ok") {
-              const div = document.createElement("div");
-              div.classList.add("form-send-success");
-              div.innerText = "Wysłanie wiadomości się nie powiodło";
-
-              form.parentElement.insertBefore(div, form);
-              div.innerHTML = `
+                form.parentElement.insertBefore(div, form);
+                div.innerHTML = `
                         <strong>Wiadomość została wysłana</strong>
                         <span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span>
                     `;
-              form.remove();
-            }
-            if (res.status === "error") {
-              //jeżeli istnieje komunikat o błędzie wysyłki
-              //np. generowany przy poprzednim wysyłaniu formularza
-              //usuwamy go, by nie duplikować tych komunikatów
-              const statusError = document.querySelector(".send-error");
-              if (statusError) {
-                statusError.remove();
+                form.remove();
               }
+              if (res.status === "error") {
+                //jeżeli istnieje komunikat o błędzie wysyłki
+                //np. generowany przy poprzednim wysyłaniu formularza
+                //usuwamy go, by nie duplikować tych komunikatów
+                const statusError = document.querySelector(".send-error");
+                if (statusError) {
+                  statusError.remove();
+                }
 
-              const div = document.createElement("div");
-              div.classList.add("send-error");
-              div.innerText = "Wysłanie wiadomości się nie powiodło";
-              submit.parentElement.appendChild(div);
+                const div = document.createElement("div");
+                div.classList.add("send-error");
+                div.innerText = "Wysłanie wiadomości się nie powiodło";
+                submit.parentElement.appendChild(div);
+              }
             }
-          }
-        }).finally(() => {
-      submit.disabled = false;
-      submit.classList.remove("element-is-busy");
+            submit.disabled = false;
+            submit.classList.remove("element-is-busy");
+          });
     });
   }
 });
