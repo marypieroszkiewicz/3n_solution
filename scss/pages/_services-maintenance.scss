@@ -481,7 +481,7 @@
       }
 
       @media #{$HD__screens__1920} {
-        padding: 53px 0 0;
+        padding: rem(53px 0 0);
       }
 
 
@@ -531,7 +531,7 @@
         }
 
         &:first-child {
-          padding-bottom: 20px;
+          padding-bottom: rem(20px);
         }
       }
 
@@ -552,7 +552,7 @@
         @media #{$HD__screens__1920} {
           font-size: rem(30px);
           padding: rem(13px 30px);
-          margin: 52px 0 0;
+          margin: rem(52px 0 0);
         }
       }
     }
