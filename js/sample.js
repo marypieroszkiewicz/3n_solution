@@ -1,3 +1,19 @@
+function recaptcha {
+
+}
+
+
+function onClick(e) {
+  e.preventDefault();
+  grecaptcha.ready(function() {
+    grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+      // Add your logic to submit to your backend server here.
+    });
+  });
+}
+
+
+
 /* ---------------------------------------------------- */
 /* ----- PARALLAX ----- */
 /* ---------------------------------------------------- */
@@ -60,4 +76,31 @@
 //
 //     return offset;
 //   }
+// });
+
+//
+//
+// // when form is submit
+// $('#contactForm').submit(function() {
+//   // we stoped it
+//   event.preventDefault();
+//   var email = $('#email').val();
+//   var message = $("#message").val();
+//   // needs for recaptacha ready
+//   grecaptcha.ready(function() {
+//     // do request for recaptcha token
+//     // response is promise with passed token
+//     grecaptcha.execute('6LfYcf8UAAAAAHiC72XsuF_WQ6tF0EyJvvJ7nFWL', {action: 'create_message'}).then(function(token) {
+//       // add token to form
+//       $('#contactForm').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+//       $.post("send-script.php",{email: email, message: message, token: token}, function(result) {
+//         console.log(result);
+//         if(result.success) {
+//           alert('Thanks for send message.')
+//         } else {
+//           alert('You are spammer ! Get the @$%K out.')
+//         }
+//       });
+//     });;
+//   });
 // });

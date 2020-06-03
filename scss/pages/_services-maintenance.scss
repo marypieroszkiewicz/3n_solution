@@ -205,14 +205,14 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px);
+        padding: rem(0 80px 100px);
         //margin-top: rem(-177px);
         //margin-top: -12.292vw;
         margin-top: -12.291666666666666%;
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 100px);
+        padding: rem(0 100px 100px);
         //margin-top: rem(-198px);
         //margin-top: -12.375vw;
         margin-top: -12.375%;
@@ -238,23 +238,55 @@
         flex-direction: row;
       }
 
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 100px);
+      }
+
       @media #{$HD__screens__1920} {
         //padding-top: rem(166px);
-        padding: 166px 278px 0 140px;
+        padding: 0 278px 0 140px;
       }
     }
 
     &-graphics {
+
+      &--1 {
+        width: 50%;
+        margin: rem(0 auto 30px);
+        position: relative;
+
+        @media #{$tablet_land__1024} {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      &:not(.maintenance__article-graphics--1) {
       width: 50%;
       margin: rem(0 auto 30px);
       position: relative;
 
-      @media #{$tablet_land__1024} {
-        width: 100%;
-        margin: 0 auto;
-      }
+        @media #{$tablet_land__1024} {
+          width: 100%;
+          margin: 0 auto;
+        }
 
-      @media #{$HD__screens__1920} {
+        @media #{$large__screens__1440} {
+          width: 80%;
+          margin: 0 auto 0 0;
+        }
+
+        @media #{$full__screens__1600} {
+          width: 90%;
+        }
+
+        @media #{$HD__screens__1920} {
+          width: 95%;
+        }
       }
     }
 
@@ -273,7 +305,7 @@
         filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
       }
 
-      &--2 {
+      &--2, &--3, &--4 {
         filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
       }
     }
@@ -345,7 +377,7 @@
       width: 100%;
       grid-template-columns: repeat(2, 50%);
       //grid-template-rows: repeat(2, 1fr);
-      grid-template-rows: auto 862px;
+      grid-template-rows: auto 605px;
     }
 
     &-navigation {
@@ -377,6 +409,14 @@
       @media #{$tablet_land__1024} {
         text-align: left;
       }
+
+      @media #{$full__screens__1600} {
+        padding-bottom: 60px;
+      }
+
+      @media #{$HD__screens__1920} {
+      padding-bottom: 95px;
+      }
     }
 
     &-progressbar, &-progressfill {
@@ -389,8 +429,12 @@
       border-radius: 50px;
       transition: width ease-in 1s;
 
+      @media #{$full__screens__1600} {
+        top: 193px;
+      }
+
       @media #{$HD__screens__1920} {
-        top: 70px;
+        top: 246px
       }
     }
 
