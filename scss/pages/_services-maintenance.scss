@@ -245,6 +245,10 @@
         flex-direction: row;
       }
 
+      @media #{$desktop__1280} {
+        padding: rem(0 60px);
+      }
+
       @media #{$large__screens__1440} {
         padding: rem(0 80px);
       }
@@ -282,9 +286,13 @@
           margin: 0 auto;
         }
 
+        @media #{$desktop__1280} {
+          width: 70%;
+          margin: 0 auto 0 0;
+        }
+
         @media #{$large__screens__1440} {
           width: 80%;
-          margin: 0 auto 0 0;
         }
 
         @media #{$full__screens__1600} {
@@ -439,6 +447,10 @@
       top: 50px;
       border-radius: 50px;
       transition: width ease-in 1s;
+
+      @media #{$large__screens__1440} {
+        top: 190px;
+      }
 
       @media #{$full__screens__1600} {
         top: 193px;
