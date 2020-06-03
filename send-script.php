@@ -1,31 +1,62 @@
 <?php
+// -----------------------------------------------------------------------------
+function post($url, $data = "", $headers = []) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    $result = curl_exec($ch);
+    curl_close($result);
+    return json_decode($result);
+}
+// -----------------------------------------------------------------------------
 
-$mailToSend = "marketing@3ns.com.pl";
+function verify_captcha($token) {
+    $secret = "6Ldzev8UAAAAAOQgCxjcx-gFHPd9i3KOzmaVO32a";
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = "secret=" . $secret . "&response=" . $token;
+    return post($url, $data, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
+}
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $surname = $_POST["surname"];
-    $email = $_POST["email"];
     $message = $_POST["message"];
     $antiSpam = $_POST["honey"];
 
-    $errors = Array();
-	$return = Array();
+    // Catcha
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $token = $_POST["token"];
+    header('Content-type: application/json');
+    $captcha = verify_captcha($token);
+    if (!$captcha->success) {
+        echo json_encode(array('success' => 'false'));
+        exit;
+    }
+    $mailToSend = "marketing@3ns.com.pl";
 
-	if (empty($name)) { //jeżeli pusta wartość
+    $errors = Array();
+    $return = Array();
+
+    if (empty($name)) { //jeżeli pusta wartość
         array_push($errors, "name");
     }
     if (empty($name)) {
-            array_push($errors, "surname");
-        }
+        array_push($errors, "surname");
+    }
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //sprawdzamy czy email ma zły wzór
         array_push($errors, "email");
     }
     if (empty($message)) {
         array_push($errors, "message");
     }
-    if (empty($antiSpam)) {
-
+    if (!empty($antiSpam)) {
+        array_push($errors, "antiSpam");
+    }
     if (count($errors) > 0) {
         $return["errors"] = $errors;
     } else {
@@ -50,14 +81,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </html>";
 
         if (mail($mailToSend, "Wiadomosc ze strony - 3N SOLUTIONS " . date("d-m-Y"), $message, $headers)) {
-            $return["status"] = "ok";
+            $return["success"] = "true";
         } else {
-            $return["status"] = "error";
+            $return["success"] = "false";
         }
-    }
-
-    } else {
-        $return["status"] = "ok";
     }
 
     header("Content-Type: application/json");
