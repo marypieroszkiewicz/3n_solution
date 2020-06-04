@@ -20,24 +20,22 @@ function verify_captcha($token) {
     return post($url, $data, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
 }
 
-$mailToSend = "marketing@3ns.com.pl";
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $antiSpam = $_POST["honey"];
 
-        // Catcha
-        $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-        $token = $_POST["token"];
-        header('Content-type: application/json');
-        $captcha = verify_captcha($token);
-        if (!$captcha->success) {
-            echo json_encode(array('success' => 'false'));
-            exit;
-        }
+    // Catcha
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $token = $_POST["token"];
+    header('Content-type: application/json');
+    $captcha = verify_captcha($token);
+    if (!$captcha->success) {
+        echo json_encode(array('success' => 'false'));
+        exit;
+    }
 
-        $mailToSend = "marketing@3ns.com.pl";
+    $mailToSend = "mary.pieroszkiewicz@gmail.com";
 
 
     $errors = Array();
@@ -45,9 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 	    if (empty($name)) { //jeżeli pusta wartość
             array_push($errors, "name");
-        }
-        if (empty($name)) {
-            array_push($errors, "surname");
         }
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //sprawdzamy czy email ma zły wzór
             array_push($errors, "email");
@@ -73,9 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     </head>
                     <body>
                         <div> Imię: $name</div>
-                        <div> Nazwisko: $surname</div>
                         <div> Email: <a href=\"mailto:$email\">$email</a> </div>
-                        <div> Telefon kontaktowy: $phone </div>
                         <div> Wiadomość: </div>
                         <div> $message </div>
                     </body>

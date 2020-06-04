@@ -23,10 +23,17 @@ close.addEventListener('click', () => {
 
 
 
-
-
 // Walidacja Modal
 
+const toggleErrorField = function(field, show) {
+  const errorText = field.nextElementSibling;
+  if (errorText !== null) {
+    if (errorText.classList.contains("form-error-text")) {
+      errorText.style.display = show ? "block" : "none";
+      errorText.setAttribute('aria-hidden', show);
+    }
+  }
+};
 
 const markFieldAsError = function(field, show) {
   if (show) {
@@ -37,15 +44,6 @@ const markFieldAsError = function(field, show) {
   }
 };
 
-
-const markFieldAsError = function(field, show) {
-  if (show) {
-    field.classList.add("field-error");
-  } else {
-    field.classList.remove("field-error");
-    toggleErrorField(field, false);
-  }
-};
 
 const form = document.querySelector('#modalForm');
 const inputs = form.querySelectorAll("[required]");
