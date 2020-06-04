@@ -481,6 +481,10 @@
             @media #{$HD__screens__1920} {
               background-position: center left 373px;
             }
+
+            @media (min-width: 1921px) {
+              background-position: center;
+            }
           }
 
           &--third {
@@ -494,6 +498,10 @@
             @media #{$HD__screens__1920} {
               background-position: center right 640px;
             }
+
+            @media (min-width: 1921px) {
+              background-position: center;
+            }
           }
 
           &--fourth {
@@ -506,6 +514,10 @@
 
             @media #{$HD__screens__1920} {
               background-position: center right 350px;
+            }
+
+            @media (min-width: 1921px) {
+              background-position: center;
             }
           }
         }
