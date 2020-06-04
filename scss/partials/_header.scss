@@ -17,10 +17,10 @@
 .navigation {
   background-color: $catskill-white;
   position: relative;
-  padding: rem(0 10px);
+  padding: rem(0 20px);
 
   @media #{$tablet__768} {
-    padding: rem(0 20px);
+    //padding: rem(0 20px);
   }
 
   @media #{$tablet_land__1024} {
