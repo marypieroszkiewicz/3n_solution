@@ -26,6 +26,14 @@
     padding: rem(0 0 0 60px);
   }
 
+  @media #{$large__screens__1440} {
+    padding: rem(0 0 0 100px);
+  }
+
+  @media #{$full__screens__1600} {
+    padding: rem(0 0 0 120px);
+  }
+
   @media #{$HD__screens__1920} {
     padding: rem(0 0 0 140px);
   }

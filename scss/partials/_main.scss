@@ -224,6 +224,14 @@
         padding: rem(0 0 0 60px);
       }
 
+      @media #{$large__screens__1440} {
+        padding: rem(0 0 0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 0 0 120px);
+      }
+
       @media #{$HD__screens__1920} {
         padding-left: rem(140px);
         font-size: rem(54px);
@@ -233,6 +241,13 @@
 
     &-parallax {
        //background-color: $catskill-white;
+
+      @media (min-width: 1921px) {
+        width: 100vw;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+      }
 
       &__box {
         display: flex;
@@ -504,8 +519,16 @@
 
           @media #{$desktop__1280} {
             text-align: left;
+            padding: rem(0 60px);
           }
 
+          @media #{$large__screens__1440} {
+            padding: rem(0 100px);
+          }
+
+          @media #{$full__screens__1600} {
+            padding: rem(0 120px);
+          }
 
           &--third {
             margin-top: 30px;
@@ -519,7 +542,7 @@
           @media #{$HD__screens__1920} {
             top: 50%;
             transform: translateY(-50%);
-            padding: rem(0 50px);
+            padding: rem(0 140px);
           }
 
 
@@ -1734,7 +1757,7 @@
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(80px 150px 0);
+      padding: rem(80px 120px 0);
     }
 
     @media #{$HD__screens__1920} {
@@ -1790,8 +1813,17 @@
         justify-content: space-around;
       }
 
+      @media #{$desktop__1280} {
+        justify-content: space-between;
+        padding: rem(0 60px);
+      }
+
       @media #{$large__screens__1440} {
-        padding: rem(0 50px);
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: 0;
       }
 
       @media #{$full__screens__1600} {
