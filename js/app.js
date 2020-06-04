@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let scrollpos = window.scrollY;
-  const dropdown = document.querySelectorAll('.menu-dropdown');
+  const dropdown = document.querySelector('.menu-dropdown');
   const dropdownHeight = dropdown.offsetHeight;
 
   const remove_class_on_scroll = () => dropdown.classList.remove('menu-dropdown--show');
@@ -39,53 +39,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     console.log(scrollpos)
-  })
+  });
 
 
-//   const subMenu = document.querySelectorAll('.menu-submenu');
-//   const subMenuHeight = subMenu.offsetHeight;
-//
-//   const remove_on_scroll = () => subMenu.classList.remove('menu-submenu--show');
-//
-// window.addEventListener('scroll', function () {
-//   scrollpos = window.scrollY
-//
-//   subMenu.forEach(e =>) {e.
-//   }
-// })
+  const menu = document.querySelector(".menu");
+  const links = menu.querySelectorAll("a:not(.js-anchor--link)");
+
+  for (const el of links) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const ul = this.nextElementSibling;
+      if (ul !== null) {
+        ul.classList.toggle("menu-submenu--show");
+      }
 
 
+      let par = this.parentElement;
+      while (true) {
+        if (par.parentElement.classList.contains("menu")) break;
+        par = par.parentElement;
+      }
 
+      console.log(par)
+      const mainLiChild = menu.children;
+      for (const li of mainLiChild) {
+        if (li !== par) {
+          li.querySelectorAll(".menu-submenu").forEach(el =>
+              el.classList.remove("menu-submenu--show"));}
+      }
+    })
+  }
 
+  addEventListener(
+      'scroll',
+      _ => [...document.querySelectorAll('.menu-submenu--show')]
+          .forEach(
+              e => e.classList.remove('menu-submenu--show')
+          )
+  )
 
-          const menu = document.querySelector(".menu");
-          const links = menu.querySelectorAll("a:not(.js-anchor--link)");
-
-          for (const el of links) {
-            el.addEventListener("click", function (e) {
-              e.preventDefault();
-
-              const ul = this.nextElementSibling;
-              if (ul !== null) {
-                ul.classList.toggle("menu-submenu--show");
-              }
-
-
-              let par = this.parentElement;
-              while (true) {
-                if (par.parentElement.classList.contains("menu")) break;
-                par = par.parentElement;
-              }
-
-              console.log(par)
-              const mainLiChild = menu.children;
-              for (const li of mainLiChild) {
-                if (li !== par) {
-                  li.querySelectorAll(".menu-submenu").forEach(el => el.classList.remove("menu-submenu--show"));
-                }
-              }
-            })
-          }
 
 
   /* ---------------------------------------------------- */
