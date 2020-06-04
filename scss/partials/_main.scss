@@ -1986,7 +1986,7 @@
           box-shadow: 0px 0px 25px 5px rgba(25, 96, 170, 0.3);
 
           @media #{$mobile_land__640} {
-            padding: rem(40px 25px);
+            //padding: rem(40px 20px);
           }
 
           @media #{$tablet__768} {
