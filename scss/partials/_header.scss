@@ -17,11 +17,6 @@
 .navigation {
   background-color: $catskill-white;
   position: relative;
-  padding: rem(0 20px);
-
-  @media #{$tablet__768} {
-    //padding: rem(0 20px);
-  }
 
   @media #{$tablet_land__1024} {
     padding: rem(0 0 0 25px);
@@ -38,6 +33,7 @@
   &-container {
     display: flex;
     align-items: center;
+    padding: rem(0 20px);
 
     @media #{$desktop__1280} {
       justify-content: space-between;
@@ -184,7 +180,7 @@
   overflow: hidden;
   transition: 0.5s max-height;
   position: absolute;
-  top: 52px;
+  top: 51px;
   left: 0;
   width: 100%;
   z-index: 3;
