@@ -106,7 +106,7 @@ form.addEventListener("submit", e => {
             } else {
               if (res.success) {
                 const div = document.createElement("div");
-                div.classList.add("form-send-success");
+                div.classList.add("modal__form-send-success");
                 div.innerText = "Wysłanie wiadomości się nie powiodło";
                 form.parentElement.insertBefore(div, form);
                 div.innerHTML = `
