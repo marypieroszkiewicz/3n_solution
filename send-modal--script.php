@@ -23,6 +23,7 @@ function verify_captcha($token) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $message = $_POST["message"];
     $antiSpam = $_POST["honey"];
 
     // Catcha
@@ -35,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $mailToSend = "mary.pieroszkiewicz@gmail.com";
+    $mailToSend = "marketing@3ns.com.pl";
 
 
     $errors = Array();
@@ -46,9 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //sprawdzamy czy email ma zły wzór
             array_push($errors, "email");
-        }
-        if (empty($message)) {
-            array_push($errors, "message");
         }
         if (!empty($antiSpam)) {
             array_push($errors, "antiSpam");
@@ -69,12 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <body>
                         <div> Imię: $name</div>
                         <div> Email: <a href=\"mailto:$email\">$email</a> </div>
-                        <div> Wiadomość: </div>
-                        <div> $message </div>
                     </body>
                 </html>";
 
-            if (mail($mailToSend, "Wiadomosc ze strony - 3N SOLUTIONS " . date("d-m-Y"), $message, $headers)) {
+            if (mail($mailToSend, "Wiadomosc ze strony - 3N SOLUTIONS -- OFERTA " . date("d-m-Y"), $message, $headers)) {
                 $return["success"] = "true";
             } else {
                 $return["success"] = "false";
