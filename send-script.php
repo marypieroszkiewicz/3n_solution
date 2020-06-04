@@ -37,6 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo json_encode(array('success' => 'false'));
         exit;
     }
+
+
     $mailToSend = "marketing@3ns.com.pl";
 
     $errors = Array();
