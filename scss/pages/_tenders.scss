@@ -210,61 +210,156 @@
       @media #{$mobile_land__640} {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        //justify-content: space-around;
+        justify-content: center;
+        margin-left: 70px;
+      }
+
+      @media #{$tablet_land__1024} {
+        flex-wrap: nowrap;
       }
 
       @media #{$HD__screens__1920} {
        justify-content: center;
-        transform: translateX(-40px);
+        //transform: translateX(-40px);
       }
     }
 
-    &__graphics {
-      width: 100%;
-      padding-bottom: 30px;
-
-      @media #{$mobile_land__640} {
-        width: calc(100% / 2 - 20px);
-      }
-
-      @media #{$tablet_land__1024} {
-        width: calc(100% / 4 - 40px);
-        padding-bottom: 0;
-      }
-    }
+    //&__graphics {
+    //  width: 100%;
+    //  padding-bottom: 30px;
+    //
+    //  @media #{$mobile_land__640} {
+    //    width: calc(100% / 2 - 20px);
+    //  }
+    //
+    //  @media #{$tablet_land__1024} {
+    //    width: calc(100% / 4 - 40px);
+    //    padding-bottom: 0;
+    //  }
+    //}
 
     &__img {
-      width: 50%;
-      margin: 0 auto;
+      width: 60%;
+      padding-bottom: 30px;
+
+      &--1 {
+        width: 45%;
+      }
+
+      &--3 {
+        width: 25%;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
 
       @media #{$mobile_land__640} {
-        width: 70%;
+        width: 30%;
+        margin-right: 70px;
+
+        &--1,  {
+          width: 25%;
+        }
+
+        &--3 {
+          width: 15%;
+          margin-right: 120px;
+          padding-bottom: 0;
+        }
+      }
+
+      @media #{$tablet__768} {
+        &--3 {
+          margin-right: 133px;
+        }
       }
 
       @media #{$tablet_land__1024} {
-        width: 100%;
+        padding-bottom: 0;
+
+        &--1 {
+          width: 22%;
+        }
+
+        &--3 {
+          width: 15%;
+          margin-right: 70px;
+        }
       }
+
+      @media #{$desktop__1280} {
+        &--1 {
+          width: 21%;
+        }
+
+        &--3 {
+          width: 14%;
+        }
+      }
+
 
       @media #{$HD__screens__1920} {
-        width: 80%;
-      }
+        width: 20%;
+        margin-right: 100px;
 
-      &--1 {
-        width: 40%;
-
-        @media #{$mobile_land__640} {
-          width: 45%;
+        &:last-child {
+          margin-right: 0;
         }
 
-        @media #{$tablet_land__1024} {
-          width: 75%;
+        &--1 {
+          width: 14%;
         }
 
-        @media #{$HD__screens__1920} {
-          width: 50%;
-          margin: 0 40px 0 auto;
+        &--3 {
+          width: 8%;
         }
       }
+
+
+
+
+
+
+
+
+
+      //width: 50%;
+      //margin: 0 auto;
+      //
+      //@media #{$mobile_land__640} {
+      //  width: 70%;
+      //}
+      //
+      //@media #{$tablet_land__1024} {
+      //  width: 100%;
+      //}
+      //
+      //@media #{$HD__screens__1920} {
+      //  width: 80%;
+      //}
+
+      //&--1 {
+      //  width: 40%;
+      //
+      //  @media #{$mobile_land__640} {
+      //    width: 45%;
+      //  }
+      //
+      //  @media #{$tablet_land__1024} {
+      //    width: 75%;
+      //  }
+      //
+      //  @media #{$HD__screens__1920} {
+      //    width: 50%;
+      //    margin: 0 40px 0 auto;
+      //  }
+      //}
+      //
+      //&--3 {
+      //  width: 30%
+      //}
     }
   }
 }
