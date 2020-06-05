@@ -39,23 +39,14 @@
     }
   }
 
-  &__list {
-    //list-style: decimal;
-    //margin: 0 0 0 4px;
-    //padding: 0 0 0 20px;
-  }
-
   &__item {
     font-size: rem(18px);
     font-family: $font-text;
     padding-bottom: 20px;
-    //list-style: inherit;
-    //list-style-position: inside;
 
     @media #{$mobile_land__640} {
       font-size: rem(20px);
     }
-
 
     @media #{$tablet_land__1024} {
       font-size: rem(25px);
