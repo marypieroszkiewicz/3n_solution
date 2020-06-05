@@ -80,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 
 
-
   /* ---------------------------------------------------- */
   /* ----- HIGHLIGHT CURRENT PAGE ACTIVE MENU ITEM ----- */
   /* ---------------------------------------------------- */
