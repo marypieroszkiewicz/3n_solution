@@ -110,6 +110,26 @@
 
   &__subpage {
 
+    &-anchor {
+      font-size: rem(18px);
+      color: $fun-blue;
+      text-decoration: underline;
+
+      @media #{$mobile_land__640} {
+        font-size: rem(20px);
+      }
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(25px);
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(30px);
+      }
+
+    }
+
+
     &-text {
       font-size: rem(18px);
       font-family: $font-text;
@@ -190,7 +210,6 @@
       @media #{$desktop__1280} {
         font-size: rem(30px);
       }
-
     }
 
     &-link {
@@ -299,7 +318,6 @@
         }
       }
 
-
       @media #{$HD__screens__1920} {
         width: 20%;
         margin-right: 100px;
@@ -316,14 +334,6 @@
           width: 8%;
         }
       }
-
-
-
-
-
-
-
-
 
       //width: 50%;
       //margin: 0 auto;

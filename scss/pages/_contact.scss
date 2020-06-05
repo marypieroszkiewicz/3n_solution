@@ -46,6 +46,11 @@
 
       @media #{$HD__screens__1920} {
         padding-left: rem(140px);
+
+        &::before {
+          content: url("../images/bg__6svg");
+
+        }
       }
     }
 
