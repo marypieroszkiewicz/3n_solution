@@ -212,6 +212,11 @@
         flex-wrap: wrap;
         justify-content: space-around;
       }
+
+      @media #{$HD__screens__1920} {
+       justify-content: center;
+        transform: translateX(-40px);
+      }
     }
 
     &__graphics {
@@ -242,6 +247,23 @@
 
       @media #{$HD__screens__1920} {
         width: 80%;
+      }
+
+      &--1 {
+        width: 40%;
+
+        @media #{$mobile_land__640} {
+          width: 45%;
+        }
+
+        @media #{$tablet_land__1024} {
+          width: 75%;
+        }
+
+        @media #{$HD__screens__1920} {
+          width: 50%;
+          margin: 0 40px 0 auto;
+        }
       }
     }
   }
