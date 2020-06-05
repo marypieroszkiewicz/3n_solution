@@ -23,23 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  let scrollpos = window.scrollY;
-  const dropdown = document.querySelector('.menu-dropdown');
-  const dropdownHeight = dropdown.offsetHeight;
+  const media = window.matchMedia('(min-width: 1024px)');
 
-  const remove_class_on_scroll = () => dropdown.classList.remove('menu-dropdown--show');
+  if (media.matches) {
+
+    let scrollpos = window.scrollY;
+    const dropdown = document.querySelector('.menu-dropdown');
+    const dropdownHeight = dropdown.offsetHeight;
+
+    const remove_class_on_scroll = () => dropdown.classList.remove('menu-dropdown--show');
 
 
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY
+    window.addEventListener('scroll', function() {
+      scrollpos = window.scrollY
 
 
-    if (scrollpos >= dropdownHeight) {
-      remove_class_on_scroll()
-    }
+      if (scrollpos >= dropdownHeight) {
+        remove_class_on_scroll()
+      }
 
-    console.log(scrollpos)
-  });
+      console.log(scrollpos)
+    });
+
+
+
+    addEventListener (
+        'scroll',
+        _ => [...document.querySelectorAll('.menu-submenu--show')]
+            .forEach(
+                e => e.classList.remove('menu-submenu--show')
+            )
+    );
+
+
+  }
 
 
   const menu = document.querySelector(".menu");
@@ -70,14 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
-
-  addEventListener(
-      'scroll',
-      _ => [...document.querySelectorAll('.menu-submenu--show')]
-          .forEach(
-              e => e.classList.remove('menu-submenu--show')
-          )
-  )
 
 
   /* ---------------------------------------------------- */
