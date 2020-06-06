@@ -67,6 +67,8 @@
         font-size: rem(20px);
         font-family: $font-title--bold;
         background-color: $fun-blue;
+        -webkit-box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
+        box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
         padding: rem(12px 54px);
         cursor: pointer;
       }
