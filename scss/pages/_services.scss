@@ -64,6 +64,12 @@
     @media #{$HD__screens__1920} {
     }
 
+    &-img {
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        width: 100%;
+      }
+    }
+
     &__box {
       width: 100%;
       display: flex;
@@ -85,9 +91,6 @@
 
       &-img {
         margin: 0 auto;
-
-        @media #{$tablet_land__1024} {
-        }
 
         @media #{$HD__screens__1920} {
           margin: 0;
