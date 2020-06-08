@@ -48,18 +48,12 @@
       }
 
       @media #{$mobile_land__640} {
-        width: 90%;
+        width: calc(100% - 40px);
         margin: 0 auto;
 
         &::before {
-          left: -68px;
-          top: -60px;
-        }
-      }
-
-      @media #{$tablet__768} {
-        &::before {
-          left: -74px;
+          top: -9.375vw;
+          left: -9.375vw;
         }
       }
 
@@ -68,8 +62,8 @@
         margin: 0 0 0 40px;
 
         &::before {
-          left: -40px;
-          top: -80px;
+          top: -7.813vw;
+          left: -3.906vw;
         }
       }
 
@@ -78,7 +72,7 @@
         margin: 0 auto;
 
         &::before {
-          top: -161px;
+          top: -8.385vw;
           left: 0;
         }
       }
@@ -186,7 +180,6 @@
           width: 100%;
         }
       }
-
     }
 
 
