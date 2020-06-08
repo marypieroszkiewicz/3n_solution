@@ -114,6 +114,7 @@
       font-size: rem(18px);
       color: $fun-blue;
       text-decoration: underline;
+      display: block;
 
       @media #{$mobile_land__640} {
         font-size: rem(20px);
@@ -125,6 +126,16 @@
 
       @media #{$desktop__1280} {
         font-size: rem(30px);
+      }
+
+      &--pl {
+        padding-bottom: 30px;
+      }
+
+      &--en {
+        @media #{$desktop__1280} {
+          padding-bottom: 0;
+        }
       }
 
     }
