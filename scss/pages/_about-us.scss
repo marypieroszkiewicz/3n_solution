@@ -48,35 +48,37 @@
 
       &--1 {
         // margin-top: -72px;
-        margin-top: -22.5%;
+        // margin-top: -22.5%;
+        margin-top: -22.500vw;
 
         @media #{$mobile_land__640} {
           // margin-top: -146px;
-          margin-top: -22.8125%;
+          // margin-top: -22.8125%;
+          margin-top: -22.813vw;
         }
 
         @media #{$tablet__768} {
-          //margin-top: rem(-135px);
-          //margin-top: -17.578vw;
-          // margin-top: -17.578125%;
+          // margin-top: -146px;
+          // margin-top: -23.046875%;
+          margin-top: -23.047vw;
         }
 
         @media #{$tablet_land__1024} {
-          //margin-top: rem(-125px);
-          //margin-top: -12.207vw;
-          margin-top: -12.20703125%;
+          // margin-top: -150px;
+          // margin-top: -14.6484375%;
+          margin-top: -14.648vw;
         }
 
         @media #{$desktop__1280} {
-          //margin-top: rem(-158px);
-          //margin-top: -12.344vw;
-          margin-top:  -12.34375%;
+          // margin-top: -216px;
+          // margin-top: -16.875%;
+          margin-top: -16.875vw;
         }
 
         @media #{$large__screens__1440} {
           //margin-top: rem(-177px);
           //margin-top: -12.292vw;
-          margin-top: -12.291666666666666%;
+          // margin-top: -12.291666666666666%;
         }
 
         @media #{$full__screens__1600} {
