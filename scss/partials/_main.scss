@@ -383,7 +383,6 @@
             }
           }
 
-
           &--sixth {
             margin-top: -160px;
 
@@ -618,6 +617,8 @@
             padding: rem(16px 32px);
             font-size: rem(16px);
             margin-top: rem(25px);
+            -webkit-box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
+            box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
             cursor: pointer;
 
             @media #{$mobile_land__640} {
