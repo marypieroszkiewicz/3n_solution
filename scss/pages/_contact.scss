@@ -4,7 +4,7 @@
   &__row {
     display: flex;
     flex-direction: column;
-    padding: rem(0 20px);
+    padding: rem(40px 20px 0);
     position: relative;
 
     @media #{$mobile_land__640} {
@@ -36,6 +36,16 @@
     &--1 {
       position: relative;
 
+      &::before {
+        content: url("../images/bg__6.svg");
+        z-index: -1;
+        position: absolute;
+        left: -20px;
+        top: -40px;
+        width: 100%;
+        display: block;
+      }
+
       @media #{$mobile_land__640} {
         width: 70%;
         margin: 0 auto;
@@ -49,13 +59,7 @@
         padding-left: rem(140px);
 
         &::before {
-          content: url("../images/bg__6.svg");
-          z-index: -1;
-          position: absolute;
-          left: 0;
           top: -161px;
-          width: 100%;
-          display: block;
         }
       }
     }
@@ -293,14 +297,37 @@
     justify-content: flex-end;
 
     &-img {
-      width: 318px;
+      //width: 100px;
+      width: 31.250vw;
+
+      @media #{$tablet_land__1024} {
+        width: 19.531vw;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 318px;
+      }
     }
   }
 }
 
-//#map {
-//  height: 100%;
-//}
+.mapouter {
+  width: 100%;
+  height: 100%;
+}
+
+.google-map {
+  width: 100%;
+  height: 88vw;
+
+  @media #{$HD__screens__1920} {
+    height: 50vw;
+  }
+
+  @media (min-width: 1921px) and (max-width: 2560px) {
+      height: 37vw;
+  }
+}
 
 @media #{$mobile_land__640} {
 }
