@@ -43,8 +43,16 @@
     align-items: center;
     padding: rem(0 20px);
 
+    @media #{$mobile_land__640} {
+      padding: rem(0 40px);
+    }
+
+    @media #{$tablet__768} {
+      padding: rem(0 60px);
+    }
+
     @media #{$tablet_land__1024} {
-      padding: 0 0 0 20px;
+      padding: 0 0 0 60px;
     }
 
     @media #{$desktop__1280} {
@@ -117,8 +125,12 @@
     background-color: $fun-blue;
   }
 
+  @media #{$mobile_land__640} {
+    right: rem(40px);
+  }
+
   @media #{$tablet__768} {
-    right: rem(20px);
+    right: rem(60px);
   }
 
   @media #{$tablet_land__1024} {

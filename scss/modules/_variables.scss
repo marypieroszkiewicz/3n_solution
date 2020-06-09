@@ -39,6 +39,6 @@ $desktop__1280: "(min-width: 1280px)";
 $large__screens__1440: "(min-width: 1440px)";
 $full__screens__1600: "(min-width: 1600px)";
 $HD__screens__1920: "(min-width: 1920px)";
-$max__screen__2560: "(max-width: 2560px)";
+$max__screen__2560: "(min-width: 1921px) and (max-width: 2560px)";
 
 // ----- END OF VARIABLES -----

@@ -201,11 +201,18 @@
         padding: rem(0 278px 166px 140px);
       }
 
-      @media (min-width: 1921px) and (max-width: 2560px) {
+      @media #{$max__screen__2560} {
         // margin-top: -347px;
         // margin-top: -13.5546875%;
         margin-top: -13.555vw;
+        // width: 100vw;
+        // left: 50%;
+        // position: relative;
+        // transform: translateX(-50%);
       }
+
+      // @media (min-width: 1921px) and (max-width: 2560px) {
+      // }
     }
 
     &--second {

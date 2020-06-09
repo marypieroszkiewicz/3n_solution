@@ -18,6 +18,10 @@
     padding: rem(0 140px 145px);
   }
 
+  @media (min-width: 1921px) and (max-width: 2560px) {
+
+  }
+
   &--bg {
     background-color: $catskill-white;
   }
@@ -47,7 +51,6 @@
     justify-content: space-between;
     width: 100%;
 
-
     @media #{$tablet_land__1024} {
       justify-content: center;
       width: calc(100% - 120px);
@@ -61,7 +64,8 @@
       margin: 0;
     }
 
-    @media #{$HD__screens__1920} {
+    @media (min-width: 1921px) and (max-width: 2560px) {
+      padding: rem(0 0 0 140px);
     }
 
     &-img {

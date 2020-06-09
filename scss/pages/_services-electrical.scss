@@ -44,7 +44,7 @@
       // margin-top: -72px;
       // margin-top: -22.5%;
       margin-top: -22.500vw;
-      padding: 0 20px;
+      padding: rem(0 20px);
 
       @media #{$mobile_land__640} {
         // margin-top: -146px;
@@ -95,7 +95,7 @@
         // margin-top: -270px;
         // margin-top: -14.0625%;
         margin-top: -14.063vw;
-        padding: 0 278px 0 140px;
+        padding: rem(0 278px 0 140px);
       }
 
       @media (min-width: 1921px) and (max-width: 2560px) {

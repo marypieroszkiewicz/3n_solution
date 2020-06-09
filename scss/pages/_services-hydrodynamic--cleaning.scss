@@ -15,6 +15,13 @@
     }
   }
 
+  &-img {
+
+    @media #{$HD__screens__1920} {
+      width: inherit;
+    }
+  }
+
   &__row {
     display: flex;
     flex-direction: column;
@@ -25,20 +32,65 @@
       flex-direction: row;
     }
 
-    @media #{$HD__screens__1920} {
-
-    }
-
     &--1 {
       flex-direction: column-reverse;
+      padding: rem(0 20px);
+      // margin-top: -72px;
+      // margin-top: -22.5%;
+      margin-top: -22.500vw;
+
+      @media #{$mobile_land__640} {
+        padding: rem(0 40px);
+        // margin-top: -146px;
+        // margin-top: -22.8125%;
+        margin-top: -22.813vw;
+      }
+
+      @media #{$tablet__768} {
+        // margin-top: -146px;
+        // margin-top: -23.046875%;
+        margin-top: -23.047vw;
+      }
 
       @media #{$tablet_land__1024} {
         flex-direction: row;
-        margin-top: -306px;
+        padding: rem(0 60px);
+        // margin-top: -150px;
+        // margin-top: -14.6484375%;
+        margin-top: -14.648vw;
+      }
+
+      @media #{$desktop__1280} {
+        // margin-top: -216px;
+        // margin-top: -16.875%;
+        margin-top: -16.875vw;
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px);
+        // margin-top: -222px;
+        // margin-top: -15.416666666666667%;
+        margin-top: -15.417vw;
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 100px);
+        // margin-top: -226px;
+        // margin-top: -14.125%;
+        margin-top: -14.125vw;
       }
 
       @media #{$HD__screens__1920} {
+        padding: rem(0 278px 0 140px);
+        // margin-top: -270px;
+        // margin-top: -14.0625%;
+        margin-top: -14.063vw;
+      }
 
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        // margin-top: -347px;
+        // margin-top: -13.5546875%;
+        margin-top: -13.555vw;
       }
     }
 
@@ -48,11 +100,6 @@
     }
 
     &--3 {
-      justify-content: center;
-      padding: rem(0 140px);
-    }
-
-    &--4 {
       flex-direction: column;
       background-color: $catskill-white;
       z-index: -1;
@@ -89,18 +136,41 @@
         @media #{$HD__screens__1920} {
           height: 278px;
         }
+
+        @media (min-width: 1921px) and (max-width: 2560px) {
+          height: 400px;
+        }
+
       }
     }
 
-    &--5 {
+    &--4 {
       flex-direction: column-reverse;
+      padding: rem(0 20px);
+
+      @media #{$mobile_land__640} {
+        padding: rem(0 40px);
+      }
 
       @media #{$tablet_land__1024} {
         flex-direction: row;
+        padding: rem(0 60px);
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 60px 60px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px 80px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 80px 150px);
       }
 
       @media #{$HD__screens__1920} {
-        padding: rem(50px 278px 115px);
+        padding: rem(50px 278px 200px);
       }
     }
 
@@ -114,6 +184,7 @@
 
       @media #{$mobile_land__640} {
         font-size: rem(18px);
+        padding: rem(0 40px);
       }
 
       @media #{$tablet__768} {
@@ -122,31 +193,37 @@
 
       @media #{$tablet_land__1024} {
         font-size: rem(25px);
+        padding: rem(0 60px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px);
       }
 
       @media #{$HD__screens__1920} {
         font-size: rem(30px);
         padding: 0;
-
       }
     }
 
     &-boxes {
       display: grid;
       grid-template-columns: 1fr;
-      //grid-template-rows: repeat(6, auto);
       grid-gap: 16px;
       padding: rem(16px 20px);
 
       @media #{$mobile_land__640} {
-
         grid-template-columns: repeat(2, 1fr);
-        //grid-template-rows: repeat(6, auto);
+        padding: rem(16px 40px);
       }
 
       @media #{$tablet_land__1024} {
         grid-template-columns: repeat(4, 1fr);
-        padding: rem(0 40px);
+        padding: rem(0 60px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px);
       }
 
       @media #{$HD__screens__1920} {
@@ -195,7 +272,6 @@
           grid-column: 3 / 4;
           grid-row: 2;
         }
-
       }
     }
 
@@ -204,7 +280,11 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      padding: rem(40px 0);
+      padding: rem(40px 20px);
+
+      @media #{$mobile_land__640} {
+        padding: rem(40px 40px);
+      }
 
       @media #{$tablet_land__1024} {
         flex-direction: row;
@@ -218,7 +298,6 @@
   }
 
   &__sub-row {
-    //padding: rem(0 140px);
     display: flex;
     flex-direction: column;
 
@@ -243,19 +322,34 @@
       text-align: left;
     }
 
-    @media #{$HD__screens__1920} {
+    @media #{$desktop__1280} {
+      width: calc(100% / 2);
     }
 
     &--1 {
-      padding: 40px 20px 20px;
-      //padding: rem(0 154px 0 140px);
+      padding: rem(40px 0 20px);
 
       @media #{$tablet_land__1024} {
-        padding: rem(0 40px);
+        width: 60%;
+        padding: rem(0 60px 0 0);
       }
 
-      @media #{$HD__screens__1920} {
-        padding: rem(0 154px 0 140px);
+      @media #{$desktop__1280} {
+        width: calc(100% / 2);
+      }
+
+      // @media #{$HD__screens__1920} {
+      //   padding: rem(0 154px 0 140px);
+      // }
+    }
+
+    &--2 {
+      @media #{$tablet_land__1024} {
+        width: 40%;
+      }
+
+      @media #{$desktop__1280} {
+        width: calc(100% / 2);
       }
     }
 
@@ -277,10 +371,14 @@
     }
 
     &--4 {
-      padding: rem(40px 20px 20px);
+      padding: rem(40px 0 20px);
 
       @media #{$tablet_land__1024} {
-        padding: 0 40px 0 0;
+        padding: rem(0 40px 0 0);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 80px 0 0);
       }
 
       @media #{$HD__screens__1920} {
@@ -289,11 +387,7 @@
     }
 
     &--5 {
-      padding: rem(40px 20px 20px);
-
-      @media #{$tablet_land__1024} {
-        padding: rem(0 40px);
-      }
+      padding: rem(40px 0 20px);
 
       @media #{$HD__screens__1920} {
         padding: 0;
@@ -417,6 +511,10 @@
     drop-shadow(-1px 1px 0 $white)
     drop-shadow(1px -1px 0 $white)
     drop-shadow(-1px -1px 0 $white);
+
+    &--1 {
+      margin: 0 0 0 auto;
+    }
 
     &--2, &--3 {
       width: inherit;
