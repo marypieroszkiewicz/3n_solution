@@ -26,6 +26,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: rem(0 20px);
+
+    @media #{$mobile_land__640} {
+      padding: rem(0 40px);
+    }
 
     @media #{$tablet_land__1024} {
       flex-direction: row;
@@ -67,7 +72,7 @@
     }
 
     &--2 {
-      padding: rem(0 20px);
+      //padding: rem(0 20px);
 
       @media #{$mobile_land__640} {
         padding: rem(0 40px);
@@ -89,7 +94,7 @@
       }
 
       @media #{$tablet_land__1024} {
-        padding: 0 30px;
+        padding: rem(0 30px);
       }
     }
 
@@ -168,7 +173,6 @@
           margin-bottom: 0;
         }
       }
-
     }
 
     &--4 {
@@ -202,10 +206,10 @@
     }
 
     &--1 {
-      padding: rem(40px 20px);
+      padding: rem(40px 0);
 
       @media #{$mobile_land__640} {
-        padding: rem(40px);
+        padding: rem(40px 0);
       }
 
       @media #{$tablet_land__1024} {
@@ -219,13 +223,8 @@
 
 
     &--3 {
-      //margin-top: rem(124px);
       margin-top: 30px;
       position: relative;
-
-      @media #{$mobile_land__640} {
-        width: calc(100% / 2);
-      }
 
       @media #{$tablet_land__1024} {
         width: 100%;
@@ -238,35 +237,14 @@
         margin-top: rem(124px);
         padding: rem(0 0 93px 140px);
       }
-
-      //&::before {
-      //  content: url("../images/bg__2.svg");
-      //  display: block;
-      //  width: 100%;
-      //  position: absolute;
-      //  z-index: -1;
-      //  left: -34%;
-      //  top: -50px;
-      //
-      //  @media #{$tablet_land__1024} {
-      //    left: -20%;
-      //    top: -70px;
-      //  }
-      //
-      //  @media #{$HD__screens__1920} {
-      //    top: -113px;
-      //  }
-      //}
     }
 
     &--4 {
-      //padding-right: rem(278px);
-
-      padding: 40px 20px 80px;
+      padding: 40px 0 80px;
       white-space: pre-line;
 
       @media #{$mobile_land__640} {
-        padding: 40px 40px 0;
+        padding: 40px 0 0;
       }
 
       @media #{$HD__screens__1920} {
