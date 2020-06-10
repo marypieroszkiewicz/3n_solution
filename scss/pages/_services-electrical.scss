@@ -56,10 +56,10 @@
         // margin-top: -146px;
         // margin-top: -23.046875%;
         margin-top: -23.047vw;
+        padding: rem(0 60px);
       }
 
       @media #{$tablet_land__1024} {
-        padding: rem(0 60px);
         // margin-top: -150px;
         // margin-top: -14.6484375%;
         margin-top: -14.648vw;
@@ -78,14 +78,14 @@
         // margin-top: -222px;
         // margin-top: -15.416666666666667%;
         margin-top: -15.417vw;
-        padding: rem(0 80px);
+        padding: rem(0 100px);
       }
 
       @media #{$full__screens__1600} {
         // margin-top: -226px;
         // margin-top: -14.125%;
         margin-top: -14.125vw;
-        padding: rem(0 100px);
+        padding: rem(0 120px);
       }
 
       @media #{$HD__screens__1920} {

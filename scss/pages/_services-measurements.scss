@@ -42,6 +42,18 @@
       align-items: center;
     }
 
+    @media #{$large__screens__1440} {
+      padding: rem(0 100px);
+    }
+
+    @media #{$full__screens__1600} {
+      padding: rem(0 120px);
+    }
+
+    @media #{$HD__screens__1920} {
+      padding: rem(0 278px 0 140px);
+    }
+
     &-text {
       font-family: $font-text;
       font-size: rem(16px);
@@ -153,6 +165,59 @@
       @media #{$tablet_land__1024} {
         padding: rem(0 60px);
       }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 140px);
+      }
+    }
+
+    &--4 {
+      background-color: $catskill-white;
+      z-index: -1;
+      padding: rem(50px 0 0);
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 120px));
+
+      @media #{$tablet_land__1024} {
+        padding: rem(90px 0 200px);
+      }
+
+      @media #{$full__screens__1600} {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 160px));
+        padding: 150px 0 240px;
+      }
+
+
+      @media #{$HD__screens__1920} {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        padding: rem(242px 0 270px);
+      }
+    }
+
+    &--5 {
+      padding-top: 30px;
+
+      @media #{$tablet_land__1024} {
+        padding-top: 60px;
+      }
+
+      @media #{$large__screens__1440} {
+        padding-top: 100px;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-top: 0;
+        padding-bottom: 120px;
+      }
+
+
     }
 
     &-boxes {
@@ -164,10 +229,6 @@
         position: relative;
         bottom: -50%;
         transform: translateY(50%);
-      }
-
-      @media #{$HD__screens__1920} {
-        padding: rem(0 140px);
       }
     }
 
@@ -231,28 +292,6 @@
         }
       }
     }
-
-    &--4 {
-      background-color: $catskill-white;
-      z-index: -1;
-      padding: rem(50px 0 0);
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 120px));
-
-      @media #{$tablet_land__1024} {
-        padding: rem(90px 0 200px);
-      }
-
-      @media #{$full__screens__1600} {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 160px));
-        padding: 150px 40px 240px;
-      }
-
-
-      @media #{$HD__screens__1920} {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-        padding: rem(242px 0 270px);
-      }
-    }
   }
 
   &__col {
@@ -274,9 +313,9 @@
         padding: rem(0 60px 0 0);
       }
 
-      @media #{$HD__screens__1920} {
-        padding: rem(0 182px 0 140px);
-      }
+      // @media #{$HD__screens__1920} {
+      //   padding: rem(0 182px 0 140px);
+      // }
     }
 
     &--2 {
@@ -287,7 +326,6 @@
 
 
     &--3 {
-      margin-top: 30px;
       position: relative;
 
       @media #{$tablet_land__1024} {
@@ -295,8 +333,8 @@
       }
 
       @media #{$HD__screens__1920} {
-        margin-top: rem(124px);
-        padding: rem(0 0 93px 140px);
+        // margin-top: rem(124px);
+        // padding: rem(0 0 93px 140px);
       }
     }
 
@@ -311,10 +349,6 @@
       @media #{$tablet_land__1024} {
         width: 60%;
         padding: rem(0 0 0 60px);
-      }
-
-      @media #{$HD__screens__1920} {
-        padding-right: rem(278px);
       }
     }
 
@@ -392,6 +426,13 @@
       width: 100%;
       margin: 0 auto;
     }
+
+    &--2 {
+      @media #{$desktop__1280} {
+        width: 90%;
+        margin: 0 auto 0 0;
+      }
+    }
   }
 
   &__shadow {
@@ -405,6 +446,7 @@
   }
 
   &__img {
+    margin: 0 auto;
     filter: drop-shadow(1px 1px 0 $white)
     drop-shadow(-1px 1px 0 $white)
     drop-shadow(1px -1px 0 $white)
@@ -414,6 +456,10 @@
       @media #{$desktop__1280} {
         margin: 0 0 0 auto;
       }
+    }
+
+    &--2 {
+      margin: 0 auto 0 0;
     }
   }
 }
