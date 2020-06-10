@@ -56,44 +56,56 @@
     }
 
     &--1 {
-      //margin-top: rem(-70px);
-      //margin-top: -21.875vw;
-      margin-top: -21.875%;
+      // margin-top: -72px;
+      // margin-top: -22.5%;
+      margin-top: -22.500vw;
+
+      @media #{$mobile_land__640} {
+        // margin-top: -146px;
+        // margin-top: -22.8125%;
+        margin-top: -22.813vw;
+      }
 
       @media #{$tablet__768} {
-        //margin-top: rem(-135px);
-        //margin-top: -17.578vw;
-        margin-top: -17.578125%;
+        // margin-top: -146px;
+        // margin-top: -23.046875%;
+        margin-top: -23.047vw;
       }
 
       @media #{$tablet_land__1024} {
-        //margin-top: rem(-125px);
-        //margin-top: -12.207vw;
-        margin-top: -12.20703125%;
+        // margin-top: -147px;
+        // margin-top: -14.35546875%;
+        margin-top: -14.355vw;
       }
 
       @media #{$desktop__1280} {
-        //margin-top: rem(-158px);
-        //margin-top: -12.344vw;
-        margin-top:  -12.34375%;
+        // margin-top: -185px;
+        // margin-top: -14.453125%;
+        margin-top: -14.453vw;
       }
 
       @media #{$large__screens__1440} {
-        //margin-top: rem(-177px);
-        //margin-top: -12.292vw;
-        margin-top: -12.291666666666666%;
+        // margin-top: -229px;
+        // margin-top: -15.902777777777777%;
+        margin-top: -15.903vw;
       }
 
       @media #{$full__screens__1600} {
-        //margin-top: rem(-198px);
-        //margin-top: -12.375vw;
-        margin-top: -12.375%;
+        // margin-top: -246px;
+        // margin-top: -15.375%;
+        margin-top: -15.375vw;
       }
 
       @media #{$HD__screens__1920} {
-        //margin-top: rem(-273px);
-        //margin-top: -14.219vw;
-        margin-top: -14.21875%;
+        // margin-top: -270px;
+        // margin-top: -14.0625%;
+        margin-top: -14.063vw;
+      }
+
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        // margin-top: -347px;
+        // margin-top: -13.5546875%;
+        margin-top: -13.555vw;
       }
     }
 
@@ -420,8 +432,33 @@
         z-index: -1;
         transform: scale(0.3);
 
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+          bottom: -60px;
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+          bottom: -45px;
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+          bottom: -35px;
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
         @media #{$HD__screens__1920} {
           transform: scale(1);
+          left: 80px;
+          bottom: -25px;
         }
       }
     }
