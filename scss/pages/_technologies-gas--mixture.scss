@@ -14,6 +14,18 @@
     padding: rem(0 0 126px);
   }
 
+  &__heading {
+    width: 100%;
+    position: relative;
+
+      &::before {
+        content: url("../images/shape02.svg");
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
+  }
 
   &__row {
     display: flex;
@@ -100,10 +112,29 @@
         flex-direction: row;
       }
     }
+
+    &--4 {
+      padding-top: 65px;
+    }
   }
 
   &__col {
     width: 100%;
+
+
+    &--2, &--3, &--6, &--7 {
+      @media #{$mobile_land__640} {
+        padding-top: 60px;
+      }
+
+      @media #{$tablet__768} {
+        padding-top: 100px;
+      }
+
+      @media #{$tablet_land__1024} {
+        padding-top: 0;
+      }
+    }
 
     &--2, &--6, &--10 {
 
@@ -209,24 +240,11 @@
 
   &__shadow {
 
-    &--1 {
-      width: 100%;
-      position: relative;
-
-      &::before {
-        content: url("../images/shape02.svg");
-        width: 100%;
-        position: absolute;
-        top:0;
-        z-index: -1;
-      }
-    }
-
-    &--2, &--4, &--6 {
+    &--1, &--3, &--5 {
       filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
     }
 
-    &--3, &--5 {
+    &--2, &--4 {
       filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
     }
   }
@@ -240,8 +258,34 @@
         display: block;
         width: 160px;
         left: -80px;
-        bottom: -25%;
+        bottom: -142px;
+        transform: scale(0.3);
         z-index: -1;
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          bottom: -25%;
+          transform: scale(1);
+        }
       }
     }
 
@@ -251,9 +295,35 @@
         position: absolute;
         display: block;
         width: 134px;
+        transform: scale(0.3);
         right: -67px;
-        bottom: -10%;
+        bottom: -100px;
         z-index: -1;
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          bottom: -10%;
+          transform: scale(1);
+        }
       }
     }
 
@@ -263,9 +333,36 @@
         position: absolute;
         display: block;
         width: 251px;
-        left: -80px;
-        top: -137px;
+        transform: scale(0.3);
+        left: -114px;
+        top: -131px;
         z-index: -1;
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          left: -80px;
+          top: -137px;
+        }
       }
     }
 
@@ -275,9 +372,35 @@
         position: absolute;
         display: block;
         width: 222px;
+        transform: scale(0.3);
         right: -109px;
-        top: -59px;
+        top: -92px;
         z-index: -1;
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          top: -59px;
+        }
       }
 
       &::after {
@@ -285,9 +408,14 @@
         position: absolute;
         display: block;
         width: 118px;
-        left: 83px;
-        bottom: -52px;
+        left: -58px;
+        bottom: -80px;
         z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+        }
       }
     }
   }

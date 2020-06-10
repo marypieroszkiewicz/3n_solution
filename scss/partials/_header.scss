@@ -5,6 +5,7 @@
 
 .wrapper {
   width: 100%;
+
   @media #{$tablet__768} {
     & .header {
       position: sticky;
@@ -17,10 +18,6 @@
 .navigation {
   background-color: $catskill-white;
   position: relative;
-
-  @media #{$tablet_land__1024} {
-    //padding: rem(0 0 0 25px);
-  }
 
   @media #{$desktop__1280} {
     padding: rem(0 0 0 60px);

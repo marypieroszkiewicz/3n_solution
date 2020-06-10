@@ -138,7 +138,6 @@
     }
 
     &--2 {
-
       @media #{$tablet_land__1024} {
         padding-top: 100px;
       }
@@ -194,7 +193,6 @@
         padding: 150px 0 240px;
       }
 
-
       @media #{$HD__screens__1920} {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
         padding: rem(242px 0 270px);
@@ -216,8 +214,6 @@
         padding-top: 0;
         padding-bottom: 120px;
       }
-
-
     }
 
     &-boxes {
@@ -272,6 +268,7 @@
       @media #{$large__screens__1440} {
         padding: rem(50px 40px);
       }
+
       @media #{$full__screens__1600} {
         padding: rem(55px 45px);
       }
@@ -312,10 +309,6 @@
         width: 60%;
         padding: rem(0 60px 0 0);
       }
-
-      // @media #{$HD__screens__1920} {
-      //   padding: rem(0 182px 0 140px);
-      // }
     }
 
     &--2 {
@@ -330,11 +323,6 @@
 
       @media #{$tablet_land__1024} {
         width: 40%;
-      }
-
-      @media #{$HD__screens__1920} {
-        // margin-top: rem(124px);
-        // padding: rem(0 0 93px 140px);
       }
     }
 
