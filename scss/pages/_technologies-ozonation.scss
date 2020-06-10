@@ -31,11 +31,11 @@
     }
 
     @media #{$large__screens__1440} {
-      padding: rem(0 80px);
+      padding: rem(0 100px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(0 100px);
+      padding: rem(0 120px);
     }
 
     @media #{$HD__screens__1920} {
@@ -43,44 +43,56 @@
     }
 
     &--1 {
-      //margin-top: rem(-70px);
-      //margin-top: -21.875vw;
-      margin-top: -21.875%;
+      // margin-top: -72px;
+      // margin-top: -22.5%;
+      margin-top: -22.500vw;
+
+      @media #{$mobile_land__640} {
+        // margin-top: -146px;
+        // margin-top: -22.8125%;
+        margin-top: -22.813vw;
+      }
 
       @media #{$tablet__768} {
-        //margin-top: rem(-135px);
-        //margin-top: -17.578vw;
-        margin-top: -17.578125%;
+        // margin-top: -177px;
+        // margin-top: -23.046875%;
+        margin-top: -23.047vw;
       }
 
       @media #{$tablet_land__1024} {
-        //margin-top: rem(-125px);
-        //margin-top: -12.207vw;
-        margin-top: -12.20703125%;
+        // margin-top: -150px;
+        // margin-top: -14.6484375%;
+        margin-top: -14.648vw;
       }
 
       @media #{$desktop__1280} {
-        //margin-top: rem(-158px);
-        //margin-top: -12.344vw;
-        margin-top:  -12.34375%;
+        // margin-top: -216px;
+        // margin-top: -16.875%;
+        margin-top: -16.875vw;
       }
 
       @media #{$large__screens__1440} {
-        //margin-top: rem(-177px);
-        //margin-top: -12.292vw;
-        margin-top: -12.291666666666666%;
+        // margin-top: -226px;
+        // margin-top: -14.125%;
+        margin-top: -14.125vw;
       }
 
       @media #{$full__screens__1600} {
-        //margin-top: rem(-198px);
-        //margin-top: -12.375vw;
-        margin-top: -12.375%;
+        // margin-top: -231px;
+        // margin-top: -14.4375%;
+        margin-top: -14.438vw;
       }
 
       @media #{$HD__screens__1920} {
-        //margin-top: rem(-273px);
-        //margin-top: -14.219vw;
-        margin-top: -14.21875%;
+        // margin-top: -270px;
+        // margin-top: -14.0625%;
+        margin-top: -14.063vw;
+      }
+
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        // margin-top: -347px;
+        // margin-top: -13.5546875%;
+        margin-top: -13.555vw;
       }
     }
 
@@ -102,12 +114,20 @@
       @media #{$tablet_land__1024} {
         padding-left: rem(60px);
       }
+
+      @media #{$large__screens__1440} {
+        padding-left: 0;
+      }
     }
 
     &--3 {
 
       @media #{$tablet_land__1024} {
         padding-right: rem(60px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding-right: 0;
       }
     }
 
@@ -122,10 +142,6 @@
 
       @media #{$tablet_land__1024} {
         width: 60%;
-      }
-
-      @media #{$desktop__1280} {
-        padding-left: 0;
       }
     }
 
@@ -146,6 +162,10 @@
 
       @media #{$tablet_land__1024} {
         text-align: left;
+      }
+
+      @media #{$large__screens__1440} {
+        margin-top: 0;
       }
     }
 
@@ -169,7 +189,7 @@
         font-size: rem(25px);
       }
 
-      @media #{$large__screens__1440} {
+      @media #{$HD__screens__1920} {
         font-size: rem(30px);
       }
     }
@@ -218,9 +238,36 @@
         position: absolute;
         display: block;
         width: 134px;
-        left: -56px;
-        bottom: -160px;
+        left: -64px;
+        bottom: -115px;
         z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          left: -56px;
+          bottom: -160px;
+        }
       }
     }
 
@@ -230,9 +277,37 @@
         position: absolute;
         display: block;
         width: 222px;
-        right: -109px;
-        top: -59px;
+        right: -115px;
+        top: -89px;
         z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+          right: -100px;
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          right: -109px;
+          top: -59px;
+        }
       }
     }
 
@@ -245,6 +320,31 @@
         left: -56px;
         bottom: -101px;
         z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+        }
       }
     }
   }
