@@ -32,6 +32,10 @@
       padding: rem(0 40px);
     }
 
+    @media #{$tablet__768} {
+      padding: rem(0 60px);
+    }
+
     @media #{$tablet_land__1024} {
       flex-direction: row;
       justify-content: space-between;
@@ -141,6 +145,10 @@
 
       @media #{$mobile_land__640} {
         padding: rem(40px);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(60px);
       }
 
       @media #{$tablet_land__1024} {
