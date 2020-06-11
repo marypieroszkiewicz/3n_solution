@@ -15,10 +15,12 @@
 
     @media #{$mobile_land__640} {
       font-size: rem(25px);
+      padding: rem(62px 40px);
     }
 
     @media #{$tablet__768} {
       font-size: rem(30px);
+      padding: rem(62px 60px);
     }
 
     @media #{$tablet_land__1024} {
@@ -26,7 +28,6 @@
     }
 
     @media #{$HD__screens__1920} {
-      //font-size: rem(54px);
       font-size: rem(40px);
     }
   }
@@ -36,6 +37,14 @@
     flex-wrap: wrap;
     width: 100%;
     padding: rem(0 20px);
+
+    @media #{$mobile_land__640} {
+      padding: rem(0 40px);
+    }
+
+    @media #{$tablet__768} {
+      padding: rem(0 60px);
+    }
 
     @media #{$tablet_land__1024} {
       flex-wrap: nowrap;
@@ -1090,11 +1099,11 @@
       padding: rem(0 20px);
       flex-direction: column;
 
-      @media #{$tablet__768} {
+      @media #{$mobile_land__640} {
         padding: rem(0 40px);
       }
 
-      @media #{$tablet_land__1024} {
+      @media #{$tablet__768} {
         padding: rem(0 60px);
       }
 
@@ -1410,11 +1419,15 @@
       align-items: center;
 
       @media #{$mobile_land__640} {
-        grid-template-columns: repeat(2, 290px);
+        grid-template-columns: repeat(2, 270px);
         grid-template-rows: repeat(2, 265px);
       }
 
       @media #{$tablet__768} {
+        grid-template-columns: repeat(2, 315px);
+      }
+
+      @media #{$tablet_land__1024} {
         grid-template-columns: repeat(2, 345px);
       }
 
@@ -1917,7 +1930,11 @@
           box-shadow: 0px 0px 25px 5px rgba(25, 96, 170, 0.3);
 
           @media #{$mobile_land__640} {
-            padding: rem(40px 25px 0);
+            padding: rem(40px 40px 0);
+          }
+
+          @media #{$tablet__768} {
+            padding: rem(40px 60px 0);
           }
 
           @media #{$tablet_land__1024} {
@@ -1954,7 +1971,7 @@
             text-align: center;
 
             @media #{$mobile_land__640} {
-              padding: rem(0 24px 35px);
+              padding: rem(0 15px 35px);
             }
 
             @media #{$tablet__768} {
@@ -1964,6 +1981,7 @@
 
             @media #{$tablet_land__1024} {
               text-align: left;
+              padding: rem(28px 28px 45px);
             }
 
             @media #{$desktop__1280} {
@@ -2031,12 +2049,16 @@
           box-shadow: 0px 0px 25px 5px rgba(25, 96, 170, 0.3);
 
           @media #{$mobile_land__640} {
-            //padding: rem(40px 20px);
+            padding: rem(40px 40px);
           }
 
           @media #{$tablet__768} {
-            padding: rem(72px 37px 60px);
+            padding: rem(72px 60px 60px);
             box-shadow: 0px 0px 25px 5px rgba(25, 96, 170, 0.3);
+          }
+
+          @media #{$tablet_land__1024} {
+            padding: rem(72px 37px 60px);
           }
 
           &:last-child {

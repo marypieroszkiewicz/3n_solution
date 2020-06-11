@@ -282,6 +282,18 @@
     &__item {
       padding: rem(20px);
 
+      @media #{$mobile_land__640} {
+        padding: rem( 20px 40px);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(20px 60px);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding: rem(20px);
+      }
+
       &:hover {
         background-color: $cornflower-blue;
         color: $white;
@@ -486,6 +498,11 @@
       font-size: rem(31px);
     }
 
+    &--space {
+      @media #{$tablet_land__1024} {
+        padding-right: 0;
+      }
+    }
 
     &::before,
     &::after {
