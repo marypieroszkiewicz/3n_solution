@@ -47,6 +47,7 @@
       }
 
       @media #{$tablet__768} {
+        padding: rem(0 60px);
         // margin-top: -146px;
         // margin-top: -23.046875%;
         margin-top: -23.047vw;
@@ -61,6 +62,7 @@
       }
 
       @media #{$desktop__1280} {
+        padding: rem(0 80px);
         // margin-top: -216px;
         // margin-top: -16.875%;
         margin-top: -16.875vw;
@@ -96,7 +98,7 @@
 
     &--2 {
       margin-top: rem(44px);
-      padding-bottom: rem(50px);
+      padding-bottom: rem(60px);
     }
 
     &--3 {
@@ -105,7 +107,11 @@
       z-index: -1;
 
       @media #{$tablet_land__1024} {
-        margin-top: rem(50px);
+        margin-top: rem(60px);
+      }
+
+      @media #{$desktop__1280} {
+        margin-top: rem(80px);
       }
 
       @media #{$HD__screens__1920} {
@@ -140,7 +146,6 @@
         @media (min-width: 1921px) and (max-width: 2560px) {
           height: 400px;
         }
-
       }
     }
 
@@ -152,13 +157,16 @@
         padding: rem(0 40px);
       }
 
-      @media #{$tablet_land__1024} {
-        flex-direction: row;
+      @media #{$tablet__768} {
         padding: rem(0 60px);
       }
 
+      @media #{$tablet_land__1024} {
+        flex-direction: row;
+      }
+
       @media #{$desktop__1280} {
-        padding: rem(0 60px 60px);
+        padding: rem(0 80px 60px);
       }
 
       @media #{$large__screens__1440} {
@@ -189,11 +197,15 @@
 
       @media #{$tablet__768} {
         font-size: rem(20px);
+        padding: rem(0 60px);
       }
 
       @media #{$tablet_land__1024} {
         font-size: rem(25px);
-        padding: rem(0 60px);
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px);
       }
 
       @media #{$large__screens__1440} {
@@ -217,9 +229,16 @@
         padding: rem(16px 40px);
       }
 
+      @media #{$tablet__768} {
+        padding: rem(16px 60px);
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(16px 80px);
+      }
+
       @media #{$tablet_land__1024} {
         grid-template-columns: repeat(4, 1fr);
-        padding: rem(0 60px);
       }
 
       @media #{$large__screens__1440} {
@@ -247,6 +266,10 @@
         white-space: normal;
       }
 
+      @media #{$tablet__768} {
+        padding: rem(20px 45px);
+      }
+
       @media #{$tablet_land__1024} {
         padding: rem(20px 22px);
         white-space: pre-line;
@@ -256,7 +279,6 @@
         padding: rem(60px);
         font-size: rem(30px);
       }
-
 
       &--5 {
 
@@ -302,7 +324,11 @@
     flex-direction: column;
 
     @media #{$tablet_land__1024} {
-      margin-top: rem(-50px);
+      margin-top: rem(-70px);
+    }
+
+    @media #{$desktop__1280} {
+      margin-top: rem(-60px);
     }
 
     @media #{$HD__screens__1920} {
