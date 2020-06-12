@@ -176,6 +176,10 @@
     display: flex;
     flex-direction: column;
 
+    @media #{$tablet__768} {
+      padding-bottom: 100px;
+    }
+
     @media #{$tablet_land__1024} {
       flex-direction: row;
       // margin-top: -36px;
@@ -295,6 +299,10 @@
         padding: rem(60px 40px 0);
       }
 
+      @media #{$tablet__768} {
+        padding: rem(60px 60px 0);
+      }
+
       @media #{$tablet_land__1024} {
         padding: rem(0 40px 0 10px);
         margin-bottom: 0;
@@ -307,13 +315,14 @@
 
     &--4, &--8 {
 
-      @media #{$tablet_land__1024} {
-        padding: rem(60px 40px 0 10px);
-        margin-bottom: 0;
-      }
+      //@media #{$tablet_land__1024} {
+      //  padding: rem(60px 40px 0 10px);
+      //  margin-bottom: 0;
+      //}
 
       @media #{$tablet_land__1024} {
         padding: rem(0 40px 0 10px);
+        margin-bottom: 0;
       }
 
       @media #{$HD__screens__1920} {
@@ -367,6 +376,10 @@
 
       @media #{$mobile_land__640} {
         padding: rem(0 40px);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(0 60px);
       }
 
       @media #{$tablet_land__1024} {
