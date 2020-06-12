@@ -69,14 +69,14 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px);
+        padding: rem(0 100px);
         // margin-top: -222px;
         // margin-top: -15.416666666666667%;
         margin-top: -15.417vw;
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 100px);
+        padding: rem(0 120px);
         // margin-top: -226px;
         // margin-top: -14.125%;
         margin-top: -14.125vw;
@@ -170,11 +170,11 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px 80px);
+        padding: rem(0 100px 80px);
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 80px 150px);
+        padding: rem(0 120px 150px);
       }
 
       @media #{$HD__screens__1920} {
@@ -209,7 +209,11 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px);
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px);
       }
 
       @media #{$HD__screens__1920} {
@@ -242,7 +246,11 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px);
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px);
       }
 
       @media #{$HD__screens__1920} {
@@ -331,6 +339,10 @@
       margin-top: rem(-60px);
     }
 
+    @media #{$large__screens__1440} {
+      margin-top: rem(-45px);
+    }
+
     @media #{$HD__screens__1920} {
       padding: rem(0 140px);
       margin-top: rem(-118px);
@@ -400,11 +412,19 @@
       padding: rem(40px 0 20px);
 
       @media #{$tablet_land__1024} {
-        padding: rem(0 40px 0 0);
+        padding: rem(0 60px 0 0);
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px 0 0);
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 80px 0 0);
+        padding: rem(0 100px 0 0);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px 0 0);
       }
 
       @media #{$HD__screens__1920} {
