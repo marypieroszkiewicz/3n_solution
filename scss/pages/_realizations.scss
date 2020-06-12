@@ -5,21 +5,28 @@
     font-family: $font-title;
     text-align: center;
     font-size: rem(30px);
-    padding: 30px 0;
+    padding: rem(30px 0);
 
     @media #{$tablet_land__1024} {
       font-size: rem(40px);
-      padding: 40px 0;
+      padding: rem(40px 0);
     }
 
       @media #{$HD__screens__1920} {
         font-size: rem(54px);
-        padding: 50px 0;
+        padding: rem(50px 0);
       }
   }
 
   &__video {
     width: 100%;
+
+    @media (min-width: 1921px) {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+    }
 
     &-overlay {
       position: relative;
@@ -57,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-bottom: rem(140px);
+    //padding-bottom: rem(60px);
 
     @media #{$mobile_land__640} {
       align-items: center;
@@ -65,18 +72,7 @@
 
     @media #{$HD__screens__1920} {
       margin-top: rem(-400px);
-      //flex-direction: row;
     }
-
-    //&::after {
-    //  content: "";
-    //  display: inline-block;
-    //  background-color: $catskill-white;
-    //  width: 100%;
-    //  height: 100px;
-    //  position: absolute;
-    //  bottom: 0;
-    //}
   }
 
   &__slider {
@@ -91,11 +87,15 @@
     position: relative;
 
     @media #{$mobile_land__640} {
-      grid-template-columns: repeat(2, 290px);
+      grid-template-columns: repeat(2, 270px);
       grid-template-rows: repeat(3, 265px);
     }
 
     @media #{$tablet__768} {
+      grid-template-columns: repeat(2, 315px);
+    }
+
+    @media #{$tablet_land__1024} {
       grid-template-columns: repeat(2, 345px);
     }
 
@@ -267,32 +267,17 @@
       }
     }
 
-    //&::before {
-    //  content: "Realizacje";
+    //&::after {
+    //  content: "";
     //  display: inline-block;
+    //  background-color: $catskill-white;
+    //  width: 100%;
+    //  min-height: 136px;
     //  position: absolute;
-    //  top: 10px;
-    //  text-align: center;
-    //  font-family: $font-title;
-    //  font-size: rem(30px);
-    //
-    //  @media #{$HD__screens__1920} {
-    //    font-size: rem(54px);
-    //    top: 110px;
-    //  }
+    //  bottom: -150px;
+    //  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+    //  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
     //}
-
-    &::after {
-      content: "";
-      display: inline-block;
-      background-color: $catskill-white;
-      width: 100%;
-      min-height: 136px;
-      position: absolute;
-      bottom: -150px;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
-    }
   }
 }
 

@@ -33,10 +33,17 @@
         padding: rem(0 40px);
       }
 
-      @media #{$tablet_land__1024} {
+      @media #{$tablet__768} {
         padding: rem(0 60px);
+      }
+
+      @media #{$tablet_land__1024} {
         flex-direction: row;
         justify-content: space-between;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px);
       }
 
       @media #{$large__screens__1440} {
@@ -50,7 +57,6 @@
       @media #{$HD__screens__1920} {
         padding: rem(0 278px);
       }
-
 
       &--1 {
         // margin-top: -72px;

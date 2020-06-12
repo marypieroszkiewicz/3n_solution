@@ -316,9 +316,13 @@
         padding: rem(40px 40px);
       }
 
+      @media #{$tablet__768} {
+        padding: rem(40px 60px);
+      }
+
       @media #{$tablet_land__1024} {
         flex-direction: row;
-        padding: 100px 0px 80px;
+        padding: rem(100px 0px 80px);
       }
 
       @media #{$HD__screens__1920} {

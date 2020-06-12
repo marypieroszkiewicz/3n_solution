@@ -163,6 +163,7 @@
         // margin-top: -146px;
         // margin-top: -23.046875%;
         margin-top: -23.047vw;
+        padding: rem(0 60px);
       }
 
       @media #{$tablet_land__1024} {
@@ -202,18 +203,11 @@
         padding: rem(0 278px 166px 140px);
       }
 
-      @media #{$max__screen__2560} {
+      @media (min-width: 1921px) and (max-width: 2560px) {
         // margin-top: -347px;
         // margin-top: -13.5546875%;
         margin-top: -13.555vw;
-        // width: 100vw;
-        // left: 50%;
-        // position: relative;
-        // transform: translateX(-50%);
       }
-
-      // @media (min-width: 1921px) and (max-width: 2560px) {
-      // }
     }
 
     &--second {
@@ -223,9 +217,12 @@
         padding: rem(100px 40px 40px);
       }
 
+      @media #{$tablet__768} {
+        padding: rem(0 60px);
+      }
+
       @media #{$tablet_land__1024} {
         flex-direction: row;
-        padding: rem(0 60px);
       }
 
       @media #{$desktop__1280} {
