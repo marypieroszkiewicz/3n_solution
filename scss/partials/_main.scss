@@ -1772,22 +1772,25 @@
 
   &__technologies {
     background-color: $catskill-white;
-    padding-bottom: rem(30px);
 
-    @media #{$tablet__768} {
-      padding-bottom: rem(40px);
-    }
+    &-wrapper {
+      padding-bottom: rem(30px);
 
-    @media #{$tablet_land__1024} {
-      padding-bottom: rem(80px);
-    }
+      @media #{$tablet__768} {
+        padding-bottom: rem(40px);
+      }
 
-    @media #{$full__screens__1600} {
-      padding: rem(80px 120px 0);
-    }
-
-    @media #{$HD__screens__1920} {
-      padding: rem(232px 278px 0);
+      @media #{$tablet_land__1024} {
+        padding-bottom: rem(80px);
+      }
+  
+      @media #{$full__screens__1600} {
+        padding: rem(80px 120px 0);
+      }
+  
+      @media #{$HD__screens__1920} {
+        padding: rem(232px 278px 0);
+      }
     }
 
     &-title {
@@ -1841,7 +1844,7 @@
 
       @media #{$desktop__1280} {
         justify-content: space-between;
-        padding: rem(0 60px);
+        padding: rem(0 80px);
       }
 
       @media #{$large__screens__1440} {

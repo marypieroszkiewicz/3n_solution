@@ -8,31 +8,30 @@
     @media #{$mobile_land__640} {
       padding: rem(40px);
     }
-  
+
     @media #{$tablet__768} {
       padding: rem(40px 60px);
     }
-  
+
     @media #{$tablet_land__1024} {
       padding: rem(60px);
     }
-  
+
     @media #{$desktop__1280} {
       padding: rem(80px);
     }
-  
+
     @media #{$large__screens__1440} {
       padding: rem(100px);
     }
-  
+
     @media #{$full__screens__1600} {
       padding: rem(120px);
     }
-  
+
     @media #{$HD__screens__1920} {
       padding: rem(80px 278px 80px 140px);
     }
-  
   }
 
   &__title {
