@@ -124,85 +124,87 @@
 
   <!-- contact -->
   <section class="contact">
-    <div  class="contact__row contact__row--1">
-      <figure class="contact__col contact__col--1">
-<!--        <div id="map" class="contact__map"></div>-->
-<!--        <img src="images/map.jpg">-->
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Szeligowska%2040a%20Warszawa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="google-map">
-          </iframe>
+    <section class="container">
+      <div  class="contact__row contact__row--1">
+        <figure class="contact__col contact__col--1">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Szeligowska%2040a%20Warszawa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="google-map">
+            </iframe>
+            </div>
           </div>
+        </figure>
+
+        <div class="contact__col contact__col--2">
+
+          <div class="contact__details">
+            <div class="contact__details-wrap contact__details-wrap--1">
+              <div class="contact__details-email">biuro@3ns.com.pl</div>
+              <div class="contact__details-phone">+48 22 233 00 50</div>
+            </div>
+            <div class="contact__details-wrap contact__details-wrap--2">
+              <div class="contact__details-address contact__details-address--1">
+                <h4 class="contact__details-address__title">Biuro Handlowe</h4>
+                <span class="contact__details-address__text">ul. Szeligowska 40a,
+                01-320 Warszawa
+            </span>
+              </div>
+              <div class="contact__details-address contact__details-address--2">
+                <h4 class="contact__details-address__title">Siedziba firmy</h4>
+                <span class="contact__details-address__text">ul. Złota 61/100,
+                00-819 Warszawa</span>
+              </div>
+            </div>
+          </div>
+  
+          <form class="contact__form" id="contactForm" method="post" action="send-script.php">
+            <h2 class="contact__form-title">Wypełnij formularz kontaktowy</h2>
+            <div class="contact__form-content">
+  
+              <div class="contact__form-row contact__form-row--1">
+                <div class="contact__form-col contact__form-col--2">
+                  <label class="contact__form-col__lab contact__form-required" for="name">Imię</label>
+                  <input class="contact__form-col__inp" type="text" name="name" required pattern=.{3,} id="name" data-error="Wypełnij to pole">
+                </div>
+                <div class="contact__form-col contact__form-col--2">
+                  <label class="contact__form-col__lab contact__form-required" for="surname">Nazwisko</label>
+                  <input class="contact__form-col__inp" type="text" name="surname" required pattern=.{3,} id="surname" data-error="Wypełnij to pole">
+                </div>
+              </div>
+              <div class="contact__form-row contact__form-row--2">
+                <div class="contact__form-col contact__form-col--3">
+                  <label class="contact__form-col__lab contact__form-required" for="email">E-mail</label>
+                  <input class="contact__form-col__inp" type="email" name="email" id="email" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+                <div class="contact__form-col contact__form-col--4">
+                  <label class="contact__form-col__lab" for="phone">Telefon kontaktowy</label>
+                  <input class="contact__form-col__inp" type="number" name="phone" id="phone">
+                </div>
+              </div>
+              <div class="contact__form-row contact__form-row--3">
+                <label class="contact__form-col__lab" for="message">Wiadomość</label>
+                <textarea class="contact__form-col__area" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <div class="contact__form-row contact__form-row--4">
+                <div class="contact__form-row__gdpr-privacy">
+                  <input id="terms" type="checkbox" required data-error-text="Musisz wypełnić pole" name="terms" class="contact__form-row__inp contact__form-row__inp--check">
+                  <label class="contact__form-row__lab" for="terms">
+                    <span class="contact__form-row__lab-text">Oświadczam, że zapoznałem się z <a href="polityka-prywatnosci.html" target="_blank" class="contact__form-row__link">polityką prywatności</a> i informacją o <a href="polityka-prywatnosci.html#data-administrator" target="_blank" class="contact__form-row__link">Administratorze danych</a></span>
+                  </label>
+                </div>
+              </div>
+              <div class="honey-row">
+                <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+                <input type="text" id="honey" name="honey">
+              </div>
+              <button type="submit" class="contact__form-row__btn submit-btn">Wyślij</button>
+  
+            </div>
+          </form>
         </div>
-      </figure>
 
-      <div class="contact__col contact__col--2">
 
-        <div class="contact__details">
-          <div class="contact__details-wrap contact__details-wrap--1">
-            <div class="contact__details-email">biuro@3ns.com.pl</div>
-            <div class="contact__details-phone">+48 22 233 00 50</div>
-          </div>
-          <div class="contact__details-wrap contact__details-wrap--2">
-            <div class="contact__details-address contact__details-address--1">
-              <h4 class="contact__details-address__title">Biuro Handlowe</h4>
-              <span class="contact__details-address__text">ul. Szeligowska 40a,
-              01-320 Warszawa
-          </span>
-            </div>
-            <div class="contact__details-address contact__details-address--2">
-              <h4 class="contact__details-address__title">Siedziba firmy</h4>
-              <span class="contact__details-address__text">ul. Złota 61/100,
-              00-819 Warszawa</span>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact__form" id="contactForm" method="post" action="send-script.php">
-          <h2 class="contact__form-title">Wypełnij formularz kontaktowy</h2>
-          <div class="contact__form-content">
-
-            <div class="contact__form-row contact__form-row--1">
-              <div class="contact__form-col contact__form-col--2">
-                <label class="contact__form-col__lab contact__form-required" for="name">Imię</label>
-                <input class="contact__form-col__inp" type="text" name="name" required pattern=.{3,} id="name" data-error="Wypełnij to pole">
-              </div>
-              <div class="contact__form-col contact__form-col--2">
-                <label class="contact__form-col__lab contact__form-required" for="surname">Nazwisko</label>
-                <input class="contact__form-col__inp" type="text" name="surname" required pattern=.{3,} id="surname" data-error="Wypełnij to pole">
-              </div>
-            </div>
-            <div class="contact__form-row contact__form-row--2">
-              <div class="contact__form-col contact__form-col--3">
-                <label class="contact__form-col__lab contact__form-required" for="email">E-mail</label>
-                <input class="contact__form-col__inp" type="email" name="email" id="email" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-              </div>
-              <div class="contact__form-col contact__form-col--4">
-                <label class="contact__form-col__lab" for="phone">Telefon kontaktowy</label>
-                <input class="contact__form-col__inp" type="number" name="phone" id="phone">
-              </div>
-            </div>
-            <div class="contact__form-row contact__form-row--3">
-              <label class="contact__form-col__lab" for="message">Wiadomość</label>
-              <textarea class="contact__form-col__area" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="10"></textarea>
-            </div>
-            <div class="contact__form-row contact__form-row--4">
-              <div class="contact__form-row__gdpr-privacy">
-                <input id="terms" type="checkbox" required data-error-text="Musisz wypełnić pole" name="terms" class="contact__form-row__inp contact__form-row__inp--check">
-                <label class="contact__form-row__lab" for="terms">
-                  <span class="contact__form-row__lab-text">Oświadczam, że zapoznałem się z <a href="polityka-prywatnosci.html" target="_blank" class="contact__form-row__link">polityką prywatności</a> i informacją o <a href="polityka-prywatnosci.html#data-administrator" target="_blank" class="contact__form-row__link">Administratorze danych</a></span>
-                </label>
-              </div>
-            </div>
-            <div class="honey-row">
-              <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
-              <input type="text" id="honey" name="honey">
-            </div>
-            <button type="submit" class="contact__form-row__btn submit-btn">Wyślij</button>
-
-          </div>
-        </form>
-      </div>
+      </section>
     </div>
 <!--    <div class="contact__row contact__row&#45;&#45;2"></div>-->
     <div class="contact__shape">
