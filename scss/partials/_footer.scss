@@ -51,11 +51,11 @@
 
         @media #{$tablet_land__1024} {
           width: 24%;
-          // margin-right: 30px;
         }
 
         @media #{$desktop__1280} {
-          width: 27%;
+          // width: 27%;
+          width: 30%;
         }
 
         @media #{$large__screens__1440} {
