@@ -51,6 +51,7 @@
 
         @media #{$tablet_land__1024} {
           width: 24%;
+          // margin-right: 30px;
         }
 
         @media #{$desktop__1280} {
@@ -75,20 +76,58 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: rem(20px);
+        width: 100%;
 
         @media #{$tablet__768} {
           flex-wrap: nowrap;
+          justify-content: center;
         }
 
         @media #{$tablet_land__1024} {
           padding-top: 0;
+          justify-content: flex-end;
         }
 
         &__img {
-          width: auto;
+          width: calc(100% / 2 - 20px);
+
+          &--1 {
+            width: 35%;
+            margin-bottom: 20px;
+          }
+
+          &--2 {
+            margin-bottom: 20px;
+          }
+
+          &--3 {
+            width: 30%;
+          }
+
+          &--4 {
+            align-self: flex-end;
+            margin-bottom: 7px;
+          }
 
           @media #{$tablet__768} {
-            margin-right: rem(45px);
+            width: 25%;
+            margin-right: 45px;
+
+            &--1 {
+              width: 15%;
+            }
+
+            &--1, &--2, &--4  {
+              margin-bottom: 0;
+            }
+
+            &--3 {
+              width: 10%;
+            }
+
+            &--4 {
+              align-self: center;
+            }
           }
 
           &:last-child {
