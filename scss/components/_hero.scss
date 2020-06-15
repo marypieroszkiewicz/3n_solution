@@ -187,9 +187,24 @@
   &-indicator {
     position: absolute;
     left: 50%;
-    top: 55%;
-    transform: translate(-50%, -55%);
+    top: 65%;
+    transform: translate(-50%, -65%);
     z-index: 2;
+
+    @media #{$mobile_land__640} {
+      top: 52%;
+      transform: translate(-50%, -52%);
+    }
+
+    @media #{$tablet_land__1024} {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media #{$HD__screens__1920} {
+      top: 55%;
+      transform: translate(-50%, -55%);
+    }
 
     & span {
       display: inline-block;
@@ -210,176 +225,6 @@
     }
   }
 }
-
-
-//.hero {
-//  background-image: url("../images/bg.png");
-//  background-position: center center;
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//  width: 100%;
-//  position: relative;
-//  height: 0;
-//  padding-bottom: calc(1351 / 1921 * 100%);
-//  // min-height: calc(142% / 4);
-//
-//  &::before {
-//    content: "";
-//    width: 100%;
-//    height: 200px;
-//    background: $catskill-white;
-//    transform: skewY(2deg);
-//    position: absolute;
-//    bottom: 0;
-//    z-index: -1;
-//
-//    @media #{$HD__screens__1920} {
-//      bottom: 104px;
-//    }
-//  }
-//
-//  &::after {
-//    content: url("../images/hero_logo.svg");
-//    display: block;
-//    position: absolute;
-//    width: 60%;
-//    top: 15%;
-//    left: 50%;
-//    transform: translate(-50%, -15%);
-//    z-index: 0;
-//
-//    @media #{$mobile_land__640} {
-//      width: 70%;
-//      top: 20%;
-//      transform: translate(-50%, -20%);
-//    }
-//
-//    @media #{$tablet_land__1024} {
-//      width: 80%;
-//    }
-//  }
-//
-//  &-slider {
-//
-//    &__slide {
-//      position: absolute;
-//      left: 0;
-//      top: 0;
-//      bottom: 0;
-//      right: 0;
-//      width: 100%;
-//      height: 100%;
-//      z-index: 1;
-//      display: none;
-//
-//      &.active {
-//        display: flex;
-//
-//        & .hero-slider__slide-title {
-//          animation: fadeIn ease 4s;
-//        }
-//      }
-//
-//      &-title {
-//        color: $white;
-//        font-family: $font-title;
-//        font-size: 22px;
-//        width: 100%;
-//        white-space: pre-line;
-//        margin: 0;
-//        position: absolute;
-//        top: 30%;
-//        left: 50%;
-//        //transform: translateY(-30%);
-//        transform: translate(-50%, -30%);
-//        text-align: center;
-//
-//        @media #{$mobile_land__640} {
-//          font-size: 35px;
-//        }
-//
-//        @media #{$tablet_land__1024} {
-//          font-size: 50px;
-//        }
-//
-//        @media #{$desktop__1280} {
-//          font-size: 60px;
-//        }
-//
-//        @media #{$large__screens__1440} {
-//          font-size: 73px;
-//        }
-//
-//        @media #{$full__screens__1600} {
-//          font-size: 82px;
-//        }
-//
-//        @media #{$HD__screens__1920} {
-//          font-size: 98px;
-//        }
-//      }
-//    }
-//  }
-//
-//  &-controls {
-//    display: none;
-//
-//    &__prev, &__next {
-//      position: absolute;
-//      z-index: 2;
-//      top: 50%;
-//      height: 40px;
-//      width: 40px;
-//      margin-top: -20px;
-//      color: $white;
-//      background-color: $fun-blue;
-//      text-align: center;
-//      line-height: 40px;
-//      font-size: 20px;
-//      cursor: pointer;
-//      transition: all .5s ease;
-//    }
-//
-//    &__prev {
-//      left: 0;
-//    }
-//
-//    &__next {
-//      right: 0;
-//    }
-//
-//    &__prev:hover,
-//    &__next:hover {
-//      background-color: $cornflower-blue;
-//    }
-//  }
-//
-//  &-indicator {
-//    position: absolute;
-//    left: 50%;
-//    top: 60%;
-//    transform: translate(-60%, -50%);
-//    z-index: 2;
-//
-//    & span {
-//      display: inline-block;
-//      width: 20px;
-//      height: 2px;
-//      background-color: $white;
-//      margin: 0 3px;
-//      cursor: pointer;
-//
-//      @media #{$HD__screens__1920} {
-//        width: 40px;
-//        height: 4px;
-//      }
-//
-//      &.active {
-//        background-color: $fun-blue;
-//      }
-//    }
-//  }
-//}
 
 // Animacja
 
