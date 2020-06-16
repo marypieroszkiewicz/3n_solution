@@ -279,36 +279,55 @@
           }
 
           &--second {
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            //clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 calc(100% - 1088px), 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 calc(100% - 1088px), 100% 0, 100% 100%, 0 80%);
             // margin-top: -143px;
-            margin-top: -189px;
+            //margin-top: -189px;
+            //margin-top: -191px;
+            margin-top: -9.948vw;
           }
 
           &--third {
             clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
             -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
             // margin-top: -143px;
-            margin-top: -189px;
+            //margin-top: -189px;
+            //margin-top: -256px;
+            margin-top: -13.333vw;
           }
 
           &--fourth {
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             // margin-top: -143px;
-            margin-top: -189px;
+            //margin-top: -189px;
+            //margin-top: -256px;
+            margin-top: -13.333vw;
           }
 
           &--fifth {
-            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 0, 100% calc(100% - 695px), 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% calc(100% - 695px), 100% 100%, 0 80%);
             // margin-top: -143px;
-            margin-top: -189px;
+            //margin-top: -256px;
+            margin-top: -13.333vw;
           }
         }
 
         @media #{$HD__screens__1920} {
-          //height: 1000px;
+          &--first, &--fifth {
+            //min-height: 950px;
+            min-height: 49.479vw;
+          }
+
+          &--second, &--third, &--fourth {
+            //height: 1280px;
+            min-height: 66.667vw;
+          }
         }
 
         &-clip {
