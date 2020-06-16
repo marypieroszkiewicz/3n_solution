@@ -179,7 +179,7 @@
 
         @media #{$HD__screens__1920} {
           font-size: rem(30px);
-          padding-left: 30px;
+          padding-left: rem(30px);
           position: relative;
         }
 
@@ -388,10 +388,6 @@
           }
         }
 
-        @media (min-width: 1921px) and (max-width: 2560px) {
-          //clip-path: polygon(0 calc(100% - 1450px), 100% 0, 100% 100%, 0 80%);
-        }
-
         &-clip {
           display: block;
           width: 100%;
@@ -426,7 +422,8 @@
           }
 
           &--second {
-            margin-top: -100px;
+            //margin-top: -100px;
+            margin-top: -31.250vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -437,7 +434,8 @@
           &--third {
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            margin-top: -120px;
+            //margin-top: -120px;
+            margin-top: -37.500vw;
             z-index: 1;
 
             @media #{$desktop__1280} {
@@ -448,7 +446,8 @@
           }
 
           &--fourth {
-            margin-top: -140px;
+            //margin-top: -140px;
+            margin-top: -43.750vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -459,7 +458,8 @@
           &--fifth {
             clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
             -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-            margin-top: -130px;
+            //margin-top: -130px;
+            margin-top: -40.625vw;
             z-index: 1;
 
             @media #{$desktop__1280} {
@@ -470,7 +470,8 @@
           }
 
           &--sixth {
-            margin-top: -160px;
+            //margin-top: -160px;
+            margin-top: -50vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -481,7 +482,8 @@
           &--seventh {
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            margin-top: -107px;
+            //margin-top: -107px;
+            margin-top: -33.438vw;
             z-index: 1;
 
             @media #{$desktop__1280} {
@@ -492,7 +494,8 @@
           }
 
           &--eighth {
-            margin-top: -160px;
+            //margin-top: -160px;
+            margin-top: -33.438vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -504,7 +507,9 @@
             clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
             z-index: 1;
-            margin-top: -160px;
+            //margin-top: -160px;
+            margin-top: -33.438vw;
+
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -516,7 +521,9 @@
           &--tenth {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-            margin-top: -160px;
+            //margin-top: -160px;
+            margin-top: -33.438vw;
+
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -567,9 +574,9 @@
               background-position: center left 373px;
             }
 
-            @media (min-width: 1921px) {
-              background-position: center;
-            }
+            //@media (min-width: 1921px) {
+            //  background-position: center;
+            //}
           }
 
           &--third {
@@ -584,9 +591,9 @@
               background-position: center right 640px;
             }
 
-            @media (min-width: 1921px) {
-              background-position: center;
-            }
+            //@media (min-width: 1921px) {
+            //  background-position: center;
+            //}
           }
 
           &--fourth {
@@ -601,9 +608,9 @@
               background-position: center right 350px;
             }
 
-            @media (min-width: 1921px) {
-              background-position: center;
-            }
+            //@media (min-width: 1921px) {
+            //  background-position: center;
+            //}
           }
         }
 
@@ -644,7 +651,6 @@
 
 
           &__title {
-            // padding-top: 85px;
             font-family: $font-title--bold;
             font-size: rem(20px);
             padding-bottom: rem(24px);
@@ -654,7 +660,6 @@
             }
 
             @media #{$tablet__768} {
-              // padding-top: 20px;
               font-size: rem(30px);
             }
 
@@ -1055,7 +1060,6 @@
           }
 
           &__title {
-            // padding-top: 85px;
             font-family: $font-title--bold;
             font-size: rem(20px);
             padding-bottom: rem(24px);
@@ -1065,7 +1069,6 @@
             }
 
             @media #{$tablet__768} {
-              // padding-top: 20px;
               font-size: rem(30px);
             }
 
@@ -1279,15 +1282,6 @@
               }
             }
 
-            // &--2,
-            // &--3 {
-            //   width: 40%;
-
-            //   @media #{$tablet__768} {
-            //     width: 11.674008810572688%;
-            //   }
-            // }
-
             &--2 {
               width: 40%;
 
@@ -1302,6 +1296,7 @@
               @media #{$tablet_land__1024} {
                 width: 15%;
               }
+
               @media #{$desktop__1280} {
                 width: 12%;
               }
@@ -1309,9 +1304,11 @@
 
             &--3 {
               width: 40%;
+
               @media #{$mobile_land__640} {
                 width: 30%;
               }
+
               @media #{$tablet__768} {
                 width: 20%;
               }
@@ -1319,6 +1316,7 @@
               @media #{$tablet_land__1024} {
                 width: 15%;
               }
+
               @media #{$desktop__1280} {
                 width: 12%;
               }
@@ -1356,7 +1354,6 @@
         }
 
         &-content {
-          //display: flex;
           flex-wrap: wrap;
           padding-top: rem(40px);
           display: none;
@@ -1376,7 +1373,6 @@
           }
 
           &__tab {
-            // width: calc(100% / 3);
             padding-bottom: rem(30px);
             width: 100%;
 
@@ -1456,7 +1452,7 @@
         width: 100%;
         position: relative;
         padding-bottom: 56.25%;
-        padding-top: 30px;
+        padding-top: rem(30px);
         height: 0;
         overflow: hidden;
       }
@@ -1939,10 +1935,6 @@
       }
 
       &__box {
-
-        //@media #{$tablet__768} {
-        //   width: calc(100% / 2 - 19px);
-        //}
 
         @media #{$tablet_land__1024} {
           width: calc(100% / 3 - 29px);
