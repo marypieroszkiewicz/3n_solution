@@ -281,10 +281,74 @@
           &--second {
             //clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             //-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 calc(100% - 1088px), 100% 0, 100% 100%, 0 80%);
-            clip-path: polygon(0 calc(100% - 1088px), 100% 0, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 calc(100% - 640px), 100% 0, 100% 100%, 0 80%);
+            //clip-path: polygon(0 calc(100% - 640px), 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 calc(100% - 50vw), 100% 0, 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 calc(100% - 50vw), 100% 0, 100% 100%, 0 80%);
             // margin-top: -143px;
-            //margin-top: -189px;
+            //margin-top: -160px;
+            margin-top: -12.500vw;
+          }
+
+          &--third {
+            clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+            // margin-top: -143px;
+            //margin-top: -160px;
+            margin-top: -12.500vw;
+          }
+
+          &--fourth {
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            // margin-top: -143px;
+            //margin-top: -160px;
+            margin-top: -12.500vw;
+          }
+
+          &--fifth {
+            //clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 0, 100% calc(100% - 640px), 100% 100%, 0 80%);
+            //clip-path: polygon(0 0, 100% calc(100% - 640px), 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 0, 100% calc(100% - 50vw), 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% calc(100% - 50vw), 100% 100%, 0 80%);
+            // margin-top: -143px;
+            margin-top: -12.500vw;
+          }
+        }
+
+        @media #{$full__screens__1600} {
+
+          &--second {
+            //clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 calc(100% - 640px), 100% 0, 100% 100%, 0 80%);
+            //clip-path: polygon(0 calc(100% - 640px), 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 calc(100% - 40vw), 100% 0, 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 calc(100% - 40vw), 100% 0, 100% 100%, 0 80%);
+            // margin-top: -143px;
+            //margin-top: -160px;
+            margin-top: -12.500vw;
+          }
+
+          &--fifth {
+            //clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            //-webkit-clip-path: polygon(0 0, 100% calc(100% - 640px), 100% 100%, 0 80%);
+            //clip-path: polygon(0 0, 100% calc(100% - 640px), 100% 100%, 0 80%);
+            -webkit-clip-path: polygon(0 0, 100% calc(100% - 40vw), 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% calc(100% - 40vw), 100% 100%, 0 80%);
+            // margin-top: -143px;
+            margin-top: -12.500vw;
+          }
+        }
+
+        @media #{$HD__screens__1920} {
+
+          &--second {
+            -webkit-clip-path: polygon(0 calc(100% - 56.667vw), 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 calc(100% - 56.667vw), 100% 0, 100% 100%, 0 80%);
             //margin-top: -191px;
             margin-top: -9.948vw;
           }
@@ -292,8 +356,6 @@
           &--third {
             clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
             -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-            // margin-top: -143px;
-            //margin-top: -189px;
             //margin-top: -256px;
             margin-top: -13.333vw;
           }
@@ -301,8 +363,6 @@
           &--fourth {
             clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
             -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            // margin-top: -143px;
-            //margin-top: -189px;
             //margin-top: -256px;
             margin-top: -13.333vw;
           }
@@ -310,15 +370,13 @@
           &--fifth {
             //clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
             //-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 0, 100% calc(100% - 695px), 100% 100%, 0 80%);
-            clip-path: polygon(0 0, 100% calc(100% - 695px), 100% 100%, 0 80%);
-            // margin-top: -143px;
+            -webkit-clip-path: polygon(0 0, 100% calc(100% - 36.198vw), 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% calc(100% - 36.198vw), 100% 100%, 0 80%);
             //margin-top: -256px;
             margin-top: -13.333vw;
           }
-        }
 
-        @media #{$HD__screens__1920} {
+
           &--first, &--fifth {
             //min-height: 950px;
             min-height: 49.479vw;
@@ -328,6 +386,10 @@
             //height: 1280px;
             min-height: 66.667vw;
           }
+        }
+
+        @media (min-width: 1921px) and (max-width: 2560px) {
+          //clip-path: polygon(0 calc(100% - 1450px), 100% 0, 100% 100%, 0 80%);
         }
 
         &-clip {
