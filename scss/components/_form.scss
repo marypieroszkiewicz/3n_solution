@@ -5,7 +5,7 @@
     flex-direction: column;
 
     @media #{$tablet_land__1024} {
-      margin: 0 40px;
+      margin: rem(0 40px);
     }
 
     @media #{$HD__screens__1920} {
@@ -28,7 +28,6 @@
       @media #{$mobile_land__640} {
         font-size: rem(40px);
       }
-
     }
 
     &-row {
@@ -53,7 +52,7 @@
 
         &-text {
           width: 100%;
-          padding-left: 21px;
+          padding-left: rem(21px);
         }
       }
 
@@ -78,7 +77,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      padding-bottom: 15px;
+      padding-bottom: rem(15px);
 
       @media #{$mobile_land__640} {
         width: calc(100% / 2 - 16px);
@@ -153,7 +152,7 @@
   color:red;
 }
 
-@media screen and (max-width :500px) {
+@media screen and (max-width: 500px) {
   .contact__form .send-error {
     text-align: center;
     display: block;
@@ -223,7 +222,6 @@
 .honey-row {
   display: none;
 }
-
 
 
 @media #{$mobile_land__640} {

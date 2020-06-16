@@ -16,22 +16,12 @@
     }
 
     @media #{$tablet__768} {
-      //top: 55%;
       top: auto;
-      //bottom: 5px;
       bottom: 0.651vw;
       right: 0.684vw;
     }
 
-    @media #{$tablet_land__1024} {
-      //top: 52%
-    }
-
-    @media #{$desktop__1280} {
-    }
-
     @media #{$HD__screens__1920} {
-      //top: 48%;
       right: 3%;
     }
 
@@ -46,17 +36,10 @@
     max-width: 400px;
     position: relative;
     margin: 10% auto;
-    padding: 20px 20px;
+    padding: rem(20px);
     border-radius: 10px;
     background: #fff;
     border: 3px solid $fun-blue;
-
-    @media #{$mobile_land__640} {
-    }
-
-
-    @media #{$HD__screens__1920} {
-    }
   }
 
   &__close {
@@ -78,24 +61,25 @@
   }
 
   &__title {
-    font-size: 20px;
+    font-size: rem(20px);
     color: $red-orange;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
     white-space: normal;
 
     @media #{$tablet__768} {
-      font-size: 22px;
+      font-size: rem(22px);
     }
+
     @media #{$tablet_land__1024} {
-      font-size: 24px;
+      font-size: rem(24px);
     }
+
     @media #{$desktop__1280} {
-      font-size: 26px;
+      font-size: rem(26px);
     }
+
     @media #{$large__screens__1440} {
-      font-size: 28px;
-    }
-    @media #{$full__screens__1600} {
+      font-size: rem(28px);
     }
 
     @media #{$HD__screens__1920} {
@@ -105,12 +89,8 @@
   }
 
   &__text {
-    padding-bottom: 10px;
-    font-size: 18px;
-
-    @media #{$HD__screens__1920} {
-
-    }
+    padding-bottom: rem(10px);
+    font-size: rem(18px);
   }
 
   &__form {
@@ -119,23 +99,19 @@
 
     &-row {
       width: 100%;
-      padding-bottom: 10px;
+      padding-bottom: rem(10px);
     }
 
     &-input {
       width: 100%;
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    &-label {
-
+      padding: rem(10px);
+      font-size: rem(16px);
     }
 
     &-checkbox {
 
       &__text {
-        padding: 1px 0 0 15px;
+        padding: rem(1px 0 0 15px);
 
         &--bold {
           text-decoration: underline;
@@ -147,7 +123,7 @@
     &-btn {
       background-color: #ff2d30;
       color: #fff;
-      padding: 13px 40px;
+      padding: rem(13px 40px);
       text-align: center;
       cursor: pointer;
     }
@@ -156,27 +132,17 @@
   &__btn {
     background: #1960aa;
     color: #fff;
-    padding: 13px 40px;
+    padding: rem(13px 40px);
     outline: none;
     border: none;
     position: fixed;
     z-index: 2;
-    //bottom: 20px;
     bottom: 6.250vw;
     right: 7%;
     cursor: pointer;
 
     @media #{$tablet__768} {
-      //top: 90vh;
       right: 3%;
-    }
-
-    @media #{$tablet_land__1024} {
-      //top: 87vh;
-    }
-
-    @media #{$HD__screens__1920} {
-      //top: 60%;
     }
   }
 }

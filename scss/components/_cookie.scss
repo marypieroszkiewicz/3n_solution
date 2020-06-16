@@ -53,7 +53,7 @@
       }
 
       @media #{$HD__screens__1920} {
-        font-size: 20px;
+        font-size: rem(20px);
       }
     }
 
@@ -75,7 +75,7 @@
       border-radius: 8px;
       cursor: pointer;
       display: block;
-      margin-top: 20px;
+      margin-top: rem(20px);
 
       @media #{$tablet_land__1024} {
         width: 20%;

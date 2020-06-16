@@ -84,10 +84,10 @@
         transform: translate(-50%, -30%);
       }
 
-          @media #{$tablet_land__1024} {
-            top: 25%;
-            width: 65%;
-          }
+      @media #{$tablet_land__1024} {
+        top: 25%;
+        width: 65%;
+      }
     }
   }
 
@@ -114,7 +114,7 @@
       &-title {
         color: $white;
         font-family: $font-title;
-        font-size: 22px;
+        font-size: rem(22px);
         width: 100%;
         white-space: pre-line;
         margin: 0;
@@ -125,27 +125,27 @@
         text-align: center;
 
         @media #{$mobile_land__640} {
-          font-size: 35px;
+          font-size: rem(35px);
         }
 
         @media #{$tablet_land__1024} {
-          font-size: 50px;
+          font-size: rem(50px);
         }
 
         @media #{$desktop__1280} {
-          font-size: 60px;
+          font-size: rem(60px);
         }
 
         @media #{$large__screens__1440} {
-          font-size: 73px;
+          font-size: rem(73px);
         }
 
         @media #{$full__screens__1600} {
-          font-size: 82px;
+          font-size: rem(82px);
         }
 
         @media #{$HD__screens__1920} {
-          font-size: 98px;
+          font-size: rem(98px);
         }
       }
     }
@@ -160,12 +160,12 @@
       top: 50%;
       height: 40px;
       width: 40px;
-      margin-top: -20px;
+      margin-top: rem(-20px);
       color: $white;
       background-color: $fun-blue;
       text-align: center;
       line-height: 40px;
-      font-size: 20px;
+      font-size: rem(20px);
       cursor: pointer;
       transition: all .5s ease;
     }
@@ -211,7 +211,7 @@
       width: 20px;
       height: 2px;
       background-color: $white;
-      margin: 0 3px;
+      margin: rem(0 3px);
       cursor: pointer;
 
       @media #{$HD__screens__1920} {
@@ -230,10 +230,10 @@
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
