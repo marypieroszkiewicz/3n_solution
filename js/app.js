@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         remove_class_on_scroll()
       }
 
-      console.log(scrollpos)
+      //console.log(scrollpos)
     });
 
 

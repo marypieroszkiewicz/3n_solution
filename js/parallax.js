@@ -2,32 +2,15 @@
 /* ----- PARALLAX ----- */
 /* ---------------------------------------------------- */
 
-window.addEventListener("DOMContentLoaded", scrollLoop,  false);
+window.addEventListener("DOMContentLoaded", init,  false);
 
-
-const parallax = document.querySelector('.main__services-parallax');
-const parallax1 = parallax.querySelector('.main__services-parallax__box-img--first');
-const parallax2 = document.querySelector('.main__services-parallax__box-img--second');
-const parallax3 = document.querySelector('.main__services-parallax__box-img--third');
-const parallax4 = document.querySelector('.main__services-parallax__box-img--fourth');
-const parallax5 = document.querySelector('.main__services-parallax__box-img--fifth');
-
-let xScrollPosition;
-let yScrollPosition;
-
-function scrollLoop(e) {
-  xScrollPosition = window.scrollX;
-  yScrollPosition = window.scrollY;
-
-  setTranslate(0, yScrollPosition * -0.08, parallax1);
-  setTranslate(0, yScrollPosition * -0.08, parallax2);
-  setTranslate(0, yScrollPosition * -0.08, parallax3);
-  setTranslate(0, yScrollPosition * -0.08, parallax4);
-  setTranslate(0, yScrollPosition * -0.08, parallax5);
-
-  requestAnimationFrame(scrollLoop);
-}
-
-function setTranslate(xPos, yPos, el) {
-  el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
+function init() {
+  document.querySelectorAll('.main__services-parallax__box').forEach(function(node) {
+    var rect = node.getBoundingClientRect();
+    node.style.setProperty('--offset-y', rect.top);
+  });
+  window.addEventListener('scroll', function() {
+    document.body.style.setProperty('--scroll-y', window.scrollY);
+    document.body.style.setProperty('--scroll-x', window.scrollX);
+  });
 }
