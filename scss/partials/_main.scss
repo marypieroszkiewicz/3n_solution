@@ -545,11 +545,12 @@
           //background-attachment: fixed;
           //background-size: 100% 100%;
           background-size: cover;
-          background-position: center;
+          //background-position: center;
           //background-position: 0 calc(var(--scroll-pos) * -1px * 0.1);
           //-webkit-transform: translateZ(0);
           pointer-events: none;
           z-index: -1;
+          background-position: 0 0;
 
           @media #{$desktop__1280} {
             position: absolute;
@@ -570,9 +571,9 @@
           &--second {
             background-image: url("../images/img_2.jpg");
 
-            @media #{$HD__screens__1920} {
-              background-position: center left 373px;
-            }
+            //@media #{$HD__screens__1920} {
+            //  background-position: center left 373px;
+            //}
 
             //@media (min-width: 1921px) {
             //  background-position: center;
@@ -581,15 +582,15 @@
 
           &--third {
             background-image: url("../images/img_3.jpg");
-            background-position: center right -336px;
+            //background-position: center right -336px;
 
-            @media #{$desktop__1280} {
-              background-position: center right 480px;
-            }
+            //@media #{$desktop__1280} {
+            //  background-position: center right 480px;
+            //}
 
-            @media #{$HD__screens__1920} {
-              background-position: center right 640px;
-            }
+            //@media #{$HD__screens__1920} {
+            //  background-position: center right 640px;
+            //}
 
             //@media (min-width: 1921px) {
             //  background-position: center;
@@ -603,10 +604,9 @@
           &--fifth {
             background-image: url("../images/img_5.jpg");
 
-
-            @media #{$HD__screens__1920} {
-              background-position: center right 350px;
-            }
+            //@media #{$HD__screens__1920} {
+            //  background-position: center right 350px;
+            //}
 
             //@media (min-width: 1921px) {
             //  background-position: center;

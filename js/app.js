@@ -176,32 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', markbox);
   });
 
-
-  // images
-
-
-  //
-  // const toggleSteps = document.querySelectorAll('[data-toggle]');
-  //
-  // Array.from(toggleSteps).forEach(link => {
-  //
-  //   const elementsSelector = link.getAttribute('data-toggle');
-  //   const elements = document.querySelectorAll(elementsSelector);
-  //
-  //   link.addEventListener('click', function(event) {
-  //     event.preventDefault();
-  //     event.stopPropagation();
-  //
-  //     Array.from(elements).forEach(item => item.setAttribute('hidden', true));
-  //
-  //     const target = this.getAttribute('href');
-  //
-  //     document.querySelector(target).removeAttribute('hidden');
-  //   }, false);
-  //
-  // });
-
-
 })
 
 
