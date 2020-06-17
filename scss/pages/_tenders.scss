@@ -57,7 +57,7 @@
   &__item {
     font-size: rem(18px);
     font-family: $font-text;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
 
     @media #{$mobile_land__640} {
       font-size: rem(20px);
@@ -72,7 +72,7 @@
       font-size: rem(30px);
 
       &:nth-of-type(2), &:nth-of-type(4) {
-        font-size: 27px;
+        font-size: rem(27px);
       }
     }
   }
@@ -86,7 +86,7 @@
         content: "1. ";
         display: inline-flex;
         vertical-align: top;
-        padding: 0 20px 0 0;
+        padding: rem(0 20px 0 0);
       }
     }
 
@@ -96,7 +96,7 @@
         color: transparent;
         display: inline-flex;
         vertical-align: top;
-        padding: 0 20px 0 0;
+        padding: rem(0 20px 0 0);
       }
     }
 
@@ -106,7 +106,7 @@
         content: "2. ";
         display: inline-flex;
         vertical-align: top;
-        padding: 0 20px 0 0;
+        padding: rem(0 20px 0 0);
       }
     }
 
@@ -118,7 +118,7 @@
         color: transparent;
         display: inline-flex;
         vertical-align: top;
-        padding: 0 20px 0 0;
+        padding: rem(0 20px 0 0);
       }
     }
   }
@@ -144,7 +144,7 @@
       }
 
       &--pl {
-        padding-bottom: 30px;
+        padding-bottom: rem(30px);
       }
 
       &--en {
@@ -160,7 +160,6 @@
       font-size: rem(18px);
       font-family: $font-text;
       white-space: pre-line;
-      //padding-bottom: 20px;
 
       @media #{$mobile_land__640} {
         font-size: rem(20px);
@@ -189,7 +188,7 @@
       font-size: rem(30px);
       text-align: center;
       padding: rem(34px 0);
-      margin-top: 40px;
+      margin-top: rem(40px);
 
       @media #{$mobile_land__640} {
         font-size: rem(40px);
@@ -204,7 +203,7 @@
     &-list {
 
       &--2 {
-        padding-bottom: 20px;
+        padding-bottom: rem(20px);
         margin-left: rem(16px);
       }
     }
@@ -213,10 +212,10 @@
       font-size: rem(18px);
       font-family: $font-text;
       list-style-position: inside;
-      padding-bottom: 20px;
+      padding-bottom: rem(20px);
 
       &:first-child {
-        padding-top: 20px;
+        padding-top: rem(20px);
       }
 
       &:last-child {
@@ -244,20 +243,20 @@
   }
 
   &-en {
-    padding-top: 60px;
+    padding-top: rem(60px);
 
     &__wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 30px;
+      padding-bottom: rem(30px);
 
       @media #{$mobile_land__640} {
         flex-direction: row;
         flex-wrap: wrap;
         //justify-content: space-around;
         justify-content: center;
-        margin-left: 70px;
+        margin-left: rem(70px);
       }
 
       @media #{$tablet_land__1024} {
@@ -271,7 +270,7 @@
 
     &__img {
       width: 60%;
-      padding-bottom: 30px;
+      padding-bottom: rem(30px);
 
       &--1 {
         width: 45%;
@@ -287,7 +286,7 @@
 
       @media #{$mobile_land__640} {
         width: 30%;
-        margin-right: 70px;
+        margin-right: rem(70px);
 
         &--1,  {
           width: 25%;
@@ -295,14 +294,14 @@
 
         &--3 {
           width: 15%;
-          margin-right: 120px;
+          margin-right: rem(120px);
           padding-bottom: 0;
         }
       }
 
       @media #{$tablet__768} {
         &--3 {
-          margin-right: 133px;
+          margin-right: rem(133px);
         }
       }
 
@@ -315,7 +314,7 @@
 
         &--3 {
           width: 15%;
-          margin-right: 70px;
+          margin-right: rem(70px);
         }
       }
 
@@ -331,7 +330,7 @@
 
       @media #{$HD__screens__1920} {
         width: 20%;
-        margin-right: 100px;
+        margin-right: rem(100px);
 
         &:last-child {
           margin-right: 0;

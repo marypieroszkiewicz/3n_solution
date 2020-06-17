@@ -139,7 +139,7 @@
 
     &--2 {
       @media #{$tablet_land__1024} {
-        padding-top: 100px;
+        padding-top: rem(100px);
       }
 
       @media #{$HD__screens__1920} {
@@ -190,7 +190,7 @@
 
       @media #{$full__screens__1600} {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 160px));
-        padding: 150px 0 240px;
+        padding: rem(150px 0 240px);
       }
 
       @media #{$HD__screens__1920} {
@@ -200,19 +200,19 @@
     }
 
     &--5 {
-      padding-top: 30px;
+      padding-top: rem(30px);
 
       @media #{$tablet_land__1024} {
-        padding-top: 60px;
+        padding-top: rem(60px);
       }
 
       @media #{$large__screens__1440} {
-        padding-top: 100px;
+        padding-top: rem(100px);
       }
 
       @media #{$HD__screens__1920} {
         padding-top: 0;
-        padding-bottom: 120px;
+        padding-bottom: rem(120px);
       }
     }
 
@@ -317,7 +317,6 @@
       }
     }
 
-
     &--3 {
       position: relative;
 
@@ -331,7 +330,7 @@
       white-space: pre-line;
 
       @media #{$mobile_land__640} {
-        padding: 40px 0 0;
+        padding: rem(40px 0 0);
       }
 
       @media #{$tablet_land__1024} {

@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: rem(0 20px);
 
     @media #{$mobile_land__640} {
       padding: rem(0 40px);
@@ -134,11 +134,11 @@
 
     &--4 {
       @media #{$tablet_land__1024} {
-        padding-bottom: 150px;
+        padding-bottom: rem(150px);
       }
 
       @media #{$large__screens__1440} {
-        padding-bottom: 180px;
+        padding-bottom: rem(180px);
       }
     }
   }

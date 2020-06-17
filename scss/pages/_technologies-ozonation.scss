@@ -101,7 +101,7 @@
 
       @media #{$tablet_land__1024} {
         flex-direction: row;
-        padding-top: 60px;
+        padding-top: rem(60px);
       }
     }
   }

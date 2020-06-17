@@ -379,10 +379,6 @@
       @media #{$desktop__1280} {
         width: calc(100% / 2);
       }
-
-      // @media #{$HD__screens__1920} {
-      //   padding: rem(0 154px 0 140px);
-      // }
     }
 
     &--2 {
@@ -405,11 +401,6 @@
       @media #{$HD__screens__1920} {
         padding-bottom: 0;
       }
-
-      //&::before {
-      //  content: "";
-      //  margin-top: rem(300px);
-      //}
     }
 
     &--4 {
@@ -572,7 +563,6 @@
       @media #{$tablet_land__1024} {
         width: 70%;
         margin: 0 auto;
-        //max-width: 100%;
       }
 
       @media #{$HD__screens__1920} {

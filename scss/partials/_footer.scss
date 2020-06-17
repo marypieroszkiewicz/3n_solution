@@ -54,17 +54,10 @@
         }
 
         @media #{$desktop__1280} {
-          // width: 27%;
           width: 30%;
         }
 
-        @media #{$large__screens__1440} {
-          // width: 22%;
-          // width: 35%;
-        }
-
         @media #{$full__screens__1600} {
-          width: 20%;
           width: 35%;
         }
 
@@ -96,11 +89,11 @@
 
           &--1 {
             width: 35%;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
           }
 
           &--2 {
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
           }
 
           &--3 {
@@ -109,12 +102,12 @@
 
           &--4 {
             align-self: flex-end;
-            margin-bottom: 7px;
+            margin-bottom: rem(7px);
           }
 
           @media #{$tablet__768} {
             width: 25%;
-            margin-right: 45px;
+            margin-right: rem(45px);
 
             &--1 {
               width: 15%;
@@ -185,14 +178,6 @@
           padding-bottom: 0;
         }
 
-        @media #{$desktop__1280} {
-          //width: 30%;
-        }
-
-        @media #{$large__screens__1440} {
-          //width: 40%;
-        }
-
         &__details {
 
           &--1 {
@@ -213,7 +198,7 @@
             }
 
             @media #{$large__screens__1440} {
-              padding-right: 10px;
+              padding-right: rem(10px);
               width: 40%;
             }
             @media #{$full__screens__1600} {
@@ -269,7 +254,6 @@
             @media #{$full__screens__1600} {
               width: 11%;
             }
-
           }
 
           &-phone::before {
@@ -331,7 +315,6 @@
               justify-content: space-around;
               width: 70%;
             }
-
 
             @media #{$tablet__768} {
               width: 60%;
