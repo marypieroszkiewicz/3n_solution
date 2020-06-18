@@ -260,6 +260,7 @@
         flex-direction: column;
         width: 100%;
         height: 900px;
+        transform: translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
 
         &--third {
           height: 1000px;
