@@ -202,7 +202,6 @@
             height: 240px;
           }
         }
-
       }
     }
   }
@@ -263,7 +262,7 @@
         height: auto;
 
         &--third {
-          height: 1000px;
+          // height: 1000px;
         }
 
         @media #{$mobile_land__640} {
@@ -397,7 +396,8 @@
           display: block;
           width: 100%;
           position: relative;
-          height: 100%;
+          // height: 100%;
+          height: 150vw;
 
           @media #{$desktop__1280} {
             width: 50%;
@@ -420,6 +420,7 @@
             clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
             -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
             z-index: 1;
+            height: 120vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -429,6 +430,7 @@
           &--second {
             //margin-top: -100px;
             margin-top: -31.250vw;
+            height: 160vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -453,6 +455,7 @@
           &--fourth {
             //margin-top: -140px;
             margin-top: -43.750vw;
+            height: 185vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -477,6 +480,7 @@
           &--sixth {
             //margin-top: -160px;
             margin-top: -50vw;
+            height: 250vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -501,6 +505,7 @@
           &--eighth {
             //margin-top: -160px;
             margin-top: -33.438vw;
+            height: 160vw;
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -514,6 +519,7 @@
             z-index: 1;
             //margin-top: -160px;
             margin-top: -33.438vw;
+            // height: 120vw;
 
 
             @media #{$desktop__1280} {
@@ -528,7 +534,7 @@
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
             //margin-top: -160px;
             margin-top: -33.438vw;
-
+            height: 200vw;
 
             @media #{$desktop__1280} {
               clip-path: none;

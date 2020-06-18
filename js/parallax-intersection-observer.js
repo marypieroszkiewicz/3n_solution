@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-
   //TODO get image and container dimensions after loaded DOM
 
   const getElementBackgroundHeight = (entry) => {
@@ -115,7 +112,3 @@ document.addEventListener('DOMContentLoaded', () => {
       observerParallax.observe(entry);
     })
   };
-
-
-
-})
