@@ -404,6 +404,10 @@
             overflow: hidden;
           }
 
+          @media #{$HD__screens__1920} {
+            height: auto;
+          }
+
           &--one {
             overflow: hidden;
           }
@@ -425,6 +429,10 @@
             @media #{$desktop__1280} {
               clip-path: none;
             }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
+            }
           }
 
           &--second {
@@ -435,6 +443,10 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
+            }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
             }
           }
 
@@ -461,6 +473,10 @@
               clip-path: none;
               margin-top: 0;
             }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
+            }
           }
 
           &--fifth {
@@ -486,6 +502,10 @@
               clip-path: none;
               margin-top: 0;
             }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
+            }
           }
 
           &--seventh {
@@ -510,6 +530,10 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
+            }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
             }
           }
 
@@ -539,6 +563,10 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
+            }
+
+            @media #{$HD__screens__1920} {
+              height: auto;
             }
           }
         }
