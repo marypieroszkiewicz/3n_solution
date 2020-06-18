@@ -259,10 +259,14 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 900px;
-        transform: translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
+        //height: 900px;
+        height: auto;
 
         &--third {
+          height: 1000px;
+        }
+
+        @media #{$mobile_land__640} {
           height: 1000px;
         }
 
@@ -557,6 +561,7 @@
             position: absolute;
             background-attachment: fixed;
             z-index: 0;
+            transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
           }
 
           @media #{$HD__screens__1920} {
@@ -573,7 +578,7 @@
             background-image: url("../images/img_2.jpg");
 
             @media #{$HD__screens__1920} {
-              background-position: center left 373px;
+              //background-position: center left 373px;
             }
 
             @media (min-width: 1921px) {
@@ -583,14 +588,14 @@
 
           &--third {
             background-image: url("../images/img_3.jpg");
-            background-position: center right -336px;
+            //background-position: center right -336px;
 
             @media #{$desktop__1280} {
-              background-position: center right 480px;
+              //background-position: center right 480px;
             }
 
             @media #{$HD__screens__1920} {
-              background-position: center right 640px;
+              //background-position: center right 640px;
             }
 
             @media (min-width: 1921px) {
@@ -606,7 +611,7 @@
             background-image: url("../images/img_5.jpg");
 
             @media #{$HD__screens__1920} {
-              background-position: center right 350px;
+              //background-position: center right 350px;
             }
 
             @media (min-width: 1921px) {
