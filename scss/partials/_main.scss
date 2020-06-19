@@ -265,9 +265,9 @@
           // height: 1000px;
         }
 
-        @media #{$mobile_land__640} {
-          height: 1000px;
-        }
+        // @media #{$mobile_land__640} {
+        //   height: 1000px;
+        // }
 
         @media #{$desktop__1280} {
           flex-direction: row;
@@ -399,6 +399,10 @@
           // height: 100%;
           height: 150vw;
 
+          @media #{$mobile_land__640} {
+            height: 80vw;
+          }
+
           @media #{$desktop__1280} {
             width: 50%;
             overflow: hidden;
@@ -421,10 +425,14 @@
           }
 
           &--first {
-            clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-            -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
             z-index: 1;
             height: 120vw;
+
+            @media #{$mobile_land__640} {
+              height: 80vw;
+            }
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -440,6 +448,16 @@
             margin-top: -31.250vw;
             height: 160vw;
 
+            @media #{$mobile_land__640} {
+              height: 140vw;
+            }
+
+            @media #{$tablet_land__1024} {
+              // margin-top: -340px;
+              margin-to: -33.203vw;
+              height: 120vw;
+            }
+
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
@@ -451,8 +469,8 @@
           }
 
           &--third {
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
             //margin-top: -120px;
             margin-top: -37.500vw;
             z-index: 1;
@@ -469,6 +487,16 @@
             margin-top: -43.750vw;
             height: 185vw;
 
+            @media #{$mobile_land__640} {
+              height: 140vw;
+            }
+
+            @media #{$tablet_land__1024} {
+              // margin-top: -420px;
+              margin-top: -41.016vw;
+              height: 130vw;
+            }
+
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
@@ -480,8 +508,8 @@
           }
 
           &--fifth {
-            clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
             //margin-top: -130px;
             margin-top: -40.625vw;
             z-index: 1;
@@ -498,6 +526,18 @@
             margin-top: -50vw;
             height: 250vw;
 
+            @media #{$mobile_land__640} {
+              // margin-top: -222px;
+              margin-top: -34.688vw;
+              height: 140vw;
+            }
+
+            @media #{$tablet_land__1024} {
+              // margin-top: -340px;
+              margin-top: -33.203vw;
+              height: 120vw;
+            }
+
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
@@ -509,11 +549,12 @@
           }
 
           &--seventh {
-            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
             //margin-top: -107px;
             margin-top: -33.438vw;
             z-index: 1;
+
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -527,6 +568,16 @@
             margin-top: -33.438vw;
             height: 160vw;
 
+            @media #{$mobile_land__640} {
+              height: 140vw;
+            }
+
+            @media #{$tablet_land__1024} {
+              // margin-top: -340px;
+              margin-top: -33.203vw;
+              height: 120vw;
+            }
+
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
@@ -538,13 +589,11 @@
           }
 
           &--ninth {
-            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
             z-index: 1;
             //margin-top: -160px;
             margin-top: -33.438vw;
-            // height: 120vw;
-
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -554,11 +603,23 @@
           }
 
           &--tenth {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
             //margin-top: -160px;
             margin-top: -33.438vw;
             height: 200vw;
+
+            @media #{$mobile_land__640} {
+              // margin-top: -100px;
+              margin-top: -14.063vw;
+              height: 95vw;
+            }
+
+            @media #{$tablet_land__1024} {
+              // margin-top: -120px;
+              margin-top: -11.719vw;
+              height: 75vw;
+            }
 
             @media #{$desktop__1280} {
               clip-path: none;
@@ -572,7 +633,6 @@
         }
 
         &-img {
-          //position: absolute;
           position: fixed;
           left: 0;
           top: 0;
@@ -581,15 +641,10 @@
           width: 100%;
           height: 100%;
           background-repeat: no-repeat;
-          //background-attachment: fixed;
-          //background-size: 100% 100%;
           background-size: cover;
           background-position: center;
-          //background-position: 0 calc(var(--scroll-pos) * -1px * 0.1);
-          //-webkit-transform: translateZ(0);
           pointer-events: none;
           z-index: -1;
-          //background-position: 0 0;
 
           @media #{$desktop__1280} {
             position: absolute;
@@ -622,7 +677,8 @@
 
           &--third {
             background-image: url("../images/img_3.jpg");
-            //background-position: center right -336px;
+            // background-position: center right -336px;
+            background-position: center right -502px;
 
             @media #{$desktop__1280} {
               //background-position: center right 480px;
@@ -639,10 +695,12 @@
 
           &--fourth {
             background-image: url("../images/img_4.jpg");
+            background-position: center right -300px;
           }
 
           &--fifth {
             background-image: url("../images/img_5.jpg");
+            background-position: center left -581px;
 
             @media #{$HD__screens__1920} {
               //background-position: center right 350px;
@@ -661,9 +719,16 @@
           transform: translateY(-50%);
           text-align: center;
 
+          @media #{$mobile_land__640} {
+            padding: rem(0 40px);
+          }
+
+          @media #{$tablet__768} {
+            padding: rem(0 60px);
+          }
+
           @media #{$desktop__1280} {
             text-align: left;
-            padding: rem(0 60px);
           }
 
           @media #{$large__screens__1440} {
@@ -674,13 +739,13 @@
             padding: rem(0 120px);
           }
 
-          &--third {
-            margin-top: rem(30px);
+          // &--third {
+          //   margin-top: rem(30px);
 
-            @media #{$desktop__1280} {
-              margin-top: 0;
-            }
-          }
+          //   @media #{$desktop__1280} {
+          //     margin-top: 0;
+          //   }
+          // }
 
 
           @media #{$HD__screens__1920} {
@@ -1898,11 +1963,11 @@
       @media #{$tablet_land__1024} {
         padding-bottom: rem(80px);
       }
-  
+
       @media #{$full__screens__1600} {
         padding: rem(80px 120px 0);
       }
-  
+
       @media #{$HD__screens__1920} {
         padding: rem(232px 278px 0);
       }
