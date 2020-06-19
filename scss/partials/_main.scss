@@ -406,10 +406,11 @@
           @media #{$desktop__1280} {
             width: 50%;
             overflow: hidden;
+            height: auto;
           }
 
           @media #{$HD__screens__1920} {
-            height: auto;
+            // height: auto;
           }
 
           &--one {
@@ -436,11 +437,12 @@
 
             @media #{$desktop__1280} {
               clip-path: none;
-            }
-
-            @media #{$HD__screens__1920} {
               height: auto;
             }
+
+            // @media #{$HD__screens__1920} {
+            //   height: auto;
+            // }
           }
 
           &--second {
@@ -461,6 +463,7 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
+              height: auto;
             }
 
             @media #{$HD__screens__1920} {
@@ -500,11 +503,12 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
-            }
-
-            @media #{$HD__screens__1920} {
               height: auto;
             }
+
+            // @media #{$HD__screens__1920} {
+            //   height: auto;
+            // }
           }
 
           &--fifth {
@@ -541,11 +545,12 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
-            }
-
-            @media #{$HD__screens__1920} {
               height: auto;
             }
+
+            // @media #{$HD__screens__1920} {
+            //   height: auto;
+            // }
           }
 
           &--seventh {
@@ -581,11 +586,12 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
-            }
-
-            @media #{$HD__screens__1920} {
               height: auto;
             }
+
+            // @media #{$HD__screens__1920} {
+            //   height: auto;
+            // }
           }
 
           &--ninth {
@@ -624,6 +630,7 @@
             @media #{$desktop__1280} {
               clip-path: none;
               margin-top: 0;
+              height: auto;
             }
 
             @media #{$HD__screens__1920} {
@@ -681,34 +688,47 @@
             background-position: center right -502px;
 
             @media #{$desktop__1280} {
-              //background-position: center right 480px;
+              // background-position: center right 480px;
+              background-position: center right 0;
             }
 
             @media #{$HD__screens__1920} {
               //background-position: center right 640px;
             }
 
-            @media (min-width: 1921px) {
-              background-position: center;
-            }
+            // @media (min-width: 1921px) {
+            //   background-position: center;
+            // }
           }
 
           &--fourth {
             background-image: url("../images/img_4.jpg");
             background-position: center right -300px;
+            
+            @media #{$desktop__1280} {
+              background-position: center right 0;
+            }
           }
 
           &--fifth {
             background-image: url("../images/img_5.jpg");
             background-position: center left -581px;
 
+            @media #{$desktop__1280} {
+              background-position: center left -170px;
+            }
+
+            @media #{$full__screens__1600} {
+              background-position: center left -90px;
+            }
+
             @media #{$HD__screens__1920} {
               //background-position: center right 350px;
             }
 
-            @media (min-width: 1921px) {
-              background-position: center;
-            }
+            // @media (min-width: 1921px) {
+            //   background-position: center;
+            // }
           }
         }
 
