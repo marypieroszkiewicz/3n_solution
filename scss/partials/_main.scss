@@ -685,17 +685,19 @@
           &--third {
             background-image: url("../images/img_3.jpg");
             // background-position: center right -336px;
-            background-position: center right -502px;
+            // background-position: center right -502px;
+            // background-position: calc(100% + 502px) calc(100% - 50%);
             background-position-x: 70%;
             background-position-y: 50%;
 
             @media #{$desktop__1280} {
               // background-position: center right 480px;
-              background-position: center right 0;
+              // background-position: center right 0;
             }
 
             @media #{$HD__screens__1920} {
-              //background-position: center right 640px;
+              // background-position: center right 640px;
+              background-position-x: -640px;
             }
 
             // @media (min-width: 1921px) {
@@ -706,7 +708,7 @@
           &--fourth {
             background-image: url("../images/img_4.jpg");
             background-position: center right -300px;
-            
+
             @media #{$desktop__1280} {
               background-position: center right 0;
             }
