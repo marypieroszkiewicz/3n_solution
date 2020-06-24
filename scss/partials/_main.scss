@@ -682,20 +682,25 @@
             }
           }
 
+
           &--third {
             background-image: url("../images/img_3.jpg");
-            // background-position: center right -502px;
-            background-position-x: 70%;
-            background-position-y: 50%;
-            // background-position: calc(100% + 502px) calc(100 - 50%);
+            // background-position: 70% 50%;
+            // background-position-x: 70%;
+            // background-position-y: 50%;
+            // background-position: right -502px center;
+            background-position: right 20% center;
+
 
             @media #{$desktop__1280} {
-              // background-position-x: -35vw;
-              background-position-x: -30rem;
+              // background-position: 85% 50%;
+              background-position: -335px center;
             }
 
             @media #{$large__screens__1440} {
               // background-position-x: -40vw;
+              background-position: -460px center;
+
             }
 
             @media #{$HD__screens__1920} {
