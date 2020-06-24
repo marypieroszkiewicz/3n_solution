@@ -247,6 +247,22 @@
     &:nth-child(3) {
       position: relative;
     }
+
+    &--social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: rem(20px);
+
+      @media #{$tablet_land__1024} {
+        flex-direction: column;
+        padding: rem(0 20px 0 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 40px 0 0);
+      }
+    }
   }
 
   @media #{$tablet_land__1024} {
@@ -389,7 +405,6 @@
         left: -281px;
         font-size: rem(29px);
       }
-
 
       &--mobile {
         background-color: rgba(17, 68, 123, 1);
@@ -728,6 +743,32 @@
           width: 100%;
           margin: 0;
         }
+      }
+    }
+
+    &--yt, &--in {
+      display: inline-block;
+      color: $fun-blue;
+      font-size: rem(30px);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(32px);
+      }
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(25px);
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(30px);
+      }
+    }
+
+    &--yt {
+      padding-right: rem(40px);
+
+      @media #{$tablet_land__1024} {
+        padding-right: 0;
       }
     }
   }
