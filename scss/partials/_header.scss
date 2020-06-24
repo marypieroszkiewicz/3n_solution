@@ -715,16 +715,14 @@
         width: 200px;
         padding: rem(20px 30px 20px 20px);
       }
+
       @media #{$large__screens__1440} {
         width: 250px;
       }
+
       @media #{$full__screens__1600} {
         width: 270px;
         padding: rem(20px 40px 20px 20px);
-      }
-
-      @media #{$HD__screens__1920} {
-        width: 300px;
       }
 
       &__img {
@@ -740,7 +738,7 @@
         }
 
         @media #{$tablet_land__1024} {
-          width: 100%;
+          width: 90%;
           margin: 0;
         }
       }
@@ -749,10 +747,10 @@
     &--yt, &--in {
       display: inline-block;
       color: $fun-blue;
-      font-size: rem(30px);
+      font-size: rem(25px);
 
       @media #{$mobile_land__640} {
-        font-size: rem(32px);
+        font-size: rem(30px);
       }
 
       @media #{$tablet_land__1024} {
@@ -760,7 +758,7 @@
       }
 
       @media #{$desktop__1280} {
-        font-size: rem(30px);
+        //font-size: rem(30px);
       }
     }
 
