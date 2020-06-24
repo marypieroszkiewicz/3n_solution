@@ -741,6 +741,10 @@
           width: 90%;
           margin: 0;
         }
+
+        @media #{$HD__screens__1920} {
+          width: 100%;
+        }
       }
     }
 
