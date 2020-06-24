@@ -725,6 +725,10 @@
         padding: rem(20px 40px 20px 20px);
       }
 
+      @media #{$HD__screens__1920} {
+        width: 260px;
+      }
+
       &__img {
         width: 70%;
         margin: 0 auto;
@@ -759,10 +763,6 @@
 
       @media #{$tablet_land__1024} {
         font-size: rem(25px);
-      }
-
-      @media #{$desktop__1280} {
-        //font-size: rem(30px);
       }
     }
 
