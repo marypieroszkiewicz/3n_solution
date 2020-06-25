@@ -685,27 +685,20 @@
 
           &--third {
             background-image: url("../images/img_3.jpg");
-            // background-position: 70% 50%;
-            // background-position-x: 70%;
-            // background-position-y: 50%;
-            // background-position: right -502px center;
-            // background-position: right 20% center;
             background-position: 70% center;
 
             @media #{$desktop__1280} {
-              // background-position: 85% 50%;
-              background-position: -335px center;
+              // background-position: -335px center;
+              background-position: -26.172vw center;
             }
 
             @media #{$large__screens__1440} {
-              // background-position-x: -40vw;
-              // background-position: -460px center;
-              background-position: -350px center;
-              // background-position: -20.833vw center;
+              // background-position: -350px center;
+              background-position: -20.833vw center;
             }
 
             @media #{$full__screens__1600} {
-              background-position: -300px center;
+              // background-position: -300px center;
               background-position: -18.750vw center;
             }
 
