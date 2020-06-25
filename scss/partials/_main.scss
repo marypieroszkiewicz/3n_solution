@@ -704,8 +704,12 @@
             background-image: url("../images/img_4.jpg");
             background-position: 80% center;
 
+            @media #{$mobile_land__640} {
+              background-position: 90% center;
+            }
+
             @media #{$desktop__1280} {
-              background-position: center;
+              background-position: -42.969vw center;
             }
           }
 
