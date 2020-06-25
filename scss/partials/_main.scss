@@ -722,8 +722,12 @@
               background-position: -14.844vw center;
             }
 
+            @media #{$large__screens__1440} {
+              background-position: -8.333vw center;
+            }
+
             @media #{$full__screens__1600} {
-              //background-position: center left -90px;
+              background-position: -4.375vw center;
             }
 
             @media #{$HD__screens__1920} {
