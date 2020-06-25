@@ -718,7 +718,8 @@
             background-position: 36% center;
 
             @media #{$desktop__1280} {
-              background-position: 30% center;
+              //background-position: -190px center;
+              background-position: -14.844vw center;
             }
 
             @media #{$full__screens__1600} {
