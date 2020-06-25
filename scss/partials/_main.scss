@@ -701,10 +701,12 @@
               // background-position-x: -40vw;
               // background-position: -460px center;
               background-position: -350px center;
-              background-position: -20.833vw center;
-              background-position
-              // background-position: -245px center;
+              // background-position: -20.833vw center;
+            }
 
+            @media #{$full__screens__1600} {
+              background-position: -300px center;
+              background-position: -18.750vw center;
             }
 
             @media #{$HD__screens__1920} {
