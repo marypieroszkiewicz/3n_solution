@@ -1,22 +1,25 @@
 .privacy-policy {
   display: flex;
   flex-direction: column;
-  padding: rem(20px);
 
-  @media #{$mobile_land__640} {
-    padding: rem(40px);
-  }
+  &__wrapper {
+    padding: rem(20px);
 
-  @media #{$tablet_land__1024} {
-    padding: rem(60px);
-  }
+    @media #{$mobile_land__640} {
+      padding: rem(40px);
+    }
 
-  @media #{$large__screens__1440} {
-    padding: rem(80px);
-  }
+    @media #{$tablet_land__1024} {
+      padding: rem(60px);
+    }
 
-  @media #{$HD__screens__1920} {
-    padding: rem(80px 278px 80px 140px);
+    @media #{$large__screens__1440} {
+      padding: rem(80px);
+    }
+
+    @media #{$HD__screens__1920} {
+      padding: rem(80px 278px 80px 140px);
+    }
   }
 
   &__title {

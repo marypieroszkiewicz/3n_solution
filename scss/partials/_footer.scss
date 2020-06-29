@@ -45,6 +45,10 @@
       &-left {
         width: 70%;
 
+        @media #{$mobile_land__640} {
+          width: 50%;
+        }
+
         @media #{$tablet__768} {
           width: 40%;
         }
@@ -105,9 +109,8 @@
             margin-bottom: rem(7px);
           }
 
-          @media #{$tablet__768} {
+          @media #{$mobile_land__640} {
             width: 25%;
-            margin-right: rem(45px);
 
             &--1 {
               width: 15%;
@@ -124,6 +127,10 @@
             &--4 {
               align-self: center;
             }
+          }
+
+          @media #{$tablet__768} {
+            margin-right: rem(45px);
 
             &:last-child {
               margin-right: 0;
