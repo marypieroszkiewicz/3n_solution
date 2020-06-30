@@ -355,6 +355,11 @@
           width: 20%;
         }
 
+        &__title {
+          color: $fun-blue;
+          padding-bottom: rem(5px);
+        }
+
         &__social {
           display: inline-block;
           color: $fun-blue;
