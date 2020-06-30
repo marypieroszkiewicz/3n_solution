@@ -661,7 +661,7 @@
             -webkit-transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
             //transition: transform 1s;
             //-webkit-transition: transform 1s;
-            will-change: transform, scroll-positions;
+            will-change: transform;
             -webkit-backface-visibility: hidden;
             -webkit-perspective: 1000;
           }

@@ -348,6 +348,10 @@
         padding: rem(0 0 20px);
 
         @media #{$tablet_land__1024} {
+          width: 13%;
+        }
+
+        @media #{$desktop__1280} {
           width: 10%;
         }
 
@@ -419,6 +423,10 @@
           &-3ns {
             font-weight: bold;
             padding-right: rem(30px);
+
+            @media #{$tablet_land__1024} {
+              padding-right: rem(20px);
+            }
 
             @media #{$desktop__1280} {
               padding-right: rem(50px);
