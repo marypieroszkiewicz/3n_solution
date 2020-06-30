@@ -658,7 +658,12 @@
             background-attachment: fixed;
             z-index: 0;
             transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
-            -webkit-transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);;
+            -webkit-transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
+            //transition: transform 1s;
+            //-webkit-transition: transform 1s;
+            will-change: transform, scroll-positions;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
           }
 
           @media #{$HD__screens__1920} {
