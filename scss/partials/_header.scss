@@ -259,6 +259,11 @@
         padding: rem(0 20px 0 0);
       }
 
+      @media #{$desktop__1280} {
+        flex-direction: row;
+        padding: rem(0 15px 0 0);
+      }
+
       @media #{$HD__screens__1920} {
         padding: rem(0 40px 0 0);
       }
@@ -284,7 +289,6 @@
 
         left: 50%;
         transform: translateX(-50%);
-        // z-index: 20;
         z-index: 2;
         width: 277px;
         margin-top: 9px;
@@ -508,6 +512,10 @@
     color: $black;
     position: relative;
 
+    @media #{$tablet_land__1024} {
+      padding: rem(15px);
+    }
+
     @media #{$desktop__1280} {
       font-size: rem(25px);
     }
@@ -689,6 +697,7 @@
           height: 12px;
           top: 4px;
         }
+
         @media #{$large__screens__1440} {
           top: 5px;
         }
@@ -708,12 +717,14 @@
 
       @media #{$tablet_land__1024} {
         width: 150px;
-        padding: rem(0 20px 0 0);
+        padding: rem(0 15px 0 0);
       }
 
       @media #{$desktop__1280} {
-        width: 200px;
-        padding: rem(20px 30px 20px 20px);
+        //width: 200px;
+        //padding: rem(20px 30px 20px 20px);
+        width: 130px;
+        padding: 0;
       }
 
       @media #{$large__screens__1440} {
@@ -753,24 +764,43 @@
     }
 
     &--yt, &--in {
-      display: inline-block;
-      color: $fun-blue;
-      font-size: rem(25px);
-
-      @media #{$mobile_land__640} {
-        font-size: rem(30px);
-      }
+      width: 100px;
+      display: block;
 
       @media #{$tablet_land__1024} {
-        font-size: rem(25px);
+        width: 60px;
+      }
+
+      @media #{$desktop__1280} {
+        width: 75px;
       }
     }
 
+    //&--yt, &--in {
+    //  display: inline-block;
+    //  color: $fun-blue;
+    //  font-size: rem(25px);
+    //
+    //  @media #{$mobile_land__640} {
+    //    font-size: rem(30px);
+    //  }
+    //
+    //  @media #{$tablet_land__1024} {
+    //    font-size: rem(25px);
+    //  }
+    //}
+
     &--yt {
-      padding-right: rem(40px);
+      margin-right: rem(40px);
 
       @media #{$tablet_land__1024} {
-        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 7px;
+      }
+
+      @media #{$desktop__1280} {
+        margin-bottom: 0;
+        margin-right: rem(15px);
       }
     }
   }

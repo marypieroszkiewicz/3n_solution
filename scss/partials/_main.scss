@@ -649,6 +649,7 @@
           height: 100%;
           background-repeat: no-repeat;
           background-size: cover;
+          -webkit-background-size: cover;
           background-position: center;
           pointer-events: none;
           z-index: -1;
@@ -664,6 +665,8 @@
             will-change: transform;
             -webkit-backface-visibility: hidden;
             -webkit-perspective: 1000;
+            transition: background-image 0.5s ease-in-out;
+            -webkit-transition: background-image 0.5s ease-in-out;
           }
 
           @media #{$HD__screens__1920} {
