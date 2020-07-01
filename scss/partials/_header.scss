@@ -271,35 +271,6 @@
         padding: rem(0 40px 0 0);
       }
     }
-
-    //&--social {
-    //  display: flex;
-    //  justify-content: center;
-    //  align-items: center;
-    //  padding: rem(20px);
-    //
-    //  @media #{$tablet_land__1024} {
-    //    flex-direction: column;
-    //    padding: rem(0 20px 0 0);
-    //  }
-    //
-    //  @media #{$desktop__1280} {
-    //    flex-direction: row;
-    //    padding: rem(0 15px 0 0);
-    //  }
-    //
-    //  @media #{$large__screens__1440} {
-    //    padding: rem(0 20px 0 0);
-    //  }
-    //
-    //  @media #{$full__screens__1600} {
-    //    padding: rem(0 25px 0 0);
-    //  }
-    //
-    //  @media #{$HD__screens__1920} {
-    //    padding: rem(0 40px 0 0);
-    //  }
-    //}
   }
 
   @media #{$tablet_land__1024} {
@@ -837,53 +808,6 @@
         padding-right: rem(25px);
       }
     }
-
-    //&--yt, &--in {
-    //  width: 100px;
-    //  display: block;
-    //
-    //  @media #{$tablet_land__1024} {
-    //    width: 60px;
-    //  }
-    //
-    //  @media #{$desktop__1280} {
-    //    width: 75px;
-    //  }
-    //
-    //  @media #{$large__screens__1440} {
-    //    width: 80px;
-    //  }
-    //
-    //  @media #{$full__screens__1600} {
-    //    width: 90px;
-    //  }
-    //
-    //  @media #{$HD__screens__1920} {
-    //    width: 100px;
-    //  }
-    //}
-
-    //&--yt {
-    //  margin-right: rem(40px);
-    //
-    //  @media #{$tablet_land__1024} {
-    //    margin-right: 0;
-    //    margin-bottom: 7px;
-    //  }
-    //
-    //  @media #{$desktop__1280} {
-    //    margin-bottom: 0;
-    //    margin-right: rem(15px);
-    //  }
-    //
-    //  @media #{$large__screens__1440} {
-    //    margin-right: rem(20px);
-    //  }
-    //
-    //  @media #{$full__screens__1600} {
-    //    margin-right: rem(25px);
-    //  }
-    //}
   }
 }
 
