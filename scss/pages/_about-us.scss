@@ -16,11 +16,13 @@
           z-index: -1;
         }
 
-        @media (min-width: 1921px) {
-          width: 100vw;
-          left: 50%;
-          transform: translateX(-50%);
+      &-img {
+        @media #{$HD__screens__1920} {
+          //width: inherit;
+          max-width: none;
+          width: 100%;
         }
+      }
     }
 
     &-row {
@@ -460,19 +462,28 @@
 
     &-img {
       width: inherit;
+      filter: drop-shadow(1px 1px 0 $white)
+      drop-shadow(-1px 1px 0 $white)
+      drop-shadow(1px -1px 0 $white)
+      drop-shadow(-1px -1px 0 $white);
 
-      &:not(.about-us__article-img--1) {
-
-        filter: drop-shadow(1px 1px 0 $white)
-        drop-shadow(-1px 1px 0 $white)
-        drop-shadow(1px -1px 0 $white)
-        drop-shadow(-1px -1px 0 $white);
-
-        @media #{$tablet_land__1024} {
-          width: initial;
-          max-width: 100%;
-        }
+      @media #{$tablet_land__1024} {
+        width: initial;
+        max-width: 100%;
       }
+
+      //&:not(.about-us__article-img--1) {
+      //
+      //  filter: drop-shadow(1px 1px 0 $white)
+      //  drop-shadow(-1px 1px 0 $white)
+      //  drop-shadow(1px -1px 0 $white)
+      //  drop-shadow(-1px -1px 0 $white);
+      //
+      //  @media #{$tablet_land__1024} {
+      //    width: initial;
+      //    max-width: 100%;
+      //  }
+      //}
 
       &--3, &--5 {
         margin: 0 0 0 auto;

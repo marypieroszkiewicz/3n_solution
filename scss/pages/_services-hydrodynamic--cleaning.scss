@@ -18,7 +18,9 @@
   &-img {
 
     @media #{$HD__screens__1920} {
-      width: inherit;
+      //width: inherit;
+      max-width: none;
+      width: 100%;
     }
   }
 

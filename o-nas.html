@@ -19,7 +19,6 @@
 <body>
 <!-- wrapper -->
 <section class="wrapper">
-  <!-- header-->
   <header class="header">
     <!-- navigation -->
     <div class="navigation">
@@ -67,7 +66,7 @@
                 </ul>
               </li>
               <li class="menu__item">
-                <a href="realizacje.html" class="menu__link js-anchor--link">Realizacje</a>
+                <a href="realizacje.html" class="menu__link menu__link--space js-anchor--link">Realizacje</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Technologie<span class="menu__link--arrow"></span></a>
@@ -87,7 +86,7 @@
                 </ul>
               </li>
               <li class="menu__item">
-                <a href="o-nas.html" class="menu__link js-anchor--link">O nas</a>
+                <a href="o-nas.html" class="menu__link menu__link--space js-anchor--link">O nas</a>
               </li>
               <li class="menu__item">
                 <a href="kontakt.html" class="menu__link js-anchor--link">Kontakt</a>
@@ -133,10 +132,14 @@
 <!-- about us -->
   <section class="about-us">
     <article class="about-us__article">
-      <section class="container">
         <figure class="about-us__article-heading">
-          <img src="images/heading-1.png" class="about-us__article-img about-us__article-img--1">
+          <picture>
+            <source srcset="images/heading-1.webp" type="image/webp">
+            <source srcset="images/heading-1.png" type="image/png">
+            <img src="images/heading-1.png" class="about-us__article-heading-img">
+          </picture>
         </figure>
+        <section class="container">
         <div class="about-us__article-row about-us__article-row--1">
           <div class="about-us__article-col about-us__article-col--1">
             <div class="about-us__article-graphics about-us__article-graphics--1">
