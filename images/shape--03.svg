@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.246 251.246" preserveAspectRatio="xMidYMid meet">
-  <g id="Group_1" data-name="Group 1" transform="translate(0 156.188) rotate(-45)" opacity="0.981">
-    <path id="Path_35" data-name="Path 35" d="M0,0H220.884L100.841,134.432H0Z" transform="translate(0 0)" fill="#dee8f2"/>
-  </g>
-</svg>
+<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 251.246 251.246" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h220.884l-120.043 134.432h-100.841z" fill="#dee8f2" opacity=".981" transform="matrix(.70710678 -.70710678 .70710678 .70710678 0 156.188)"/></svg>

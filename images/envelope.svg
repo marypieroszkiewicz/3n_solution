@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.421 21.33" preserveAspectRatio="xMidYMid meet">
-  <g id="mail002_-_E02E" data-name="mail002 - E02E" transform="translate(-90.362 -57.138)" style="isolation: isolate">
-    <g id="Group_656" data-name="Group 656" transform="translate(91.072 57.796)" style="isolation: isolate">
-      <path id="Path_1547" data-name="Path 1547" d="M109.072,65.485V77.8h-18V65.485l9-7.689Zm-17.7.407v11.39L97.5,71.3Zm8.7-7.689-8.616,7.342,6.27,5.544,2.346-2.3,2.346,2.3,6.27-5.544Zm-8.484,19.29h16.967L100.072,69.2Zm17.188-.21V65.892L102.639,71.3Z" transform="translate(-91.072 -57.796)" fill="#ff2d30" stroke="#ff2d30" stroke-width="1"/>
-    </g>
-    <g id="Group_657" data-name="Group 657" transform="translate(91.072 57.796)" style="isolation: isolate">
-      <path id="Path_1548" data-name="Path 1548" d="M109.072,65.485V77.8h-18V65.485l9-7.689Zm-17.7.407v11.39L97.5,71.3Zm8.7-7.689-8.616,7.342,6.27,5.544,2.346-2.3,2.346,2.3,6.27-5.544Zm-8.484,19.29h16.967L100.072,69.2Zm17.188-.21V65.892L102.639,71.3Z" transform="translate(-91.072 -57.796)" fill="#ff2d30" stroke="#ff2d30" stroke-width="1"/>
-    </g>
-  </g>
-</svg>
+<svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 19.421 21.33" xmlns="http://www.w3.org/2000/svg"><g fill="#ff2d30" stroke="#ff2d30" transform="translate(-90.362 -57.138)"><path d="m109.072 65.485v12.315h-18v-12.315l9-7.689zm-17.7.407v11.39l6.128-5.982zm8.7-7.689-8.616 7.342 6.27 5.544 2.346-2.3 2.346 2.3 6.27-5.544zm-8.484 19.29h16.967l-8.483-8.293zm17.188-.21v-11.391l-6.137 5.408z"/><path d="m109.072 65.485v12.315h-18v-12.315l9-7.689zm-17.7.407v11.39l6.128-5.982zm8.7-7.689-8.616 7.342 6.27 5.544 2.346-2.3 2.346 2.3 6.27-5.544zm-8.484 19.29h16.967l-8.483-8.293zm17.188-.21v-11.391l-6.137 5.408z"/></g></svg>
