@@ -438,6 +438,7 @@
             @media #{$desktop__1280} {
               clip-path: none;
               height: auto;
+              z-index: 0;
             }
 
             // @media #{$HD__screens__1920} {
@@ -456,7 +457,7 @@
 
             @media #{$tablet_land__1024} {
               // margin-top: -340px;
-              margin-to: -33.203vw;
+              margin-top: -33.203vw;
               height: 120vw;
             }
 
@@ -651,16 +652,19 @@
           background-size: cover;
           -webkit-background-size: cover;
           background-position: center;
+          background-position-x: 50%;
+          background-position-y: 50%;
           pointer-events: none;
           z-index: -1;
 
           @media #{$desktop__1280} {
             position: absolute;
-            //background-attachment: fixed;
-            -moz-background-attachment: fixed;
-            z-index: 0;
-            transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
-            -webkit-transform: scale(1.2) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.08 * 1px), 0);
+            //position: fixed;
+            background-attachment: fixed;
+            //-moz-background-attachment: fixed;
+            //z-index: 0;
+            transform: scale(1.1) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.03 * 1px), 0);
+            -webkit-transform: scale(1.1) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.03 * 1px), 0);
             will-change: transform;
             -webkit-backface-visibility: hidden;
             -webkit-perspective: 1000;
@@ -670,44 +674,58 @@
             //height: 150%;
             //width: 50%;
             height: 100%;
+            transform: scale(1.1) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.02 * 1px), 0);
+            -webkit-transform: scale(1.1) translate3D(0, calc((var(--scroll-y) - var(--offset-y)) * -0.02 * 1px), 0);
           }
 
           &--first {
-            background-image: url("../images/img_1.jpg");
+            background-image: url("../images/konserwacja_2160.jpg");
+            @media #{$desktop__1280} {
+              background-position: -100px center;
+            }
           }
 
           &--second {
-            background-image: url("../images/img_2.jpg");
+            background-image: url("../images/czyszczenie_2160.jpg");
+
+            @media #{$large__screens__1440} {
+              //background-position: -335px center;
+              //background-position: -23.264vw center;
+            }
+
           }
 
-
           &--third {
-            background-image: url("../images/img_3.jpg");
+            background-image: url("../images/hydro_2160.jpg");
             background-position: 70% center;
 
             @media #{$desktop__1280} {
               // background-position: -335px center;
-              background-position: -26.172vw center;
+              //background-position: -26.172vw center;
+              background-position: -4.297vw center;
             }
 
             @media #{$large__screens__1440} {
               // background-position: -350px center;
-              background-position: -20.833vw center;
+              //background-position: -20.833vw center;
+              background-position: -2.431vw center;
             }
 
             @media #{$full__screens__1600} {
               // background-position: -300px center;
-              background-position: -18.750vw center;
+              //background-position: -18.750vw center;
+              background-position: 1.250vw center;
             }
 
             @media #{$HD__screens__1920} {
               // background-position: -640px center;
-              background-position: -33.333vw center;
+              //background-position: -33.333vw center;
+              background-position: -5.208vw center;
             }
           }
 
           &--fourth {
-            background-image: url("../images/img_4.jpg");
+            background-image: url("../images/pozarowe_2160.jpg");
             background-position: 80% center;
 
             @media #{$mobile_land__640} {
@@ -720,7 +738,7 @@
           }
 
           &--fifth {
-            background-image: url("../images/img_5.jpg");
+            background-image: url("../images/pomiary_2160.jpg");
             background-position: 36% center;
 
             @media #{$desktop__1280} {
@@ -729,11 +747,16 @@
             }
 
             @media #{$large__screens__1440} {
-              background-position: -8.333vw center;
+              //background-position: -8.333vw center;
+              background-position: -12.500vw center;
             }
 
             @media #{$full__screens__1600} {
               background-position: -4.375vw center;
+            }
+
+            @media #{$HD__screens__1920} {
+              background-position: -10.417vw center;
             }
           }
         }
@@ -1967,7 +1990,27 @@
 /* ----- END OF MAIN ----- */
 
 @media #{$mobile_land__640} {
+
+  .main {
+    &__title {
+      font-size: rem(25px);
+      padding: rem(62px 40px);
+    }
+  }
+
+  &__boxes {
+    padding: rem(0 40px);
+  }
 }
+
+
+
+
+
+
+
+
+
 @media #{$tablet__768} {
 }
 @media #{$tablet_land__1024} {

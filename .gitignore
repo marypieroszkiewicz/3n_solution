@@ -10,3 +10,4 @@ npm-debug.log
 js/sample.js
 */.htaccess
 !www/.htaccess
+home.html

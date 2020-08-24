@@ -24,6 +24,7 @@ function verify_captcha($token) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $surname = $_POST["surname"];
+    $phone = $_POST["phone"];
     $message = $_POST["message"];
     $antiSpam = $_POST["honey"];
 
@@ -39,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
 
-    $mailToSend = "marketing@3ns.com.pl";
+    $mailToSend = "maria.pieroszkiewicz@gmail.com";
 
     $errors = Array();
     $return = Array();
