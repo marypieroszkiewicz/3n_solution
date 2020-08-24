@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
 
-    $mailToSend = "maria.pieroszkiewicz@gmail.com";
+    $mailToSend = "marketing@3ns.com.pl";
 
     $errors = Array();
     $return = Array();

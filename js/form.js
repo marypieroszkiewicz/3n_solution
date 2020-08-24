@@ -18,14 +18,12 @@ const markFieldAsError = function(field, show) {
 };
 
 const form = document.querySelector('#contactForm');
-// const inputs = form.querySelectorAll("[required]");
 
-const inputs = form.querySelectorAll("input");
+const inputs = form.querySelectorAll('input,textarea');
 const required = form.querySelectorAll("[required]");
 
 form.setAttribute('novalidate', true);
 
-// const inputs = [inputName, inputSurname, inputEmail, formMessage];
 for (const el of required) {
   el.addEventListener("input", e => markFieldAsError(e.target, !e.target.checkValidity()));
 }
@@ -56,7 +54,6 @@ form.addEventListener("submit", e => {
     const formData = new FormData();
     for (const el of inputs) {
       formData.append(el.name, el.value);
-      console.log(formData);
     }
 
     const url = form.getAttribute("action");
