@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div> Imię: $name</div>
                     <div> Nazwisko: $surname</div>
                     <div> Email: <a href=\"mailto:$email\">$email</a> </div>
-                    <div> Telefon kontaktowy: $phone</div>
+                    <div> Telefon kontaktowy: $phone </div>
                     <div> Wiadomość: </div>
                     <div> $message </div>
                 </body>
