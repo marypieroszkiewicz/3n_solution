@@ -32,7 +32,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55428215-1"></script>
@@ -234,7 +234,17 @@
             <div class="modal__form-row modal__form-row--2">
               <input class="modal__form-input" type="email" name="email" id="email" placeholder="Wpisz swój e-mail" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
             </div>
-            <div class="modal__form-row modal__form-row--3">
+            <a href="#" role="button" class="modal__btn-more">Więcej</a>
+            <div class="modal__form-more">
+              <div class="modal__form-row modal__form-row--3">
+                <input class="modal__form-input" type="number" name="phone" id="phone" placeholder="Telefon kontaktowy">
+              </div>
+              <div class="modal__form-row modal__form-row--4">
+                <textarea class="modal__form-textarea" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="5" placeholder="Wiadomość"></textarea>
+              </div>
+            </div>
+
+            <div class="modal__form-row modal__form-row--5">
               <input id="terms" type="checkbox" class="modal__form-checkbox" required data-error-text="Musisz wypełnić pole" name="terms">
               <label class="modal__form-label" for="terms">
                 <span class="modal__form-checkbox__text">Oświadczam, że zapoznałem/am się z <a href="polityka-prywatnosci.html" target="_blank" class="modal__form-link"><span class="modal__form-checkbox__text--bold">Regulaminem</span></a></span>

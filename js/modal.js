@@ -1,3 +1,10 @@
+
+const modalToggle = document.querySelector('.modal__btn-more');
+modalToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.modal__form-more').classList.toggle('modal__form-more--open');
+});
+
 const SE_NAME = "ModalDisplayed";
 
 let showModal = function() {
