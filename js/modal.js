@@ -29,7 +29,6 @@ close.addEventListener('click', () => {
 });
 
 
-
 // Walidacja Modal
 
 const toggleErrorField = function(field, show) {
@@ -57,7 +56,6 @@ const inputs = form.querySelectorAll("[required]");
 
 form.setAttribute('novalidate', true);
 
-// const inputs = [inputName, inputSurname, inputEmail];
 for (const el of inputs) {
   el.addEventListener("input", e => markFieldAsError(e.target, !e.target.checkValidity()));
 }

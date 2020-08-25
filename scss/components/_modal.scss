@@ -10,7 +10,8 @@
     //transform: translateY(-100vw);
     //transition: 2s transform ease-out;
     display: none;
-    top: 25px;
+    //top: 25px;
+    top: 7.813vw;
 
     @media #{$mobile_land__640} {
       top: 6.250vw;
@@ -50,10 +51,19 @@
   &__content {
     overflow-y: scroll;
     max-height: 80vh;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-visibility: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
     @media #{$HD__screens__1920} {
       overflow-y: auto;
       max-height: initial;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
     }
   }
 
@@ -110,6 +120,10 @@
   &__text {
     padding-bottom: rem(10px);
     font-size: rem(18px);
+
+    @media #{$mobile_land__640} {
+      padding-bottom: rem(20px);
+    }
   }
 
   &__form {
@@ -130,7 +144,12 @@
       @media #{$HD__screens__1920} {
         padding: rem(10px);
       }
+
+      &:focus {
+        outline: none;
+      }
     }
+
 
     &-more {
       max-height: 0;
@@ -148,6 +167,10 @@
       resize: none;
       padding: rem(5px);
       border: 1px solid $bombay;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     &-checkbox {
@@ -172,7 +195,7 @@
   }
 
   &__btn {
-    background: #1960aa;
+    background: $fun-blue;
     color: #fff;
     padding: rem(13px 40px);
     outline: none;
@@ -218,9 +241,8 @@
 /* walidacja formularza JS */
 /* ---------------------------------------------------- */
 
-.modal__form .field-error,
 .modal__form .field-error {
-  border-bottom: 1px solid $red-ribbon;
+  border: 1px solid $red-ribbon;
   outline: none;
 }
 
