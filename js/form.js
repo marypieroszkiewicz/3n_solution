@@ -34,7 +34,7 @@ form.addEventListener("submit", e => {
 
   let formErrors = false;
 
-  //2 etap - sprawdzamy poszczególne pola gdy ktoś chce wysłać formularz
+  // 2 etap - sprawdzamy poszczególne pola gdy ktoś chce wysłać formularz
   for (const el of required) {
     markFieldAsError(el, false);
     toggleErrorField(el, false);

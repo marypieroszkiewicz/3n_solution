@@ -23,6 +23,7 @@ function verify_captcha($token) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $phone = $_POST["phone"];
     $message = $_POST["message"];
     $antiSpam = $_POST["honey"];
 
@@ -48,6 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //sprawdzamy czy email ma zły wzór
             array_push($errors, "email");
         }
+        if (empty($message)) {
+            array_push($errors, "message");
+        }
         if (!empty($antiSpam)) {
             array_push($errors, "antiSpam");
         }
@@ -67,6 +71,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <body>
                         <div> Imię: $name</div>
                         <div> Email: <a href=\"mailto:$email\">$email</a> </div>
+                        <div> Telefon kontaktowy: $phone </div>
+                        <div> Wiadomość: </div>
+                        <div> $message </div>
                     </body>
                 </html>";
 

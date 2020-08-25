@@ -148,7 +148,8 @@
                   <ul class="menu-dropdown js--menu-submenu">
                     <li class="menu-dropdown__item">
                       <span class="menu-dropdown__text menu-dropdown__text--mobile">+48 22 233 00 50</span>
-                      <a class="menu-dropdown__link menu-dropdown__link--mobile js-anchor--link" href="tel:+48 22 233 00 50"><img src="images/smartphone_2.svg" class="menu-dropdown__icon menu-dropdown__icon--1" alt="mobile"></a>
+                      <a class="menu-dropdown__link menu-dropdown__link--mobile js-anchor--link" href="tel:+48 22 233 00 50">
+                        <img src="images/smartphone_2.svg" class="menu-dropdown__icon menu-dropdown__icon--1" alt="mobile"></a>
                     </li>
                     <li class="menu-dropdown__item">
                       <span class="menu-dropdown__text menu-dropdown__text--envelop">biuro@3ns.com.pl</span>
@@ -240,7 +241,7 @@
                 <input class="modal__form-input" type="number" name="phone" id="phone" placeholder="Telefon kontaktowy">
               </div>
               <div class="modal__form-row modal__form-row--4">
-                <textarea class="modal__form-textarea" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="3" placeholder="Wiadomość"></textarea>
+                <textarea class="modal__form-textarea" name="message" id="message" cols="30" rows="3" placeholder="Wiadomość"></textarea>
               </div>
             </div>
 
@@ -626,8 +627,18 @@
               <div class="main__technologies-content__box main__technologies-content__box--1">
                 <div class="main__technologies-content__box-col">
                   <p class="main__technologies-content__box-text">Technologie dopasowujemy indywidualnie do każdego klienta, aby dowiedzieć się więcej skontaktuj się z nami.</p>
-                  <span class="main__technologies-content__box-contact main__technologies-content__box-contact--1">+48 22 233 00 50</span>
-                  <span class="main__technologies-content__box-contact main__technologies-content__box-contact--2">biuro@3ns.com.pl</span>
+                  <div class="main__technologies-content__box-contact main__technologies-content__box-contact--1">
+                    <a href="tel:+48 22 233 00 50" class="main__technologies-content__box-contact__anchor main__technologies-content__box-contact__anchor--1">
+                      <img src="images/smartphone_2.svg" class="main__technologies-content__box-contact__img main__technologies-content__box-contact__img--1" alt="mobile">
+                    </a>
+                    <span class="main__technologies-content__box-contact__text main__technologies-content__box-contact__text--mobile">+48 22 233 00 50</span>
+                  </div>
+
+                  <div class="main__technologies-content__box-contact main__technologies-content__box-contact--2">
+                    <a href="mailto:biuro@3ns.com.pl" class="main__technologies-content__box-contact__anchor main__technologies-content__box-contact__anchor--2">
+                      <img src="images/envelope_2.svg" class="main__technologies-content__box-contact__img main__technologies-content__box-contact__img--2" alt="email"></a>
+                    <span class="main__technologies-content__box-contact__text main__technologies-content__box-contact__text--envelope">biuro@3ns.com.pl</span>
+                  </div>
                 </div>
               </div>
               <div class="main__technologies-content__box main__technologies-content__box--2">
@@ -716,7 +727,7 @@
           <div class="footer-content__bottom-right">
             <div class="footer-content__bottom-right__details footer-content__bottom-right__details--1">
               <span class="footer-content__bottom-right__details-3ns">3N Solutions Sp. z o.o.</span>ul. Złota 61/100
-              00-819 Warszaw
+              00-819 Warszawa
             </div>
             <div class="footer-content__bottom-right__details footer-content__bottom-right__details--2">
               <span class="footer-content__bottom-right__details-krs">KRS:0000257515, Sąd Rejonowy dla m.st.

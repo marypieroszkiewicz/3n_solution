@@ -52,11 +52,13 @@ const markFieldAsError = function(field, show) {
 
 
 const form = document.querySelector('#modalForm');
-const inputs = form.querySelectorAll("[required]");
+
+const inputs = form.querySelectorAll('input,textarea');
+const required = form.querySelectorAll("[required]");
 
 form.setAttribute('novalidate', true);
 
-for (const el of inputs) {
+for (const el of required) {
   el.addEventListener("input", e => markFieldAsError(e.target, !e.target.checkValidity()));
 }
 
@@ -66,8 +68,8 @@ form.addEventListener("submit", e => {
 
   let formErrors = false;
 
-  //2 etap - sprawdzamy poszczególne pola gdy ktoś chce wysłać formularz
-  for (const el of inputs) {
+  // 2 etap - sprawdzamy poszczególne pola gdy ktoś chce wysłać formularz
+  for (const el of required) {
     markFieldAsError(el, false);
     toggleErrorField(el, false);
 

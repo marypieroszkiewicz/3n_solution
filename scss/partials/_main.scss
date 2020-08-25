@@ -1916,13 +1916,14 @@
 
 
         &-contact {
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           text-align: center;
           font-size: rem(25px);
           font-family: $font-title--bold;
           padding: rem(19px 0);
           border-top: 1px solid rgba(255, 255, 255, 0.3);
-          vertical-align: middle;
 
           @media #{$mobile_land__640} {
             padding: rem(22px 0);
@@ -1933,20 +1934,18 @@
             padding: rem(29px 0);
           }
 
-          &--1::before {
-            content: url("../images/smartphone_2.svg");
-            display: inline-block;
-            width: 25px;
-            vertical-align: middle;
-            margin-right: rem(35px);
-          }
+          &__anchor {
+            display: block;
 
-          &--2::before {
-            content: url("../images/envelope_2.svg");
-            display: inline-block;
-            width: 40px;
-            vertical-align: middle;
-            margin-right: rem(20px);
+            &--1 {
+              width: 25px;
+              margin-right: rem(35px);
+            }
+
+            &--2 {
+              width: 40px;
+              margin-right: rem(20px);
+            }
           }
 
           // &::before {
@@ -1989,19 +1988,19 @@
 
 /* ----- END OF MAIN ----- */
 
-@media #{$mobile_land__640} {
-
-  .main {
-    &__title {
-      font-size: rem(25px);
-      padding: rem(62px 40px);
-    }
-  }
-
-  &__boxes {
-    padding: rem(0 40px);
-  }
-}
+//@media #{$mobile_land__640} {
+//
+//  .main {
+//    &__title {
+//      font-size: rem(25px);
+//      padding: rem(62px 40px);
+//    }
+//  }
+//
+//  &__boxes {
+//    padding: rem(0 40px);
+//  }
+//}
 
 
 
