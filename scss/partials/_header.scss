@@ -139,6 +139,10 @@
   }
 
   @media #{$tablet_land__1024} {
+    top: 22px;
+  }
+
+  @media #{$desktop__1280} {
     display: none;
   }
 }
@@ -216,7 +220,27 @@
   z-index: 3;
   background-color: $catskill-white;
 
-  @media #{$tablet_land__1024} {
+  //@media #{$tablet_land__1024} {
+  //  overflow: visible;
+  //  top: auto;
+  //  position: relative;
+  //  box-shadow: none;
+  //  max-height: 100%;
+  //  transition: none;
+  //  transition-duration: 0s;
+  //  display: flex;
+  //  flex-direction: row;
+  //  justify-content: flex-end;
+  //  width: 100%;
+  //  background: transparent;
+  //}
+
+  //.menu--show & {
+  //  max-height: 900px;
+  //  overflow-y: auto;
+  //}
+
+  @media #{$desktop__1280} {
     overflow: visible;
     top: auto;
     position: relative;
@@ -263,7 +287,6 @@
       padding: rem(20px);
 
       @media #{$tablet_land__1024} {
-        //flex-direction: column;
         padding: rem(0 20px 0 0);
       }
 
@@ -273,7 +296,13 @@
     }
   }
 
-  @media #{$tablet_land__1024} {
+  //@media #{$tablet_land__1024} {
+  //  margin-top: 0;
+  //  flex-direction: row;
+  //  align-items: center;
+  //}
+
+  @media #{$desktop__1280} {
     margin-top: 0;
     flex-direction: row;
     align-items: center;
