@@ -19,11 +19,11 @@
     }
 
     @media #{$large__screens__1440} {
-      padding: rem(40px 100px 20px);
+      padding: rem(40px 60px 20px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(45px 120px 25px);
+      padding: rem(45px 80px 25px);
     }
 
     @media #{$HD__screens__1920} {
@@ -61,12 +61,8 @@
           width: 30%;
         }
 
-        @media #{$full__screens__1600} {
-          width: 35%;
-        }
-
         @media #{$HD__screens__1920} {
-          width: 18%;
+          width: 23%;
         }
       }
 

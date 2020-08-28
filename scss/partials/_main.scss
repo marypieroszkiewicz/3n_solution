@@ -52,15 +52,15 @@
     }
 
     @media #{$desktop__1280} {
-      padding: rem(0 40px);
+      padding: rem(0 60px);
     }
 
     @media #{$large__screens__1440} {
-      padding: rem(0 100px);
+      padding: rem(0 80px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(0 120px);
+      padding: rem(0 100px);
     }
 
     @media #{$HD__screens__1920} {
@@ -229,15 +229,15 @@
       @media #{$desktop__1280} {
         text-align: left;
         font-size: rem(45px);
-        padding: rem(0 0 0 60px);
+        padding: rem(0 0 0 40px);
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 0 0 100px);
+        padding: rem(0 0 0 60px);
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 0 0 120px);
+        padding: rem(0 0 0 80px);
       }
 
       @media #{$HD__screens__1920} {
@@ -1586,7 +1586,7 @@
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(80px 120px 0);
+        padding: rem(80px 100px 0);
       }
 
       @media #{$HD__screens__1920} {
@@ -1616,7 +1616,7 @@
       @media #{$desktop__1280} {
         font-size: rem(45px);
         text-align: left;
-        padding: rem(40px 60px 80px);
+        padding: rem(40px 40px 80px);
       }
 
       @media #{$large__screens__1440} {
@@ -1649,7 +1649,7 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 100px);
+        padding: rem(0 80px);
       }
 
       @media #{$full__screens__1600} {
