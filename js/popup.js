@@ -13,6 +13,10 @@ function get_day(date) {
 
 const day = get_day(new Date());
 const last = get_day(new Date(2020, 09, 18));
-if (day <= last) {
-  popup.classList.remove('popupClose');
-}
+
+const delay = function(){
+  if (day <= last) {
+    popup.classList.remove('popupClose');
+  }
+};
+setTimeout(delay, 1000);

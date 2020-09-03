@@ -23,14 +23,9 @@
     transform: translate(-50%, -50%);
   }
 
-  @media #{$HD__screens__1920} {
+  @media #{$full__screens__1600} {
     top: 80%;
     transform: translate(-50%, -80%);
-  }
-
-  @media #{$max__screen__2560} {
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 
   &Close {
