@@ -3,15 +3,16 @@ const button = document.querySelector('.js-popup-close');
 button.addEventListener('click', closePopup)
 
 function closePopup() {
-  let popup= document.querySelector('.popup');
+  let popup = document.querySelector('.popup');
   popup.classList.add('popupClose');
-  localStorage.setItem('popupDay', day);
+}
+const factor = 1000 * 24 * 60 * 60;
+function get_day(date) {
+  return Math.floor(+date / factor);
 }
 
-// const day = new Date().getDay();
-const day = Math.floor(Date.now() / 1000 / 60 / 60 / 24);
-const saved_day = localStorage.getItem('popupDay');
-
-if (!saved_day || day > +saved_day) {
+const day = get_day(new Date());
+const last = get_day(new Date(2020, 09, 18));
+if (day <= last) {
   popup.classList.remove('popupClose');
 }
