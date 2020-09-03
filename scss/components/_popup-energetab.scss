@@ -32,30 +32,67 @@ button {
 
 .popup {
   display: block;
+  width: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 99999;
+  z-index: 999999;
+
+  &Close {
+    display: none;
+  }
+
+  &__wrapper {
+    width: calc(100% - 40px);
+    max-width: 531px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #0c426d;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: $white;
+    position: relative;
+    margin: 5% auto 0;
+
+    @media #{$mobile_land__640} {
+      padding: 50px;
+    }
+  }
+
+  &__content {
+    overflow-y: scroll;
+    max-height: 80vh;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-visibility: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    @media #{$tablet__768} {
+      overflow: hidden;
+    }
+
+    @media #{$HD__screens__1920} {
+      //overflow-y: auto;
+      max-height: initial;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+  }
 }
 
-.popupClose {
-  display: none;
-}
-
-.popup__content {
-  max-width: 531px;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #0c426d;
-  border-radius: 10px;
-  padding: 50px;
-  background-color: $white;
-}
 
 .popup__content-logo {
-  width: 111px;
+  width: 40%;
+  display: block;
   margin: 0 auto;
+
+  @media #{$mobile_land__640} {
+    width: 25%;
+  }
 }
 
 .popup__content-text {
@@ -63,19 +100,29 @@ button {
   text-align: center;
   white-space: pre-line;
   color: #0c426d;
-  font-size: 20px;
+  font-size: 19px;
+
+  @media #{$mobile_land__640} {
+    font-size: 20px;
+  }
+
 }
 
 .popup__content-text--bold {
   display: inline-block;
-  font-size: 34px;
+  font-size: 25px;
   padding: 17px 0 13px;
+  white-space: pre-line;
+
+
+  @media #{$mobile_land__640} {
+    font-size: 34px;
+    white-space: normal;
+  }
 }
 
 .popup__content-map {
-  /*   width: 430px; */
-  width: calc(100% + 35px);
-  margin-left: -18px;
+  width: 100%;
 }
 
 
@@ -91,4 +138,19 @@ button {
   right: -10px;
   width: 30px;
   z-index: 2;
+}
+
+@media #{$mobile_land__640} {}
+
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
 }
