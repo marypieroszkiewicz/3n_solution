@@ -19,11 +19,6 @@
   }
 
   @media #{$large__screens__1440} {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media #{$full__screens__1600} {
     top: 80%;
     transform: translate(-50%, -80%);
   }
@@ -75,7 +70,11 @@
       max-height: 80vh;
     }
 
-    @media #{$tablet_land__1024} {
+    @media #{$large__screens__1440} {
+      max-height: 65vh;
+    }
+
+    @media #{$full__screens__1600} {
       max-height: 80vh;
     }
 
