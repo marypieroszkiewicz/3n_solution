@@ -12,7 +12,7 @@ function get_day(date) {
 }
 
 const day = get_day(new Date());
-const last = get_day(new Date(2020, 09, 18));
+const last = get_day(new Date(2020, 09, 17));
 
 const delay = function(){
   if (day <= last) {

@@ -246,11 +246,13 @@
             &--1 {
               width: 11%;
               margin-right: rem(8px);
+              //width: 16px;
             }
 
             &--2 {
               width: 8%;
               margin-right: rem(11px);
+              //width: 12px;
             }
 
             &--3 {
@@ -258,17 +260,23 @@
               margin-right: rem(8px);
 
               @media #{$mobile_land__640} {
-                width: 12%;
+                //width: 12%;
                 margin-right: rem(20px);
+                width: 6%;
+              }
+
+              @media #{$tablet__768} {
+                width: 8%;
               }
 
               @media #{$tablet_land__1024} {
-                width: 13%;
+                //width: 13%;
+                width: 15%;
               }
 
-              @media #{$desktop__1280} {
-                width: 12%;
-              }
+              //@media #{$desktop__1280} {
+              //  width: 12%;
+              //}
 
               @media #{$full__screens__1600} {
                 width: 11%;
